@@ -1,0 +1,56 @@
+{
+  "contributor": "nthbotast",
+  "score": 12,
+  "grade": "CC",
+  "confidence": "high",
+  "last_scored": "2026-04-04",
+  "signals": {
+    "account_age_days": 36,
+    "account_created": "2026-02-27",
+    "followers": 0,
+    "following": 0,
+    "total_prs": 160,
+    "pr_velocity": "160 PRs in 36 days (4.4/day)",
+    "cross_repo_targets": ["node-fetch/node-fetch", "nodejs/undici", "axios/axios", "lodash/lodash", "tektoncd/pipeline", "up-for-grabs/up-for-grabs.net"],
+    "scope_escalation": true,
+    "scope_escalation_detail": "Consistent pattern across repos: docs PRs first, then types, then source code targeting security-sensitive paths",
+    "security_paths_touched": ["request headers (node-fetch)", "proxy connections / TLS (undici)", "proxy resolution (axios)"],
+    "description_mismatch": false,
+    "dormant_reactivation": false,
+    "ai_generated_indicators": "PR descriptions on axios reference 'cubic' tool"
+  },
+  "evidence_hash": "sha256:d4057a936ce9a4e0895fcf828c4e18b55db23a93ab7dfffff35c99b8f812771a",
+  "summary": "1-month-old account submitting 160 PRs across JavaScript HTTP client libraries in 36 days. Source code PRs specifically target credential and proxy handling on node-fetch, undici, and axios. Escalation pattern: docs → types → source code on each repo. On lodash (utility library, not HTTP), source code changes are benign and strengthen security. The selectivity of security-weakening changes to HTTP libraries specifically is the primary risk signal.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 9,
+      "risk_prs": ["#1878 — silently strips cookie, proxy-authorization, and sec-* headers from requests"],
+      "any_merged": false,
+      "note": "Repo has no active maintainer. 131M weekly npm downloads."
+    },
+    {
+      "repo": "nodejs/undici",
+      "prs": 12,
+      "risk_prs": ["#4860 — modified proxy connection handler, initial version would default HTTPS to plaintext HTTP (TLS downgrade)"],
+      "any_merged": false,
+      "merged_docs": true,
+      "note": "Maintainer @metcoder95 caught the TLS downgrade and closed the PR. 4 docs PRs were merged."
+    },
+    {
+      "repo": "axios/axios",
+      "prs": 8,
+      "risk_prs": ["#7479 — bumps proxy-from-env v1 to v2 in core HTTP adapter, changes proxy resolution"],
+      "any_merged": true,
+      "merged_prs": ["#7478 — JSDoc comment fix, zero runtime impact"],
+      "note": "One docs PR merged. Source code PR closed."
+    },
+    {
+      "repo": "lodash/lodash",
+      "prs": 15,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Source code changes strengthen prototype pollution defenses. No security concerns."
+    }
+  ]
+}
