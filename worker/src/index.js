@@ -4,6 +4,20 @@ import { SEED_SCORES } from './seed-data.js';
 
 const app = new Hono();
 
+// Analytics: lightweight event logging
+async function logEvent(env, type, detail) {
+  try {
+    const now = new Date().toISOString();
+    const hour = now.slice(0, 13); // "2026-04-07T15"
+    const key = `analytics:${hour}`;
+    const existing = await env.ACS_SCORES.get(key, 'json') || { hour, events: [] };
+    existing.events.push({ type, detail, ts: now });
+    // Only keep last 100 events per hour to avoid KV size limits
+    if (existing.events.length > 100) existing.events = existing.events.slice(-100);
+    await env.ACS_SCORES.put(key, JSON.stringify(existing), { expirationTtl: 604800 }); // 7 day TTL
+  } catch {} // fail silently — analytics should never break the API
+}
+
 // Helper: try KV first, fall back to seed data
 async function getScore(env, key) {
   try {
@@ -101,6 +115,7 @@ app.get('/', (c) => {
 app.get('/api/contributor/:username', async (c) => {
   const username = c.req.param('username').toLowerCase();
   const data = await getScore(c.env, `contributor:${username}`);
+  await logEvent(c.env, 'contributor_lookup', { username, found: !!data });
 
   if (!data) {
     return c.json({
@@ -119,6 +134,7 @@ app.get('/api/repo/:owner/:repo', async (c) => {
   const repo = c.req.param('repo');
   const key = `repo:${owner}/${repo}`.toLowerCase();
   const data = await getScore(c.env, key);
+  await logEvent(c.env, 'repo_lookup', { repo: `${owner}/${repo}`, found: !!data });
 
   if (!data) {
     return c.json({
@@ -182,6 +198,70 @@ app.get('/api/repos', async (c) => {
   }));
 
   return c.json({ total: repos.length, repos });
+});
+
+// Dashboard — private analytics (requires secret)
+app.get('/api/dashboard', async (c) => {
+  const key = c.req.query('key');
+  if (key !== c.env.DASHBOARD_KEY) {
+    return c.json({ error: 'unauthorized' }, 401);
+  }
+
+  // Gather analytics from last 72 hours
+  const now = new Date();
+  const hours = [];
+  for (let i = 0; i < 72; i++) {
+    const d = new Date(now.getTime() - i * 3600000);
+    hours.push(d.toISOString().slice(0, 13));
+  }
+
+  let totalEvents = 0;
+  let contributorLookups = 0;
+  let repoLookups = 0;
+  let notFoundCount = 0;
+  const topContributors = {};
+  const topRepos = {};
+  const hourlyActivity = {};
+
+  for (const hour of hours) {
+    const data = await c.env.ACS_SCORES.get(`analytics:${hour}`, 'json');
+    if (!data) continue;
+
+    hourlyActivity[hour] = data.events.length;
+
+    for (const evt of data.events) {
+      totalEvents++;
+      if (evt.type === 'contributor_lookup') {
+        contributorLookups++;
+        if (evt.detail?.username) {
+          topContributors[evt.detail.username] = (topContributors[evt.detail.username] || 0) + 1;
+        }
+        if (!evt.detail?.found) notFoundCount++;
+      }
+      if (evt.type === 'repo_lookup') {
+        repoLookups++;
+        if (evt.detail?.repo) {
+          topRepos[evt.detail.repo] = (topRepos[evt.detail.repo] || 0) + 1;
+        }
+      }
+    }
+  }
+
+  const sortedContributors = Object.entries(topContributors).sort((a, b) => b[1] - a[1]).slice(0, 20);
+  const sortedRepos = Object.entries(topRepos).sort((a, b) => b[1] - a[1]).slice(0, 10);
+
+  return c.json({
+    period: '72 hours',
+    total_events: totalEvents,
+    contributor_lookups: contributorLookups,
+    repo_lookups: repoLookups,
+    not_found_count: notFoundCount,
+    top_contributors_queried: sortedContributors.map(([name, count]) => ({ name, count })),
+    top_repos_queried: sortedRepos.map(([name, count]) => ({ name, count })),
+    hourly_activity: hourlyActivity,
+    scores_in_database: Object.keys(SEED_SCORES).filter(k => k.startsWith('contributor:')).length,
+    repos_in_database: Object.keys(SEED_SCORES).filter(k => k.startsWith('repo:')).length
+  });
 });
 
 // Health check
