@@ -1,29 +1,23 @@
 {
-  "username": "SaisakthiM",
-  "source_repo": "expressjs/express",
-  "scanned": "2026-04-04",
-  "profile": {
-    "name": "",
-    "created": "2025-03-16T09:35:22Z",
+  "contributor": "SaisakthiM",
+  "score": 50,
+  "grade": "NR",
+  "confidence": "low",
+  "last_scored": "2026-04-04",
+  "signals": {
     "account_age_days": 383,
-    "account_age_years": 1.0,
+    "account_created": "2025-03-16T09:35:22Z",
     "followers": 0,
-    "public_repos": 8
+    "total_prs": 0,
+    "pr_velocity": ""
   },
-  "activity": {
-    "total_prs": -1,
-    "express_prs": -1,
-    "daily_pr_rate": -1,
-    "pr_data_incomplete": true
-  },
-  "acs": {
-    "score": 55,
-    "base": 50,
-    "account_age_bonus": 5,
-    "follower_bonus": 0,
-    "velocity_adjustment": 0,
-    "spam_penalty": 0,
-    "note": "PR count unavailable due to rate limit; velocity not scored"
-  },
-  "flags": []
+  "summary": "Scored from express.js scan.",
+  "repos_affected": [
+    {
+      "repo": "expressjs/express",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
 }

@@ -1,27 +1,23 @@
 {
-  "username": "guyroyse",
-  "source_repo": "expressjs/express",
-  "scanned": "2026-04-04",
-  "profile": {
-    "name": "Guy Royse",
-    "created": "2010-05-09T20:59:24Z",
+  "contributor": "guyroyse",
+  "score": 50,
+  "grade": "NR",
+  "confidence": "low",
+  "last_scored": "2026-04-04",
+  "signals": {
     "account_age_days": 5808,
-    "account_age_years": 15.9,
+    "account_created": "2010-05-09T20:59:24Z",
     "followers": 938,
-    "public_repos": 208
+    "total_prs": 0,
+    "pr_velocity": ""
   },
-  "activity": {
-    "total_prs": 93,
-    "express_prs": 1,
-    "daily_pr_rate": 0.01
-  },
-  "acs": {
-    "score": 95,
-    "base": 50,
-    "account_age_bonus": 20,
-    "follower_bonus": 15,
-    "velocity_adjustment": 10,
-    "spam_penalty": 0
-  },
-  "flags": []
+  "summary": "Scored from express.js scan.",
+  "repos_affected": [
+    {
+      "repo": "expressjs/express",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
 }

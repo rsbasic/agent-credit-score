@@ -1,27 +1,23 @@
 {
-  "username": "AzmeerX",
-  "source_repo": "expressjs/express",
-  "scanned": "2026-04-04",
-  "profile": {
-    "name": "Azmeer Farhan",
-    "created": "2025-03-24T15:06:07Z",
+  "contributor": "AzmeerX",
+  "score": 50,
+  "grade": "NR",
+  "confidence": "low",
+  "last_scored": "2026-04-04",
+  "signals": {
     "account_age_days": 375,
-    "account_age_years": 1.0,
+    "account_created": "2025-03-24T15:06:07Z",
     "followers": 0,
-    "public_repos": 10
+    "total_prs": 0,
+    "pr_velocity": ""
   },
-  "activity": {
-    "total_prs": 7,
-    "express_prs": 1,
-    "daily_pr_rate": 0.01
-  },
-  "acs": {
-    "score": 65,
-    "base": 50,
-    "account_age_bonus": 5,
-    "follower_bonus": 0,
-    "velocity_adjustment": 10,
-    "spam_penalty": 0
-  },
-  "flags": []
+  "summary": "Scored from express.js scan.",
+  "repos_affected": [
+    {
+      "repo": "expressjs/express",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
 }

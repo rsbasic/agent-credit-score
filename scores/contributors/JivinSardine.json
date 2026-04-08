@@ -1,27 +1,23 @@
 {
-  "username": "JivinSardine",
-  "source_repo": "expressjs/express",
-  "scanned": "2026-04-04",
-  "profile": {
-    "name": "Jivin Sardine M",
-    "created": "2021-08-31T15:32:01Z",
+  "contributor": "JivinSardine",
+  "score": 50,
+  "grade": "NR",
+  "confidence": "low",
+  "last_scored": "2026-04-04",
+  "signals": {
     "account_age_days": 1676,
-    "account_age_years": 4.5,
+    "account_created": "2021-08-31T15:32:01Z",
     "followers": 2,
-    "public_repos": 133
+    "total_prs": 0,
+    "pr_velocity": ""
   },
-  "activity": {
-    "total_prs": 23,
-    "express_prs": 1,
-    "daily_pr_rate": 0.01
-  },
-  "acs": {
-    "score": 75,
-    "base": 50,
-    "account_age_bonus": 10,
-    "follower_bonus": 5,
-    "velocity_adjustment": 10,
-    "spam_penalty": 0
-  },
-  "flags": []
+  "summary": "Scored from express.js scan.",
+  "repos_affected": [
+    {
+      "repo": "expressjs/express",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
 }
