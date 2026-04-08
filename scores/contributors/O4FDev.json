@@ -1,0 +1,27 @@
+{
+  "username": "O4FDev",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Luke Lucas",
+    "created": "2019-07-08T18:28:17Z",
+    "account_age_days": 2461,
+    "account_age_years": 6.7,
+    "followers": 16,
+    "public_repos": 65
+  },
+  "activity": {
+    "total_prs": 24,
+    "express_prs": 1,
+    "daily_pr_rate": 0
+  },
+  "acs": {
+    "score": 90,
+    "base": 50,
+    "account_age_bonus": 20,
+    "follower_bonus": 10,
+    "velocity_adjustment": 10,
+    "spam_penalty": 0
+  },
+  "flags": []
+}

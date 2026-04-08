@@ -1,0 +1,29 @@
+{
+  "username": "kgarg1",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "",
+    "created": "2017-08-26T08:02:53Z",
+    "account_age_days": 3142,
+    "account_age_years": 8.6,
+    "followers": 0,
+    "public_repos": 5
+  },
+  "activity": {
+    "total_prs": -1,
+    "express_prs": -1,
+    "daily_pr_rate": -1,
+    "pr_data_incomplete": true
+  },
+  "acs": {
+    "score": 70,
+    "base": 50,
+    "account_age_bonus": 20,
+    "follower_bonus": 0,
+    "velocity_adjustment": 0,
+    "spam_penalty": 0,
+    "note": "PR count unavailable due to rate limit; velocity not scored"
+  },
+  "flags": []
+}

@@ -1,0 +1,27 @@
+{
+  "username": "jonchurch",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Jon Church",
+    "created": "2015-06-16T16:36:38Z",
+    "account_age_days": 3944,
+    "account_age_years": 10.8,
+    "followers": 293,
+    "public_repos": 270
+  },
+  "activity": {
+    "total_prs": 280,
+    "express_prs": {"message":"API rate limit exceeded for user ID 95368510. If you reach out to GitHub Support for help, please include the request ID D2E3:25B525:2644B4B:9D0CFEA:69D65F49 and timestamp 2026-04-08 13:59:37 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)","documentation_url":"https://docs.github.com/rest/overview/rate-limits-for-the-rest-api","status":"403"}0,
+    "daily_pr_rate": 0.07
+  },
+  "acs": {
+    "score": 95,
+    "base": 50,
+    "account_age_bonus": 20,
+    "follower_bonus": 15,
+    "velocity_adjustment": 10,
+    "spam_penalty": 0
+  },
+  "flags": []
+}

@@ -1,0 +1,29 @@
+{
+  "username": "som14062005",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Praveen Somasundaram",
+    "created": "2025-03-20T16:42:31Z",
+    "account_age_days": 379,
+    "account_age_years": 1.0,
+    "followers": 4,
+    "public_repos": 26
+  },
+  "activity": {
+    "total_prs": -1,
+    "express_prs": -1,
+    "daily_pr_rate": -1,
+    "pr_data_incomplete": true
+  },
+  "acs": {
+    "score": 60,
+    "base": 50,
+    "account_age_bonus": 5,
+    "follower_bonus": 5,
+    "velocity_adjustment": 0,
+    "spam_penalty": 0,
+    "note": "PR count unavailable due to rate limit; velocity not scored"
+  },
+  "flags": []
+}

@@ -1,0 +1,29 @@
+{
+  "username": "aagamezl",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "\u00c1lvaro Jos\u00e9 Ag\u00e1mez Licha",
+    "created": "2018-11-18T19:20:32Z",
+    "account_age_days": 2693,
+    "account_age_years": 7.3,
+    "followers": 38,
+    "public_repos": 80
+  },
+  "activity": {
+    "total_prs": -1,
+    "express_prs": -1,
+    "daily_pr_rate": -1,
+    "pr_data_incomplete": true
+  },
+  "acs": {
+    "score": 80,
+    "base": 50,
+    "account_age_bonus": 20,
+    "follower_bonus": 10,
+    "velocity_adjustment": 0,
+    "spam_penalty": 0,
+    "note": "PR count unavailable due to rate limit; velocity not scored"
+  },
+  "flags": []
+}

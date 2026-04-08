@@ -1,0 +1,27 @@
+{
+  "username": "Johan511",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Hari Hara Naveen S",
+    "created": "2020-08-20T18:49:44Z",
+    "account_age_days": 2052,
+    "account_age_years": 5.6,
+    "followers": 33,
+    "public_repos": 77
+  },
+  "activity": {
+    "total_prs": 44,
+    "express_prs": 1,
+    "daily_pr_rate": 0.02
+  },
+  "acs": {
+    "score": 90,
+    "base": 50,
+    "account_age_bonus": 20,
+    "follower_bonus": 10,
+    "velocity_adjustment": 10,
+    "spam_penalty": 0
+  },
+  "flags": []
+}

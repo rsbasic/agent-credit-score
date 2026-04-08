@@ -1,0 +1,29 @@
+{
+  "username": "alfonsograziano",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Alfonso Graziano",
+    "created": "2015-08-12T09:44:47Z",
+    "account_age_days": 3887,
+    "account_age_years": 10.6,
+    "followers": 129,
+    "public_repos": 91
+  },
+  "activity": {
+    "total_prs": -1,
+    "express_prs": -1,
+    "daily_pr_rate": -1,
+    "pr_data_incomplete": true
+  },
+  "acs": {
+    "score": 85,
+    "base": 50,
+    "account_age_bonus": 20,
+    "follower_bonus": 15,
+    "velocity_adjustment": 0,
+    "spam_penalty": 0,
+    "note": "PR count unavailable due to rate limit; velocity not scored"
+  },
+  "flags": []
+}

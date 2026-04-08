@@ -1,0 +1,27 @@
+{
+  "username": "Abdel-Monaam-Aouini",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "AbdelMonaam Aouini",
+    "created": "2019-06-22T20:05:04Z",
+    "account_age_days": 2477,
+    "account_age_years": 6.7,
+    "followers": 60,
+    "public_repos": 67
+  },
+  "activity": {
+    "total_prs": 60,
+    "express_prs": 15,
+    "daily_pr_rate": 0.02
+  },
+  "acs": {
+    "score": 90,
+    "base": 50,
+    "account_age_bonus": 20,
+    "follower_bonus": 10,
+    "velocity_adjustment": 10,
+    "spam_penalty": 0
+  },
+  "flags": []
+}

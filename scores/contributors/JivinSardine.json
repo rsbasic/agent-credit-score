@@ -1,0 +1,27 @@
+{
+  "username": "JivinSardine",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Jivin Sardine M",
+    "created": "2021-08-31T15:32:01Z",
+    "account_age_days": 1676,
+    "account_age_years": 4.5,
+    "followers": 2,
+    "public_repos": 133
+  },
+  "activity": {
+    "total_prs": 23,
+    "express_prs": 1,
+    "daily_pr_rate": 0.01
+  },
+  "acs": {
+    "score": 75,
+    "base": 50,
+    "account_age_bonus": 10,
+    "follower_bonus": 5,
+    "velocity_adjustment": 10,
+    "spam_penalty": 0
+  },
+  "flags": []
+}

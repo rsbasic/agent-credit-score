@@ -1,0 +1,29 @@
+{
+  "username": "agungjati",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Agung Jati",
+    "created": "2016-09-03T03:27:56Z",
+    "account_age_days": 3499,
+    "account_age_years": 9.5,
+    "followers": 13,
+    "public_repos": 68
+  },
+  "activity": {
+    "total_prs": -1,
+    "express_prs": -1,
+    "daily_pr_rate": -1,
+    "pr_data_incomplete": true
+  },
+  "acs": {
+    "score": 80,
+    "base": 50,
+    "account_age_bonus": 20,
+    "follower_bonus": 10,
+    "velocity_adjustment": 0,
+    "spam_penalty": 0,
+    "note": "PR count unavailable due to rate limit; velocity not scored"
+  },
+  "flags": []
+}

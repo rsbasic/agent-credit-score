@@ -1,0 +1,27 @@
+{
+  "username": "emilANS",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Emil",
+    "created": "2024-03-04T23:16:11Z",
+    "account_age_days": 760,
+    "account_age_years": 2.0,
+    "followers": 3,
+    "public_repos": 13
+  },
+  "activity": {
+    "total_prs": 3,
+    "express_prs": 1,
+    "daily_pr_rate": 0
+  },
+  "acs": {
+    "score": 75,
+    "base": 50,
+    "account_age_bonus": 10,
+    "follower_bonus": 5,
+    "velocity_adjustment": 10,
+    "spam_penalty": 0
+  },
+  "flags": []
+}

@@ -1,0 +1,29 @@
+{
+  "username": "bjohansebas",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Sebastian Beltran",
+    "created": "2022-04-13T14:24:20Z",
+    "account_age_days": 1451,
+    "account_age_years": 3.9,
+    "followers": 114,
+    "public_repos": 133
+  },
+  "activity": {
+    "total_prs": -1,
+    "express_prs": -1,
+    "daily_pr_rate": -1,
+    "pr_data_incomplete": true
+  },
+  "acs": {
+    "score": 75,
+    "base": 50,
+    "account_age_bonus": 10,
+    "follower_bonus": 15,
+    "velocity_adjustment": 0,
+    "spam_penalty": 0,
+    "note": "PR count unavailable due to rate limit; velocity not scored"
+  },
+  "flags": []
+}

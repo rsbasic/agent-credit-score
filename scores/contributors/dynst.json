@@ -1,0 +1,27 @@
+{
+  "username": "dynst",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "",
+    "created": "2023-10-22T16:12:44Z",
+    "account_age_days": 894,
+    "account_age_years": 2.4,
+    "followers": 0,
+    "public_repos": 48
+  },
+  "activity": {
+    "total_prs": 261,
+    "express_prs": 2,
+    "daily_pr_rate": 0.29
+  },
+  "acs": {
+    "score": 70,
+    "base": 50,
+    "account_age_bonus": 10,
+    "follower_bonus": 0,
+    "velocity_adjustment": 10,
+    "spam_penalty": 0
+  },
+  "flags": []
+}

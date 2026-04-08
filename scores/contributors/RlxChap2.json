@@ -1,0 +1,29 @@
+{
+  "username": "RlxChap2",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "!? ReLaX",
+    "created": "2023-05-12T00:54:13Z",
+    "account_age_days": 1057,
+    "account_age_years": 2.8,
+    "followers": 43,
+    "public_repos": 32
+  },
+  "activity": {
+    "total_prs": -1,
+    "express_prs": -1,
+    "daily_pr_rate": -1,
+    "pr_data_incomplete": true
+  },
+  "acs": {
+    "score": 70,
+    "base": 50,
+    "account_age_bonus": 10,
+    "follower_bonus": 10,
+    "velocity_adjustment": 0,
+    "spam_penalty": 0,
+    "note": "PR count unavailable due to rate limit; velocity not scored"
+  },
+  "flags": []
+}

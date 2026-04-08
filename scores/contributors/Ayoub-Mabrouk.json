@@ -1,0 +1,27 @@
+{
+  "username": "Ayoub-Mabrouk",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Ayoub Mabrouk",
+    "created": "2021-01-21T17:12:38Z",
+    "account_age_days": 1898,
+    "account_age_years": 5.2,
+    "followers": 42,
+    "public_repos": 113
+  },
+  "activity": {
+    "total_prs": 209,
+    "express_prs": 29,
+    "daily_pr_rate": 0.11
+  },
+  "acs": {
+    "score": 90,
+    "base": 50,
+    "account_age_bonus": 20,
+    "follower_bonus": 10,
+    "velocity_adjustment": 10,
+    "spam_penalty": 0
+  },
+  "flags": []
+}

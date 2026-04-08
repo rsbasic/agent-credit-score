@@ -1,0 +1,27 @@
+{
+  "username": "blazmrak",
+  "source_repo": "expressjs/express",
+  "scanned": "2026-04-04",
+  "profile": {
+    "name": "Blaz Mrak",
+    "created": "2017-02-23T12:53:43Z",
+    "account_age_days": 3326,
+    "account_age_years": 9.1,
+    "followers": 1,
+    "public_repos": 19
+  },
+  "activity": {
+    "total_prs": 21,
+    "express_prs": 1,
+    "daily_pr_rate": 0
+  },
+  "acs": {
+    "score": 85,
+    "base": 50,
+    "account_age_bonus": 20,
+    "follower_bonus": 5,
+    "velocity_adjustment": 10,
+    "spam_penalty": 0
+  },
+  "flags": []
+}
