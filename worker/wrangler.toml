@@ -1,0 +1,16 @@
+name = "acs-worker"
+main = "src/index.js"
+compatibility_date = "2026-04-01"
+workers_dev = true
+
+routes = [
+  { pattern = "agentcreditscore.ai/*", zone_id = "af24de25282e4e0f3a57079887c93f51" },
+  { pattern = "www.agentcreditscore.ai/*", zone_id = "af24de25282e4e0f3a57079887c93f51" }
+]
+
+[vars]
+ENVIRONMENT = "production"
+
+[[kv_namespaces]]
+binding = "ACS_SCORES"
+id = "f0cf9ca2de1d4f3ab9abd524f37615e0"

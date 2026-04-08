@@ -1,0 +1,30 @@
+{
+  "contributor": "sbingner",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-04",
+  "signals": {
+    "account_age_days": 5717,
+    "account_created": "2010-08-04",
+    "followers": 760,
+    "total_prs": "not enumerated — focused contributor, not high volume",
+    "pr_velocity": "low, consistent",
+    "cross_repo_targets": [],
+    "scope_escalation": false,
+    "security_paths_touched": ["body stream error handling (defensive fix)"],
+    "description_mismatch": false,
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:placeholder",
+  "summary": "16-year GitHub veteran. 760 followers. Established developer. On node-fetch, submitted PR #1852 — a small defensive fix (9 lines) for a crash on abort when body stream differs from source body. The change follows the existing error handling pattern in the codebase. Low velocity, focused contributions, no cross-repo concerns.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "PR #1852 — defensive error handling fix. 9 lines. Matches existing code patterns. Open since July 2025."
+    }
+  ]
+}

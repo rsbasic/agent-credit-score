@@ -1,0 +1,33 @@
+{
+  "contributor": "theluckystrike",
+  "score": 31,
+  "grade": "CCC",
+  "confidence": "medium",
+  "last_scored": "2026-04-04",
+  "signals": {
+    "account_age_days": 2501,
+    "account_created": "2019-05-25",
+    "followers": 13,
+    "total_prs": 1728,
+    "pr_velocity": "2 PRs from 2019-2024, then 1,726 in March 2026 alone",
+    "cross_repo_targets": ["682 PRs to other people's repos in March 2026"],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "description_mismatch": false,
+    "dormant_reactivation": true,
+    "dormant_reactivation_detail": "6-year-old account with 2 lifetime PRs suddenly produces 1,726 in one month",
+    "primary_activity": "Mass URL updates across Chrome extension repos + dependency vulnerability fixes",
+    "ai_generated_indicators": "Identical PR titles across dozens of repos ('docs: update Chrome Web Store URLs to new domain')"
+  },
+  "evidence_hash": "sha256:placeholder",
+  "summary": "6-year-old account dormant until March 2026, then 1,726 PRs in one month. Primarily mass find-and-replace campaigns (Chrome Web Store URL updates across 30+ repos) and automated dependency vulnerability fixes. On node-fetch: 4 PRs, all docs or dependency consolidation — no source code changes to request/response handling. The velocity anomaly is the primary signal. The content of contributions is largely benign but the pattern indicates automated agent operation on a previously dormant account.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 4,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Docs and dependency consolidation only. No source code changes to security-sensitive paths."
+    }
+  ]
+}

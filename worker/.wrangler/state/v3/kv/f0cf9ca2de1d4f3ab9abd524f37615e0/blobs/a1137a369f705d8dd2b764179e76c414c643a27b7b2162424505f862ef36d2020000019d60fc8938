@@ -1,0 +1,31 @@
+{
+  "contributor": "gr2m",
+  "score": 96,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-04",
+  "signals": {
+    "account_age_days": 6323,
+    "account_created": "2008-12-12",
+    "followers": 1727,
+    "total_prs": 4269,
+    "pr_velocity": "4269 PRs over 17 years (0.7/day average — consistent, not bursty)",
+    "cross_repo_targets": [],
+    "scope_escalation": false,
+    "security_paths_touched": ["CI/CD pipeline (npm provenance improvement)"],
+    "description_mismatch": false,
+    "dormant_reactivation": false,
+    "notable_affiliations": "Vercel, Octokit, semantic-release, Probot, Nock, AllContributors"
+  },
+  "evidence_hash": "sha256:placeholder",
+  "summary": "17-year GitHub veteran. Creator and maintainer of semantic-release, Octokit, Probot, and other foundational open source infrastructure. 1,727 followers. Consistent contribution history across 4,269 PRs. On node-fetch, submitted PR #1881 to add npm provenance via OIDC — a security improvement that removes NPM_TOKEN dependency from the CI pipeline. Highly trusted.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "PR #1881 — adds npm provenance via OIDC. Net security improvement. From the creator of semantic-release."
+    }
+  ]
+}

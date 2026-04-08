@@ -1,0 +1,21 @@
+{
+  "repo": "node-fetch/node-fetch",
+  "health_score": 15,
+  "health_grade": "C",
+  "weekly_downloads": 131000000,
+  "npm_dependents": 45348,
+  "stars": 8862,
+  "last_maintainer_commit": "2023-07-25",
+  "months_since_commit": 32,
+  "active_maintainers": 0,
+  "org_members": 10,
+  "open_issues": 240,
+  "open_prs": 15,
+  "auto_publish": true,
+  "codeowners": false,
+  "known_cves": ["CVE-2020-15168", "CVE-2022-0235", "CVE-2022-2596"],
+  "flagged_contributors": ["nthbotast", "theluckystrike"],
+  "trusted_contributors": ["gr2m", "sbingner"],
+  "last_assessed": "2026-04-04",
+  "summary": "131M weekly downloads with no active maintainer for 32 months. Auto-publish pipeline. No CODEOWNERS. Active automated PR campaigns targeting credential-handling code."
+}
