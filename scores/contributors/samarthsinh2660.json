@@ -1,0 +1,23 @@
+{
+  "contributor": "samarthsinh2660",
+  "score": 75,
+  "grade": "A",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 958,
+    "account_created": "2023-08-23T15:58:00+00:00",
+    "followers": 15,
+    "total_prs": "unknown",
+    "pr_velocity": "~51 public repos (PR count unavailable)"
+  },
+  "summary": "Moderate-age account (2.6yr); active webpack contributor (4 open PRs).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 4,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "contributor": "arkapratimc",
+  "score": 70,
+  "grade": "BBB",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 1429,
+    "account_created": "2022-05-09T16:20:03+00:00",
+    "followers": 5,
+    "total_prs": "unknown",
+    "pr_velocity": "~35 public repos (PR count unavailable)"
+  },
+  "summary": "Moderate-age account (3.9yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

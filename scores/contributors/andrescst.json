@@ -1,0 +1,23 @@
+{
+  "contributor": "andrescst",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 2387,
+    "account_created": "2019-09-24T18:36:25+00:00",
+    "followers": 3,
+    "total_prs": 3,
+    "pr_velocity": "3 PRs over 2387d (0.00/day) - reasonable"
+  },
+  "summary": "Established account (7yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

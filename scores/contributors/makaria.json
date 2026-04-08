@@ -1,0 +1,23 @@
+{
+  "contributor": "makaria",
+  "score": 70,
+  "grade": "BBB",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 3967,
+    "account_created": "2015-05-28T07:43:05+00:00",
+    "followers": 0,
+    "total_prs": "unknown",
+    "pr_velocity": "~17 public repos (PR count unavailable)"
+  },
+  "summary": "Veteran GitHub user (11yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

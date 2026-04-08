@@ -1,0 +1,23 @@
+{
+  "contributor": "Danielku15",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 5500,
+    "account_created": "2011-03-17T10:54:13+00:00",
+    "followers": 114,
+    "total_prs": 612,
+    "pr_velocity": "612 PRs over 5500d (0.11/day) - reasonable"
+  },
+  "summary": "Veteran GitHub user (15yr); well-followed (114).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

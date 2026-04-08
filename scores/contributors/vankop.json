@@ -1,0 +1,23 @@
+{
+  "contributor": "vankop",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 4112,
+    "account_created": "2015-01-03T12:17:19+00:00",
+    "followers": 84,
+    "total_prs": "unknown",
+    "pr_velocity": "~74 public repos, likely reasonable velocity (PR count unavailable)"
+  },
+  "summary": "Veteran GitHub user (11yr); active webpack contributor (5 open PRs).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 5,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

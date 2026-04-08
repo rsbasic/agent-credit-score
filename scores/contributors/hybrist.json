@@ -1,0 +1,23 @@
+{
+  "contributor": "hybrist",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 5560,
+    "account_created": "2011-01-16T15:47:04+00:00",
+    "followers": 213,
+    "total_prs": "unknown",
+    "pr_velocity": "~132 public repos, likely reasonable velocity (PR count unavailable)"
+  },
+  "summary": "Veteran GitHub user (15yr); well-followed (213).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

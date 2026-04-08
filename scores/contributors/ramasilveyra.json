@@ -1,0 +1,23 @@
+{
+  "contributor": "ramasilveyra",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 4358,
+    "account_created": "2014-05-02T06:32:05+00:00",
+    "followers": 56,
+    "total_prs": "unknown",
+    "pr_velocity": "~134 public repos, likely reasonable velocity (PR count unavailable)"
+  },
+  "summary": "Veteran GitHub user (12yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

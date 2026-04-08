@@ -1,0 +1,23 @@
+{
+  "contributor": "Prinkal37",
+  "score": 65,
+  "grade": "BBB",
+  "confidence": "medium",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 529,
+    "account_created": "2024-10-25T14:37:41+00:00",
+    "followers": 0,
+    "total_prs": 2,
+    "pr_velocity": "2 PRs over 529d (0.00/day) - reasonable"
+  },
+  "summary": "Young account (1.4yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

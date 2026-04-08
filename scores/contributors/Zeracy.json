@@ -1,0 +1,23 @@
+{
+  "contributor": "Zeracy",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 4146,
+    "account_created": "2014-11-30T13:59:50+00:00",
+    "followers": 3,
+    "total_prs": 2,
+    "pr_velocity": "2 PRs over 4146d (0.00/day) - reasonable"
+  },
+  "summary": "Veteran GitHub user (11yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "contributor": "ScriptedAlchemy",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 3362,
+    "account_created": "2017-01-22T03:02:00+00:00",
+    "followers": 2935,
+    "total_prs": 2838,
+    "pr_velocity": "2838 PRs over 3362d (0.84/day) - reasonable"
+  },
+  "summary": "Established account (9yr); highly followed (2935).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

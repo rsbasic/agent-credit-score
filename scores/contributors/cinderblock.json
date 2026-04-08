@@ -1,0 +1,23 @@
+{
+  "contributor": "cinderblock",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 5670,
+    "account_created": "2010-09-28T23:29:06+00:00",
+    "followers": 45,
+    "total_prs": "unknown",
+    "pr_velocity": "~194 public repos, likely reasonable velocity (PR count unavailable)"
+  },
+  "summary": "Veteran GitHub user (16yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

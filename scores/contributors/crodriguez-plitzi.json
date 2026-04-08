@@ -1,0 +1,23 @@
+{
+  "contributor": "crodriguez-plitzi",
+  "score": 65,
+  "grade": "BBB",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 1751,
+    "account_created": "2021-06-21T19:24:43+00:00",
+    "followers": 1,
+    "total_prs": "unknown",
+    "pr_velocity": "~1 public repos (PR count unavailable)"
+  },
+  "summary": "Moderate-age account (4.8yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

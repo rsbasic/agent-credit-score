@@ -1,0 +1,23 @@
+{
+  "contributor": "ahabhgk",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 2776,
+    "account_created": "2018-08-31T05:05:27+00:00",
+    "followers": 245,
+    "total_prs": 1009,
+    "pr_velocity": "1009 PRs over 2776d (0.36/day) - reasonable"
+  },
+  "summary": "Established account (8yr); well-followed (245).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

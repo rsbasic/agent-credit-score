@@ -1,0 +1,23 @@
+{
+  "contributor": "developit",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 6110,
+    "account_created": "2009-07-15T08:22:03+00:00",
+    "followers": 12964,
+    "total_prs": "unknown",
+    "pr_velocity": "~349 public repos, likely reasonable velocity (PR count unavailable)"
+  },
+  "summary": "Veteran GitHub user (17yr); highly followed (12964).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

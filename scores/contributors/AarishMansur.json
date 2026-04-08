@@ -1,0 +1,23 @@
+{
+  "contributor": "AarishMansur",
+  "score": 70,
+  "grade": "BBB",
+  "confidence": "medium",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 680,
+    "account_created": "2024-05-27T14:42:02+00:00",
+    "followers": 3,
+    "total_prs": 25,
+    "pr_velocity": "25 PRs over 680d (0.04/day) - reasonable"
+  },
+  "summary": "Young account (1.9yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

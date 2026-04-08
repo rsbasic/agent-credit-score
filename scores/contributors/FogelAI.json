@@ -1,0 +1,23 @@
+{
+  "contributor": "FogelAI",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 1778,
+    "account_created": "2021-05-25T11:38:10+00:00",
+    "followers": 2,
+    "total_prs": 2,
+    "pr_velocity": "2 PRs over 1778d (0.00/day) - reasonable"
+  },
+  "summary": "Moderate-age account (4.9yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

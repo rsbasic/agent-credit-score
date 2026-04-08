@@ -1,0 +1,23 @@
+{
+  "contributor": "aleen42",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 4171,
+    "account_created": "2014-11-05T15:30:45+00:00",
+    "followers": 401,
+    "total_prs": 131,
+    "pr_velocity": "131 PRs over 4171d (0.03/day) - reasonable"
+  },
+  "summary": "Veteran GitHub user (11yr); well-followed (401).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

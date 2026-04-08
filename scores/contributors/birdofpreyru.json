@@ -1,0 +1,23 @@
+{
+  "contributor": "birdofpreyru",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 3573,
+    "account_created": "2016-06-25T19:18:51+00:00",
+    "followers": 94,
+    "total_prs": "unknown",
+    "pr_velocity": "~72 public repos, likely reasonable velocity (PR count unavailable)"
+  },
+  "summary": "Established account (10yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "contributor": "thehenryco",
+  "score": 60,
+  "grade": "BB",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 0,
+    "account_created": "",
+    "followers": 0,
+    "total_prs": 0,
+    "pr_velocity": ""
+  },
+  "summary": "Scored from repo scan.",
+  "repos_affected": [
+    {
+      "repo": "unknown",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

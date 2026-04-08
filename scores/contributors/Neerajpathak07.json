@@ -1,0 +1,23 @@
+{
+  "contributor": "Neerajpathak07",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 678,
+    "account_created": "2024-05-29T15:17:55+00:00",
+    "followers": 28,
+    "total_prs": 195,
+    "pr_velocity": "195 PRs over 678d (0.29/day) - reasonable"
+  },
+  "summary": "Young account (1.9yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

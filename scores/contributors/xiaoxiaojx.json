@@ -1,0 +1,23 @@
+{
+  "contributor": "xiaoxiaojx",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 3441,
+    "account_created": "2016-11-04T05:59:49+00:00",
+    "followers": 151,
+    "total_prs": "unknown",
+    "pr_velocity": "~34 public repos (PR count unavailable)"
+  },
+  "summary": "Established account (9yr); well-followed (151); active webpack contributor (4 open PRs).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 4,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

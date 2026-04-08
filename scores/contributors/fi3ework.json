@@ -1,0 +1,23 @@
+{
+  "contributor": "fi3ework",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 3987,
+    "account_created": "2015-05-08T06:39:48+00:00",
+    "followers": 838,
+    "total_prs": "unknown",
+    "pr_velocity": "~132 public repos, likely reasonable velocity (PR count unavailable)"
+  },
+  "summary": "Veteran GitHub user (11yr); well-followed (838).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

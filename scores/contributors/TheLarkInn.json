@@ -1,0 +1,23 @@
+{
+  "contributor": "TheLarkInn",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 4817,
+    "account_created": "2013-01-28T17:11:47+00:00",
+    "followers": 6482,
+    "total_prs": 453,
+    "pr_velocity": "453 PRs over 4817d (0.09/day) - reasonable"
+  },
+  "summary": "Veteran GitHub user (13yr); highly followed (6482).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

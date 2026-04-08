@@ -1,0 +1,23 @@
+{
+  "contributor": "MuTaToR08",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-08",
+  "signals": {
+    "account_age_days": 4265,
+    "account_created": "2014-08-03T12:20:16+00:00",
+    "followers": 1,
+    "total_prs": 12,
+    "pr_velocity": "12 PRs over 4265d (0.00/day) - reasonable"
+  },
+  "summary": "Veteran GitHub user (12yr).",
+  "repos_affected": [
+    {
+      "repo": "webpack/webpack",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}
