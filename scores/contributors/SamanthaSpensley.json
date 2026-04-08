@@ -1,0 +1,16 @@
+{
+  "contributor": "SamanthaSpensley",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 3730,
+    "account_created": "2016-01-19",
+    "followers": 12,
+    "total_prs": 0,
+    "pr_velocity": "minimal (0 PRs over 3730 days)"
+  },
+  "summary": "Established contributor with 10+ year account, 12 followers, and 0 lifetime PRs.",
+  "repos_affected": [{"repo": "jaredhanson/passport", "prs": 1, "risk_prs": [], "any_merged": false}]
+}

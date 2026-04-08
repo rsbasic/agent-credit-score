@@ -1,0 +1,17 @@
+{
+  "contributor": "adidaslevy",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4505,
+    "account_created": "2013-12-05T15:51:34Z",
+    "followers": 3,
+    "public_repos": 14,
+    "total_prs": 9,
+    "pr_velocity": "reasonable (.001/day avg)"
+  },
+  "summary": "Account 12.33y old, 3 followers, 9 lifetime PRs, 14 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

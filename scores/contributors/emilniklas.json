@@ -1,0 +1,23 @@
+{
+  "contributor": "emilniklas",
+  "score": 80,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4688,
+    "account_created": "2013-06-05T14:46:49",
+    "followers": 54,
+    "total_prs": 208,
+    "pr_velocity": "0.0444/day (reasonable)"
+  },
+  "summary": "Established contributor with 12.8-year account history and 208 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

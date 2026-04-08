@@ -1,0 +1,17 @@
+{
+  "contributor": "Leftwitch",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4229,
+    "account_created": "2014-09-07T10:08:43Z",
+    "followers": 8,
+    "public_repos": 37,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 11.57y old, 8 followers, 0 lifetime PRs, 37 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

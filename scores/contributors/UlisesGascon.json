@@ -1,0 +1,17 @@
+{
+  "contributor": "UlisesGascon",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4634,
+    "account_created": "2013-07-29T06:55:12Z",
+    "followers": 1736,
+    "public_repos": 301,
+    "total_prs": 2120,
+    "pr_velocity": "reasonable (.457/day avg)"
+  },
+  "summary": "Account 12.68y old, 1736 followers, 2120 lifetime PRs, 301 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

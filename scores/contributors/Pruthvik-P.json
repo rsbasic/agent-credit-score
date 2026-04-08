@@ -1,0 +1,23 @@
+{
+  "contributor": "Pruthvik-P",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 2428,
+    "account_created": "2019-08-13T01:51:49",
+    "followers": 4,
+    "total_prs": 66,
+    "pr_velocity": "0.0272/day (reasonable)"
+  },
+  "summary": "Established contributor with 6.6-year account history and 66 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

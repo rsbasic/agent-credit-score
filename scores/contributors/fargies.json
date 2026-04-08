@@ -1,0 +1,17 @@
+{
+  "contributor": "fargies",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5670,
+    "account_created": "2010-09-27T07:34:49Z",
+    "followers": 3,
+    "public_repos": 67,
+    "total_prs": 27,
+    "pr_velocity": "reasonable (.004/day avg)"
+  },
+  "summary": "Account 15.52y old, 3 followers, 27 lifetime PRs, 67 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

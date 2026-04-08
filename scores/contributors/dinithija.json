@@ -1,0 +1,17 @@
+{
+  "contributor": "dinithija",
+  "score": 80,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 1847,
+    "account_created": "2021-03-16T11:11:34Z",
+    "followers": 0,
+    "public_repos": 7,
+    "total_prs": 6,
+    "pr_velocity": "reasonable (.003/day avg)"
+  },
+  "summary": "Account 5.05y old, 0 followers, 6 lifetime PRs, 7 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

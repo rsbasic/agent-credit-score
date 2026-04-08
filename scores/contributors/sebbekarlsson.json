@@ -1,0 +1,16 @@
+{
+  "contributor": "sebbekarlsson",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4410,
+    "account_created": "2014-03-10",
+    "followers": 395,
+    "total_prs": 124,
+    "pr_velocity": "reasonable (124 PRs over 4410 days, ~.0281/day)"
+  },
+  "summary": "Established contributor with 12+ year account, 395 followers, and 124 lifetime PRs.",
+  "repos_affected": [{"repo": "jaredhanson/passport", "prs": 1, "risk_prs": [], "any_merged": false}]
+}

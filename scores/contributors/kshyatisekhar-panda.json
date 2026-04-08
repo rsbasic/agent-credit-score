@@ -1,0 +1,23 @@
+{
+  "contributor": "kshyatisekhar-panda",
+  "score": 70,
+  "grade": "BBB",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 3153,
+    "account_created": "2017-08-18T09:34:08",
+    "followers": 4,
+    "total_prs": 2,
+    "pr_velocity": "0.0006/day (reasonable)"
+  },
+  "summary": "Moderate profile with 8.6-year account and 2 PRs across GitHub.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "contributor": "alinoaimi",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5975,
+    "account_created": "2009-11-26T07:33:43Z",
+    "followers": 9,
+    "public_repos": 14,
+    "total_prs": 13,
+    "pr_velocity": "reasonable (.002/day avg)"
+  },
+  "summary": "Account 16.35y old, 9 followers, 13 lifetime PRs, 14 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

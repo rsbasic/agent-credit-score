@@ -1,0 +1,17 @@
+{
+  "contributor": "pavan-sh",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4489,
+    "account_created": "2013-12-21T15:09:36Z",
+    "followers": 3,
+    "public_repos": 64,
+    "total_prs": 117,
+    "pr_velocity": "reasonable (.026/day avg)"
+  },
+  "summary": "Account 12.29y old, 3 followers, 117 lifetime PRs, 64 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

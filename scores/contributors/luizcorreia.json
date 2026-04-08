@@ -1,0 +1,17 @@
+{
+  "contributor": "luizcorreia",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5627,
+    "account_created": "2010-11-09T22:52:47Z",
+    "followers": 28,
+    "public_repos": 94,
+    "total_prs": 12,
+    "pr_velocity": "reasonable (.002/day avg)"
+  },
+  "summary": "Account 15.40y old, 28 followers, 12 lifetime PRs, 94 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

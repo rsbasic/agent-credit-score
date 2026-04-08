@@ -1,0 +1,23 @@
+{
+  "contributor": "bitekas",
+  "score": 70,
+  "grade": "BBB",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4795,
+    "account_created": "2013-02-18T16:54:19",
+    "followers": 4,
+    "total_prs": 18,
+    "pr_velocity": "0.0038/day (reasonable)"
+  },
+  "summary": "Moderate profile with 13.1-year account and 18 PRs across GitHub.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

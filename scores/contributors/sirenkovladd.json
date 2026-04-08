@@ -1,0 +1,23 @@
+{
+  "contributor": "sirenkovladd",
+  "score": 80,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 3265,
+    "account_created": "2017-04-28T20:45:56",
+    "followers": 25,
+    "total_prs": 79,
+    "pr_velocity": "0.0242/day (reasonable)"
+  },
+  "summary": "Established contributor with 8.9-year account history and 79 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

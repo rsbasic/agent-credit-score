@@ -1,0 +1,23 @@
+{
+  "contributor": "asingh04",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 3825,
+    "account_created": "2015-10-16T15:39:18",
+    "followers": 3,
+    "total_prs": 10,
+    "pr_velocity": "0.0026/day (reasonable)"
+  },
+  "summary": "Established contributor with 10.5-year account history and 10 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

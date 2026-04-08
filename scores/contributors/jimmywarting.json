@@ -1,0 +1,23 @@
+{
+  "contributor": "jimmywarting",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5278,
+    "account_created": "2011-10-24T14:26:28",
+    "followers": 539,
+    "total_prs": 684,
+    "pr_velocity": "0.1296/day (reasonable)"
+  },
+  "summary": "Established contributor with 14.5-year account history and 684 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

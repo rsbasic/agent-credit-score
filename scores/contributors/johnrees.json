@@ -1,0 +1,16 @@
+{
+  "contributor": "johnrees",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5539,
+    "account_created": "2011-02-05",
+    "followers": 145,
+    "total_prs": 630,
+    "pr_velocity": "reasonable (630 PRs over 5539 days, ~.1137/day)"
+  },
+  "summary": "Established contributor with 15+ year account, 145 followers, and 630 lifetime PRs.",
+  "repos_affected": [{"repo": "jaredhanson/passport", "prs": 1, "risk_prs": [], "any_merged": false}]
+}

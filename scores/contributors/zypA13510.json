@@ -1,0 +1,16 @@
+{
+  "contributor": "zypA13510",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4293,
+    "account_created": "2014-07-05",
+    "followers": 17,
+    "total_prs": 0,
+    "pr_velocity": "minimal (0 PRs over 4293 days)"
+  },
+  "summary": "Established contributor with 11+ year account, 17 followers, and 0 lifetime PRs.",
+  "repos_affected": [{"repo": "jaredhanson/passport", "prs": 1, "risk_prs": [], "any_merged": false}]
+}

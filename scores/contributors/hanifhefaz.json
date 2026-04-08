@@ -1,0 +1,17 @@
+{
+  "contributor": "hanifhefaz",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 2811,
+    "account_created": "2018-07-26T20:12:08Z",
+    "followers": 10,
+    "public_repos": 56,
+    "total_prs": 8,
+    "pr_velocity": "reasonable (.002/day avg)"
+  },
+  "summary": "Account 7.69y old, 10 followers, 8 lifetime PRs, 56 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

@@ -1,0 +1,17 @@
+{
+  "contributor": "usamaJ17",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 1921,
+    "account_created": "2021-01-01T18:20:12Z",
+    "followers": 3,
+    "public_repos": 57,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 5.25y old, 3 followers, 0 lifetime PRs, 57 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

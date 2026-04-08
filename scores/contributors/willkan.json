@@ -1,0 +1,17 @@
+{
+  "contributor": "willkan",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4821,
+    "account_created": "2013-01-23T10:23:58Z",
+    "followers": 26,
+    "public_repos": 36,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 13.19y old, 26 followers, 0 lifetime PRs, 36 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

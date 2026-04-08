@@ -1,0 +1,17 @@
+{
+  "contributor": "mylesgordon",
+  "score": 75,
+  "grade": "A",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 1645,
+    "account_created": "2021-10-04T16:24:26Z",
+    "followers": 3,
+    "public_repos": 9,
+    "total_prs": 1,
+    "pr_velocity": "reasonable (0/day avg)"
+  },
+  "summary": "Account 4.50y old, 3 followers, 1 lifetime PRs, 9 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

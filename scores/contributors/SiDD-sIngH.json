@@ -1,0 +1,17 @@
+{
+  "contributor": "SiDD-sIngH",
+  "score": 70,
+  "grade": "BBB",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 1640,
+    "account_created": "2021-10-09T11:55:43Z",
+    "followers": 0,
+    "public_repos": 14,
+    "total_prs": 4,
+    "pr_velocity": "reasonable (.002/day avg)"
+  },
+  "summary": "Account 4.49y old, 0 followers, 4 lifetime PRs, 14 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

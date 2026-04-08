@@ -1,0 +1,17 @@
+{
+  "contributor": "BigBalli",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5662,
+    "account_created": "2010-10-05T07:17:07Z",
+    "followers": 7,
+    "public_repos": 20,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 15.50y old, 7 followers, 0 lifetime PRs, 20 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

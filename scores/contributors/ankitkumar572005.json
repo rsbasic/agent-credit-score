@@ -1,0 +1,17 @@
+{
+  "contributor": "ankitkumar572005",
+  "score": 65,
+  "grade": "BBB",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 484,
+    "account_created": "2024-12-08T12:31:50Z",
+    "followers": 0,
+    "public_repos": 63,
+    "total_prs": 45,
+    "pr_velocity": "reasonable (.092/day avg)"
+  },
+  "summary": "Account 1.32y old, 0 followers, 45 lifetime PRs, 63 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

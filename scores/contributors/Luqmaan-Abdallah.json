@@ -1,0 +1,17 @@
+{
+  "contributor": "Luqmaan-Abdallah",
+  "score": 75,
+  "grade": "A",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 939,
+    "account_created": "2023-09-10T07:09:16Z",
+    "followers": 2,
+    "public_repos": 12,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 2.57y old, 2 followers, 0 lifetime PRs, 12 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

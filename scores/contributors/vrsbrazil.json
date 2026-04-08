@@ -1,0 +1,17 @@
+{
+  "contributor": "vrsbrazil",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5793,
+    "account_created": "2010-05-27T15:07:11Z",
+    "followers": 9,
+    "public_repos": 10,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 15.86y old, 9 followers, 0 lifetime PRs, 10 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

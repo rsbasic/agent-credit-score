@@ -1,0 +1,17 @@
+{
+  "contributor": "dvishniakov",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4051,
+    "account_created": "2015-03-04T19:41:21Z",
+    "followers": 1,
+    "public_repos": 7,
+    "total_prs": 5,
+    "pr_velocity": "reasonable (.001/day avg)"
+  },
+  "summary": "Account 11.09y old, 1 followers, 5 lifetime PRs, 7 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

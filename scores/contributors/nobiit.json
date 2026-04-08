@@ -1,0 +1,17 @@
+{
+  "contributor": "nobiit",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 2700,
+    "account_created": "2018-11-14T03:18:58Z",
+    "followers": 282,
+    "public_repos": 122,
+    "total_prs": 207,
+    "pr_velocity": "reasonable (.076/day avg)"
+  },
+  "summary": "Account 7.39y old, 282 followers, 207 lifetime PRs, 122 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

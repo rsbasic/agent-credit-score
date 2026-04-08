@@ -1,0 +1,23 @@
+{
+  "contributor": "TheThing",
+  "score": 80,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5659,
+    "account_created": "2010-10-08T16:20:57",
+    "followers": 18,
+    "total_prs": 34,
+    "pr_velocity": "0.0060/day (reasonable)"
+  },
+  "summary": "Established contributor with 15.5-year account history and 34 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

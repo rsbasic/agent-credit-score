@@ -1,0 +1,17 @@
+{
+  "contributor": "ardhyanth",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 3623,
+    "account_created": "2016-05-05T13:42:57Z",
+    "followers": 1,
+    "public_repos": 8,
+    "total_prs": 2,
+    "pr_velocity": "reasonable (0/day avg)"
+  },
+  "summary": "Account 9.91y old, 1 followers, 2 lifetime PRs, 8 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

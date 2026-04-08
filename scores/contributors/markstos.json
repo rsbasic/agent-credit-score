@@ -1,0 +1,16 @@
+{
+  "contributor": "markstos",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 6404,
+    "account_created": "2008-09-23",
+    "followers": 177,
+    "total_prs": 634,
+    "pr_velocity": "reasonable (634 PRs over 6404 days, ~.0990/day)"
+  },
+  "summary": "Established contributor with 17+ year account, 177 followers, and 634 lifetime PRs.",
+  "repos_affected": [{"repo": "jaredhanson/passport", "prs": 1, "risk_prs": [], "any_merged": false}]
+}

@@ -1,0 +1,17 @@
+{
+  "contributor": "Zukhrik",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 2114,
+    "account_created": "2020-06-22T13:31:43Z",
+    "followers": 358,
+    "public_repos": 20,
+    "total_prs": 22,
+    "pr_velocity": "reasonable (.010/day avg)"
+  },
+  "summary": "Account 5.78y old, 358 followers, 22 lifetime PRs, 20 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

@@ -1,0 +1,17 @@
+{
+  "contributor": "vkarai",
+  "score": 80,
+  "grade": "A",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 2349,
+    "account_created": "2019-10-31T20:48:38Z",
+    "followers": 0,
+    "public_repos": 23,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 6.43y old, 0 followers, 0 lifetime PRs, 23 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

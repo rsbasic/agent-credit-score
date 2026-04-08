@@ -1,0 +1,17 @@
+{
+  "contributor": "marcoancona",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4962,
+    "account_created": "2012-09-04T13:59:55Z",
+    "followers": 169,
+    "public_repos": 34,
+    "total_prs": 39,
+    "pr_velocity": "reasonable (.007/day avg)"
+  },
+  "summary": "Account 13.58y old, 169 followers, 39 lifetime PRs, 34 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

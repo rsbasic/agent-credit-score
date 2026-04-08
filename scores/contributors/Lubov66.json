@@ -1,0 +1,23 @@
+{
+  "contributor": "Lubov66",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 1394,
+    "account_created": "2022-06-12T06:01:10",
+    "followers": 15,
+    "total_prs": 180,
+    "pr_velocity": "0.1291/day (reasonable)"
+  },
+  "summary": "Established contributor with 3.8-year account history and 180 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

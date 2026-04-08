@@ -1,0 +1,23 @@
+{
+  "contributor": "remizreza",
+  "score": 55,
+  "grade": "BB",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 676,
+    "account_created": "2024-05-30T01:30:55",
+    "followers": 0,
+    "total_prs": 116,
+    "pr_velocity": "0.1716/day (reasonable)"
+  },
+  "summary": "Moderate profile with 1.9-year account and 116 PRs across GitHub.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

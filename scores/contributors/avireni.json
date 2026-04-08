@@ -1,0 +1,17 @@
+{
+  "contributor": "avireni",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5107,
+    "account_created": "2012-04-12T17:27:55Z",
+    "followers": 2,
+    "public_repos": 32,
+    "total_prs": 5,
+    "pr_velocity": "reasonable (0/day avg)"
+  },
+  "summary": "Account 13.98y old, 2 followers, 5 lifetime PRs, 32 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

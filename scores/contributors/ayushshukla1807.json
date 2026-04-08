@@ -1,0 +1,17 @@
+{
+  "contributor": "ayushshukla1807",
+  "score": 65,
+  "grade": "BBB",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 561,
+    "account_created": "2024-09-22T10:27:02Z",
+    "followers": 0,
+    "public_repos": 57,
+    "total_prs": 61,
+    "pr_velocity": "reasonable (.108/day avg)"
+  },
+  "summary": "Account 1.53y old, 0 followers, 61 lifetime PRs, 57 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

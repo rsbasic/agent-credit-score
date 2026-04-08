@@ -1,0 +1,17 @@
+{
+  "contributor": "kjona",
+  "score": 80,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5142,
+    "account_created": "2012-03-08T09:04:19Z",
+    "followers": 0,
+    "public_repos": 4,
+    "total_prs": 5,
+    "pr_velocity": "reasonable (0/day avg)"
+  },
+  "summary": "Account 14.07y old, 0 followers, 5 lifetime PRs, 4 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

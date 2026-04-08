@@ -1,0 +1,23 @@
+{
+  "contributor": "skagedal",
+  "score": 80,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5223,
+    "account_created": "2011-12-18T20:57:20",
+    "followers": 33,
+    "total_prs": 73,
+    "pr_velocity": "0.0140/day (reasonable)"
+  },
+  "summary": "Established contributor with 14.3-year account history and 73 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "contributor": "rommni",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5383,
+    "account_created": "2011-07-11",
+    "followers": 2,
+    "total_prs": 21,
+    "pr_velocity": "reasonable (21 PRs over 5383 days, ~.0039/day)"
+  },
+  "summary": "Established contributor with 14+ year account, 2 followers, and 21 lifetime PRs.",
+  "repos_affected": [{"repo": "jaredhanson/passport", "prs": 1, "risk_prs": [], "any_merged": false}]
+}

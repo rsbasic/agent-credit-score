@@ -1,0 +1,23 @@
+{
+  "contributor": "JVBorges",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 3707,
+    "account_created": "2016-02-11T00:05:12",
+    "followers": 14,
+    "total_prs": 10,
+    "pr_velocity": "0.0027/day (reasonable)"
+  },
+  "summary": "Established contributor with 10.1-year account history and 10 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

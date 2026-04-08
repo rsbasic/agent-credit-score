@@ -1,0 +1,17 @@
+{
+  "contributor": "pavhov",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4221,
+    "account_created": "2014-09-15T22:38:36Z",
+    "followers": 4,
+    "public_repos": 25,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 11.55y old, 4 followers, 0 lifetime PRs, 25 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

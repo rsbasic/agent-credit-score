@@ -1,0 +1,16 @@
+{
+  "contributor": "grahamwhiteuk",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5108,
+    "account_created": "2012-04-11",
+    "followers": 22,
+    "total_prs": 0,
+    "pr_velocity": "minimal (0 PRs over 5108 days)"
+  },
+  "summary": "Established contributor with 13+ year account, 22 followers, and 0 lifetime PRs.",
+  "repos_affected": [{"repo": "jaredhanson/passport", "prs": 1, "risk_prs": [], "any_merged": false}]
+}

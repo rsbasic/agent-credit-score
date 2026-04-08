@@ -1,0 +1,23 @@
+{
+  "contributor": "ikonst",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5261,
+    "account_created": "2011-11-10T12:56:20",
+    "followers": 64,
+    "total_prs": 407,
+    "pr_velocity": "0.0774/day (reasonable)"
+  },
+  "summary": "Established contributor with 14.4-year account history and 407 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

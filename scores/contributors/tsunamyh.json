@@ -1,0 +1,16 @@
+{
+  "contributor": "tsunamyh",
+  "score": 80,
+  "grade": "A",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 1904,
+    "account_created": "2021-01-18",
+    "followers": 0,
+    "total_prs": 0,
+    "pr_velocity": "minimal (0 PRs over 1904 days)"
+  },
+  "summary": "Established contributor with 5+ year account, 0 followers, and 0 lifetime PRs.",
+  "repos_affected": [{"repo": "jaredhanson/passport", "prs": 1, "risk_prs": [], "any_merged": false}]
+}

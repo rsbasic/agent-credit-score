@@ -1,0 +1,17 @@
+{
+  "contributor": "dev-sharma-08",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 1256,
+    "account_created": "2022-10-28T06:47:24Z",
+    "followers": 1,
+    "public_repos": 1,
+    "total_prs": 18,
+    "pr_velocity": "reasonable (.014/day avg)"
+  },
+  "summary": "Account 3.43y old, 1 followers, 18 lifetime PRs, 1 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

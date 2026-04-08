@@ -1,0 +1,17 @@
+{
+  "contributor": "Electroid",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4834,
+    "account_created": "2013-01-10T20:04:46Z",
+    "followers": 306,
+    "public_repos": 96,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 13.23y old, 306 followers, 0 lifetime PRs, 96 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

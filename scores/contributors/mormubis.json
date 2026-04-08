@@ -1,0 +1,17 @@
+{
+  "contributor": "mormubis",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5140,
+    "account_created": "2012-03-10T15:39:28Z",
+    "followers": 31,
+    "public_repos": 61,
+    "total_prs": 96,
+    "pr_velocity": "reasonable (.018/day avg)"
+  },
+  "summary": "Account 14.07y old, 31 followers, 96 lifetime PRs, 61 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

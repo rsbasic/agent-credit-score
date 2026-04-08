@@ -1,0 +1,17 @@
+{
+  "contributor": "reyostallenberg",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4801,
+    "account_created": "2013-02-12T22:04:14Z",
+    "followers": 9,
+    "public_repos": 68,
+    "total_prs": 118,
+    "pr_velocity": "reasonable (.024/day avg)"
+  },
+  "summary": "Account 13.14y old, 9 followers, 118 lifetime PRs, 68 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

@@ -1,0 +1,17 @@
+{
+  "contributor": "ksreejithnair",
+  "score": 80,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 3041,
+    "account_created": "2017-12-08T17:48:55Z",
+    "followers": 0,
+    "public_repos": 11,
+    "total_prs": 6,
+    "pr_velocity": "reasonable (.001/day avg)"
+  },
+  "summary": "Account 8.32y old, 0 followers, 6 lifetime PRs, 11 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

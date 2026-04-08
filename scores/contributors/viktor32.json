@@ -1,0 +1,17 @@
+{
+  "contributor": "viktor32",
+  "score": 90,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 3375,
+    "account_created": "2017-01-08T11:25:46Z",
+    "followers": 10,
+    "public_repos": 20,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 9.24y old, 10 followers, 0 lifetime PRs, 20 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

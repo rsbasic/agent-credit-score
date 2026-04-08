@@ -1,0 +1,17 @@
+{
+  "contributor": "marleneheinzle",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 2646,
+    "account_created": "2019-01-07T14:20:23Z",
+    "followers": 1,
+    "public_repos": 1,
+    "total_prs": 1,
+    "pr_velocity": "reasonable (0/day avg)"
+  },
+  "summary": "Account 7.24y old, 1 followers, 1 lifetime PRs, 1 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

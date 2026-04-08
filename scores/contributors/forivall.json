@@ -1,0 +1,17 @@
+{
+  "contributor": "forivall",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5455,
+    "account_created": "2011-04-30T05:43:27Z",
+    "followers": 182,
+    "public_repos": 549,
+    "total_prs": 529,
+    "pr_velocity": "reasonable (.096/day avg)"
+  },
+  "summary": "Account 14.93y old, 182 followers, 529 lifetime PRs, 549 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

@@ -1,0 +1,23 @@
+{
+  "contributor": "dnalborczyk",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4878,
+    "account_created": "2012-11-27T15:36:23",
+    "followers": 42,
+    "total_prs": 465,
+    "pr_velocity": "0.0953/day (reasonable)"
+  },
+  "summary": "Established contributor with 13.4-year account history and 465 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

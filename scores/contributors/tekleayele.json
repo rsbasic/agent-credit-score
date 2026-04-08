@@ -1,0 +1,17 @@
+{
+  "contributor": "tekleayele",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 3541,
+    "account_created": "2016-07-26T14:55:39Z",
+    "followers": 1,
+    "public_repos": 24,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 9.69y old, 1 followers, 0 lifetime PRs, 24 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

@@ -1,0 +1,16 @@
+{
+  "contributor": "siddtheone",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 2687,
+    "account_created": "2018-11-27",
+    "followers": 1,
+    "total_prs": 67,
+    "pr_velocity": "reasonable (67 PRs over 2687 days, ~.0249/day)"
+  },
+  "summary": "Established contributor with 7+ year account, 1 followers, and 67 lifetime PRs.",
+  "repos_affected": [{"repo": "jaredhanson/passport", "prs": 1, "risk_prs": [], "any_merged": false}]
+}

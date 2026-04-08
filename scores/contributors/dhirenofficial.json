@@ -1,0 +1,17 @@
+{
+  "contributor": "dhirenofficial",
+  "score": 80,
+  "grade": "A",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 3975,
+    "account_created": "2015-05-19T16:57:24Z",
+    "followers": 0,
+    "public_repos": 3,
+    "total_prs": 1,
+    "pr_velocity": "reasonable (0/day avg)"
+  },
+  "summary": "Account 10.88y old, 0 followers, 1 lifetime PRs, 3 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

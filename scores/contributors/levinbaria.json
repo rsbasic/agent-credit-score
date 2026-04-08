@@ -1,0 +1,17 @@
+{
+  "contributor": "levinbaria",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 1648,
+    "account_created": "2021-10-01T03:49:00Z",
+    "followers": 1,
+    "public_repos": 16,
+    "total_prs": 17,
+    "pr_velocity": "reasonable (.010/day avg)"
+  },
+  "summary": "Account 4.51y old, 1 followers, 17 lifetime PRs, 16 public repos.",
+  "repos_affected": [{"repo": "moment/moment", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

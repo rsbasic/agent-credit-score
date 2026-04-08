@@ -1,0 +1,23 @@
+{
+  "contributor": "Treverix",
+  "score": 75,
+  "grade": "A",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5092,
+    "account_created": "2012-04-27T13:19:05",
+    "followers": 4,
+    "total_prs": 4,
+    "pr_velocity": "0.0008/day (reasonable)"
+  },
+  "summary": "Established contributor with 13.9-year account history and 4 total PRs.",
+  "repos_affected": [
+    {
+      "repo": "node-fetch/node-fetch",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false
+    }
+  ]
+}

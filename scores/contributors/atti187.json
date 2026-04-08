@@ -1,0 +1,17 @@
+{
+  "contributor": "atti187",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4508,
+    "account_created": "2013-12-02T21:31:29Z",
+    "followers": 1,
+    "public_repos": 22,
+    "total_prs": 23,
+    "pr_velocity": "reasonable (.005/day avg)"
+  },
+  "summary": "Account 12.34y old, 1 followers, 23 lifetime PRs, 22 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}

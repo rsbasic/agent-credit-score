@@ -1,0 +1,16 @@
+{
+  "contributor": "mifi",
+  "score": 95,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 5681,
+    "account_created": "2010-09-16",
+    "followers": 1888,
+    "total_prs": 579,
+    "pr_velocity": "reasonable (579 PRs over 5681 days, ~.1019/day)"
+  },
+  "summary": "Established contributor with 15+ year account, 1888 followers, and 579 lifetime PRs.",
+  "repos_affected": [{"repo": "jaredhanson/passport", "prs": 1, "risk_prs": [], "any_merged": false}]
+}

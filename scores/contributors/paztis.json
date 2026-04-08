@@ -1,0 +1,17 @@
+{
+  "contributor": "paztis",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "low",
+  "last_scored": "2026-04-07",
+  "signals": {
+    "account_age_days": 4610,
+    "account_created": "2013-08-22T09:27:30Z",
+    "followers": 5,
+    "public_repos": 38,
+    "total_prs": 0,
+    "pr_velocity": "no PRs found"
+  },
+  "summary": "Account 12.62y old, 5 followers, 0 lifetime PRs, 38 public repos.",
+  "repos_affected": [{"repo": "request/request", "prs": 0, "risk_prs": [], "any_merged": false}]
+}
