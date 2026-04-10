@@ -4,17 +4,61 @@ import { SEED_SCORES } from './seed-data.js';
 
 const app = new Hono();
 
+// Extract caller identity from Cloudflare request headers
+function extractCaller(c) {
+  const h = c.req.header.bind(c.req);
+  const ip = h('cf-connecting-ip') || h('x-forwarded-for') || 'unknown';
+  // Hash IP for privacy (first 12 hex chars of sha-like truncation — we store full IP too but mark it)
+  const cf = c.req.raw?.cf || {};
+  return {
+    ip,
+    country: h('cf-ipcountry') || cf.country || null,
+    asn: cf.asn || null,
+    as_org: cf.asOrganization || null,
+    city: cf.city || null,
+    colo: cf.colo || null,
+    ua: (h('user-agent') || '').slice(0, 200),
+    referer: (h('referer') || h('referrer') || '').slice(0, 200),
+    accept: (h('accept') || '').slice(0, 100),
+    origin: (h('origin') || '').slice(0, 200)
+  };
+}
+
 // Analytics: lightweight event logging
-async function logEvent(env, type, detail) {
+async function logEvent(env, type, detail, caller) {
   try {
     const now = new Date().toISOString();
     const hour = now.slice(0, 13); // "2026-04-07T15"
     const key = `analytics:${hour}`;
     const existing = await env.ACS_SCORES.get(key, 'json') || { hour, events: [] };
-    existing.events.push({ type, detail, ts: now });
-    // Only keep last 100 events per hour to avoid KV size limits
-    if (existing.events.length > 100) existing.events = existing.events.slice(-100);
-    await env.ACS_SCORES.put(key, JSON.stringify(existing), { expirationTtl: 604800 }); // 7 day TTL
+    existing.events.push({ type, detail, caller, ts: now });
+    // Only keep last 200 events per hour to avoid KV size limits
+    if (existing.events.length > 200) existing.events = existing.events.slice(-200);
+    await env.ACS_SCORES.put(key, JSON.stringify(existing), { expirationTtl: 1209600 }); // 14 day TTL
+
+    // Also maintain a rolling caller index for fast lookup — key by IP
+    if (caller?.ip && caller.ip !== 'unknown') {
+      const ipKey = `caller:${caller.ip}`;
+      const ipData = await env.ACS_SCORES.get(ipKey, 'json') || {
+        ip: caller.ip,
+        first_seen: now,
+        last_seen: now,
+        request_count: 0,
+        country: caller.country,
+        as_org: caller.as_org,
+        ua_samples: [],
+        queries: []
+      };
+      ipData.last_seen = now;
+      ipData.request_count++;
+      if (caller.ua && !ipData.ua_samples.includes(caller.ua)) {
+        ipData.ua_samples.push(caller.ua);
+        if (ipData.ua_samples.length > 5) ipData.ua_samples = ipData.ua_samples.slice(-5);
+      }
+      ipData.queries.push({ ts: now, type, detail });
+      if (ipData.queries.length > 50) ipData.queries = ipData.queries.slice(-50);
+      await env.ACS_SCORES.put(ipKey, JSON.stringify(ipData), { expirationTtl: 2592000 }); // 30 day TTL
+    }
   } catch {} // fail silently — analytics should never break the API
 }
 
@@ -115,7 +159,7 @@ app.get('/', (c) => {
 app.get('/api/contributor/:username', async (c) => {
   const username = c.req.param('username').toLowerCase();
   const data = await getScore(c.env, `contributor:${username}`);
-  await logEvent(c.env, 'contributor_lookup', { username, found: !!data });
+  await logEvent(c.env, 'contributor_lookup', { username, found: !!data }, extractCaller(c));
 
   if (!data) {
     return c.json({
@@ -134,7 +178,7 @@ app.get('/api/repo/:owner/:repo', async (c) => {
   const repo = c.req.param('repo');
   const key = `repo:${owner}/${repo}`.toLowerCase();
   const data = await getScore(c.env, key);
-  await logEvent(c.env, 'repo_lookup', { repo: `${owner}/${repo}`, found: !!data });
+  await logEvent(c.env, 'repo_lookup', { repo: `${owner}/${repo}`, found: !!data }, extractCaller(c));
 
   if (!data) {
     return c.json({
@@ -222,6 +266,10 @@ app.get('/api/dashboard', async (c) => {
   const topContributors = {};
   const topRepos = {};
   const hourlyActivity = {};
+  const byCountry = {};
+  const byAsOrg = {};
+  const byUa = {};
+  const uniqueIPs = new Set();
 
   for (const hour of hours) {
     const data = await c.env.ACS_SCORES.get(`analytics:${hour}`, 'json');
@@ -244,23 +292,68 @@ app.get('/api/dashboard', async (c) => {
           topRepos[evt.detail.repo] = (topRepos[evt.detail.repo] || 0) + 1;
         }
       }
+      if (evt.caller) {
+        if (evt.caller.ip && evt.caller.ip !== 'unknown') uniqueIPs.add(evt.caller.ip);
+        if (evt.caller.country) byCountry[evt.caller.country] = (byCountry[evt.caller.country] || 0) + 1;
+        if (evt.caller.as_org) byAsOrg[evt.caller.as_org] = (byAsOrg[evt.caller.as_org] || 0) + 1;
+        if (evt.caller.ua) {
+          const short = evt.caller.ua.slice(0, 60);
+          byUa[short] = (byUa[short] || 0) + 1;
+        }
+      }
     }
   }
 
   const sortedContributors = Object.entries(topContributors).sort((a, b) => b[1] - a[1]).slice(0, 20);
   const sortedRepos = Object.entries(topRepos).sort((a, b) => b[1] - a[1]).slice(0, 10);
+  const sortedCountries = Object.entries(byCountry).sort((a, b) => b[1] - a[1]).slice(0, 10);
+  const sortedOrgs = Object.entries(byAsOrg).sort((a, b) => b[1] - a[1]).slice(0, 15);
+  const sortedUas = Object.entries(byUa).sort((a, b) => b[1] - a[1]).slice(0, 15);
 
   return c.json({
     period: '72 hours',
     total_events: totalEvents,
+    unique_ips: uniqueIPs.size,
     contributor_lookups: contributorLookups,
     repo_lookups: repoLookups,
     not_found_count: notFoundCount,
     top_contributors_queried: sortedContributors.map(([name, count]) => ({ name, count })),
     top_repos_queried: sortedRepos.map(([name, count]) => ({ name, count })),
+    top_countries: sortedCountries.map(([country, count]) => ({ country, count })),
+    top_orgs: sortedOrgs.map(([org, count]) => ({ org, count })),
+    top_user_agents: sortedUas.map(([ua, count]) => ({ ua, count })),
     hourly_activity: hourlyActivity,
     scores_in_database: Object.keys(SEED_SCORES).filter(k => k.startsWith('contributor:')).length,
     repos_in_database: Object.keys(SEED_SCORES).filter(k => k.startsWith('repo:')).length
+  });
+});
+
+// Dashboard: per-caller drilldown — who is hitting the API
+app.get('/api/callers', async (c) => {
+  const key = c.req.query('key');
+  if (key !== c.env.DASHBOARD_KEY) {
+    return c.json({ error: 'unauthorized' }, 401);
+  }
+  const limit = Math.min(parseInt(c.req.query('limit') || '100', 10), 500);
+  const list = await c.env.ACS_SCORES.list({ prefix: 'caller:', limit });
+  const callers = [];
+  for (const k of list.keys) {
+    const data = await c.env.ACS_SCORES.get(k.name, 'json');
+    if (data) callers.push(data);
+  }
+  callers.sort((a, b) => (b.request_count || 0) - (a.request_count || 0));
+  return c.json({
+    total: callers.length,
+    callers: callers.map(cdata => ({
+      ip: cdata.ip,
+      country: cdata.country,
+      as_org: cdata.as_org,
+      request_count: cdata.request_count,
+      first_seen: cdata.first_seen,
+      last_seen: cdata.last_seen,
+      ua_samples: cdata.ua_samples,
+      recent_queries: (cdata.queries || []).slice(-10)
+    }))
   });
 });
 
