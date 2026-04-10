@@ -357,6 +357,166 @@ app.get('/api/callers', async (c) => {
   });
 });
 
+// API: Combined Trust Record — Rex x Noobagent combination product (v0.1 stub)
+// Schema: shared/strategy/coordination/combo-product/schema.json
+// Returns: ACS data (if present) + placeholder SIGNAL block + DOWNSTREAM placeholder + verdict.
+// Real SIGNAL data will be injected as noobagent's cycle delivers it.
+app.get('/api/combined/:identifier', async (c) => {
+  const raw = c.req.param('identifier');
+  // Identifier format: 'github:username' or 'mycel:agentname' or bare username (assume github)
+  let platform = 'github';
+  let handle = raw.toLowerCase();
+  if (raw.includes(':')) {
+    const [p, h] = raw.split(':', 2);
+    platform = p.toLowerCase();
+    handle = h.toLowerCase();
+  }
+
+  // 1. Pull ACS data if we have it (github entities only for now)
+  let acs = null;
+  if (platform === 'github') {
+    const acsData = await getScore(c.env, `contributor:${handle}`);
+    if (acsData) {
+      const topSignals = [];
+      const s = acsData.signals || {};
+      if (s.account_age_days !== undefined) {
+        topSignals.push({
+          name: 'account_age_days',
+          direction: s.account_age_days < 90 ? 'negative' : (s.account_age_days > 730 ? 'positive' : 'neutral'),
+          evidence_note: `${s.account_age_days}d old`
+        });
+      }
+      if (s.pr_velocity) {
+        topSignals.push({ name: 'pr_velocity', direction: 'neutral', evidence_note: s.pr_velocity });
+      }
+      if (s.security_paths_touched && s.security_paths_touched.length > 0) {
+        topSignals.push({
+          name: 'security_sensitive_paths',
+          direction: 'negative',
+          evidence_note: `${s.security_paths_touched.length} security-sensitive path(s) touched`
+        });
+      }
+      if (s.cross_repo_targets && s.cross_repo_targets.length > 1) {
+        topSignals.push({
+          name: 'cross_repo_targeting',
+          direction: s.scope_escalation ? 'negative' : 'neutral',
+          evidence_note: `${s.cross_repo_targets.length} repos targeted`
+        });
+      }
+      acs = {
+        score: acsData.score,
+        grade: acsData.grade,
+        confidence: acsData.confidence || 'medium',
+        top_signals: topSignals.slice(0, 5),
+        security_sensitive_ratio: null, // TODO: compute from signals
+        evidence_ref: `https://agentcreditscore.ai/api/contributor/${handle}`,
+        last_updated: acsData.last_scored || null
+      };
+    }
+  }
+
+  // 2. SIGNAL data — placeholder until noobagent ships the scoring script
+  //    When real data lands, key will be `signal:${platform}:${handle}` in KV
+  let signal = null;
+  try {
+    const signalData = await c.env.ACS_SCORES.get(`signal:${platform}:${handle}`, 'json');
+    if (signalData) signal = signalData;
+  } catch {}
+
+  // 3. DOWNSTREAM track — placeholder
+  let downstream = null;
+  try {
+    const downstreamData = await c.env.ACS_SCORES.get(`downstream:${platform}:${handle}`, 'json');
+    if (downstreamData) downstream = downstreamData;
+  } catch {}
+
+  // 4. Log the query with caller identity
+  await logEvent(c.env, 'combined_lookup', {
+    identifier: `${platform}:${handle}`,
+    tracks_found: [acs && 'acs', signal && 'signal', downstream && 'downstream'].filter(Boolean)
+  }, extractCaller(c));
+
+  // 5. If no data in any track, 404
+  if (!acs && !signal && !downstream) {
+    return c.json({
+      error: 'not_found',
+      message: `No combined trust record found for '${platform}:${handle}'. Request a combined scan at https://github.com/rsbasic/agent-credit-score/issues/new?template=scan-request.md`,
+      entity: { identifier: `${platform}:${handle}` }
+    }, 404);
+  }
+
+  // 6. Compose verdict
+  const trackCoverage = [];
+  if (acs) trackCoverage.push('acs');
+  if (signal) trackCoverage.push('signal');
+  if (downstream) trackCoverage.push('downstream');
+
+  let disagreementFlag = false;
+  let disagreementNote = '';
+  if (acs && signal?.composite !== undefined) {
+    const acsNormalized = acs.score / 10; // 0-100 → 0-10
+    const gap = Math.abs(acsNormalized - signal.composite);
+    if (gap > 3.0) {
+      disagreementFlag = true;
+      disagreementNote = `ACS and SIGNAL disagree by ${gap.toFixed(1)} points on the 0-10 scale. ACS=${acs.score}/100, SIGNAL=${signal.composite}/10.`;
+    }
+  }
+
+  let recommendation = 'insufficient_data';
+  if (acs) {
+    if (acs.score >= 70) recommendation = 'trust';
+    else if (acs.score >= 50) recommendation = 'trust_with_caveats';
+    else if (acs.score >= 30) recommendation = 'watch';
+    else recommendation = 'distrust';
+  }
+
+  const verdict = {
+    headline: acs
+      ? `${platform}:${handle} — ACS ${acs.score}/${acs.grade}${signal ? `, SIGNAL ${signal.composite}/10` : ''}`
+      : `${platform}:${handle} — insufficient data`,
+    acs_grade: acs?.grade || 'N/A',
+    signal_grade: signal?.composite !== undefined ? gradeFromScore(signal.composite * 10) : 'N/A',
+    downstream_grade: downstream?.composite !== undefined ? gradeFromScore(downstream.composite * 10) : 'N/A',
+    track_coverage: trackCoverage,
+    disagreement_flag: disagreementFlag,
+    disagreement_note: disagreementNote,
+    recommendation
+  };
+
+  const record = {
+    entity: {
+      identifier: `${platform}:${handle}`,
+      type: 'unknown',
+      platforms: [platform]
+    },
+    acs,
+    signal,
+    downstream,
+    verdict,
+    schema_version: '0.1',
+    scored_at: new Date().toISOString(),
+    scorers: ['rex', ...(signal ? ['noobagent'] : [])],
+    anchor: null
+  };
+
+  return c.json(record);
+});
+
+// Helper: letter grade from 0-100 score
+function gradeFromScore(s) {
+  if (s === null || s === undefined) return 'NR';
+  if (s >= 90) return 'AAA';
+  if (s >= 80) return 'AA';
+  if (s >= 70) return 'A';
+  if (s >= 60) return 'BBB';
+  if (s >= 50) return 'BB';
+  if (s >= 40) return 'B';
+  if (s >= 30) return 'CCC';
+  if (s >= 20) return 'CC';
+  if (s >= 10) return 'C';
+  return 'D';
+}
+
 // Health check
 app.get('/api/health', (c) => {
   return c.json({
