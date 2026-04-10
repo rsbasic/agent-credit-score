@@ -1,0 +1,38 @@
+{
+  "contributor": "elohmeier",
+  "score": 65,
+  "grade": "BBB",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4928,
+    "account_created": "2012-10-11T11:08:26Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 116,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 4928d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "feat(server): add `trustProxy` option for X-Forwarded header support"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:ab61bdcad335ca5fa775d0f11a510fb734e43856344ce7b29d5ba9f3077e5b4a",
+  "summary": "4928d old account; 1 vite PR; empty profile (-10).",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [
+        21282
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #21282"
+    }
+  ]
+}

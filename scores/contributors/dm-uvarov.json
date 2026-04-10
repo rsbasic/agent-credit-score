@@ -1,0 +1,34 @@
+{
+  "contributor": "dm-uvarov",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1575,
+    "account_created": "2021-12-16T15:09:16Z",
+    "followers": 4,
+    "following": 11,
+    "public_repos": 352,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1575d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:2bdce444945e04a0c5762182c350b59e71e8a53e905c6285b95eac18c2256b18",
+  "summary": "1575d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21803"
+    }
+  ]
+}

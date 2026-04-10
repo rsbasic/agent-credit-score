@@ -1,0 +1,38 @@
+{
+  "contributor": "JarekToro",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4685,
+    "account_created": "2013-06-11T21:03:19Z",
+    "followers": 19,
+    "following": 2,
+    "public_repos": 39,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 4685d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "fix(dev): fix html-proxy cache key mismatch for /@fs/ HTML paths"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:3318e0b169d3abb1ff14d3ba9594adcc33ae1d81847a8bf83cd034dab3de619d",
+  "summary": "4685d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [
+        21762
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #21762"
+    }
+  ]
+}

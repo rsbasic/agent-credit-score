@@ -1,0 +1,34 @@
+{
+  "contributor": "patak-cat",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5553,
+    "account_created": "2011-01-25T17:10:05Z",
+    "followers": 3221,
+    "following": 101,
+    "public_repos": 53,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 5553d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:63ed47594a1aa247f4e5eeb2442a6032e913f70b20fa3ddcafabf19b2eece6b9",
+  "summary": "5553d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #20171"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "contributor": "Copilot",
+  "score": 0,
+  "grade": "NR",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 0,
+    "account_created": "",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 0,
+    "total_prs": 0,
+    "pr_velocity": "N/A - GitHub Copilot bot (not a user account)",
+    "profile_complete": false,
+    "cross_repo_targets": ["vitejs/vite"],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "summary": "GitHub Copilot bot author - not a human contributor, not rateable.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Bot-authored PRs via GitHub Copilot; attribution is to Copilot not a human."
+    }
+  ]
+}

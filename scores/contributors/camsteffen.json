@@ -1,0 +1,34 @@
+{
+  "contributor": "camsteffen",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4576,
+    "account_created": "2013-09-28T17:36:46Z",
+    "followers": 28,
+    "following": 0,
+    "public_repos": 85,
+    "total_prs": 330,
+    "pr_velocity": "330 PRs over 4576d (0.07/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:fc3c4be1ace377fc92d46d2aeab243da59e4914c83eda918b599f7356b7fab18",
+  "summary": "4576d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21516"
+    }
+  ]
+}

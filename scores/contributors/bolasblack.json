@@ -1,0 +1,34 @@
+{
+  "contributor": "bolasblack",
+  "score": 78,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5700,
+    "account_created": "2010-08-31T13:23:58Z",
+    "followers": 272,
+    "following": 117,
+    "public_repos": 245,
+    "total_prs": 175,
+    "pr_velocity": "175 PRs over 5700d (0.03/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:5bf09cab53b293790ec369911513c82f6eec00dc14f3d0e0db8dc8a4a0955680",
+  "summary": "5700d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #22098"
+    }
+  ]
+}

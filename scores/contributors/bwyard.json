@@ -1,0 +1,34 @@
+{
+  "contributor": "bwyard",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2703,
+    "account_created": "2018-11-15T04:05:53Z",
+    "followers": 3,
+    "following": 5,
+    "public_repos": 44,
+    "total_prs": 257,
+    "pr_velocity": "257 PRs over 2703d (0.10/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:b314403d31f82b7179aa4d9ae2e5918eb4897b25f82e7624290ab785c33ba79e",
+  "summary": "2703d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #22089"
+    }
+  ]
+}

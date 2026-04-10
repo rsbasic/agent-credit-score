@@ -1,0 +1,34 @@
+{
+  "contributor": "wxsms",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4526,
+    "account_created": "2013-11-17T13:42:57Z",
+    "followers": 168,
+    "following": 25,
+    "public_repos": 77,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 4526d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:105e546c8209b61537b9b3a4b930c20c26b4648cca4657bc8125b8b1d439e63e",
+  "summary": "4526d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #6267"
+    }
+  ]
+}

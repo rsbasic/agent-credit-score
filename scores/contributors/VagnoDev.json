@@ -1,0 +1,34 @@
+{
+  "contributor": "VagnoDev",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1032,
+    "account_created": "2023-06-12T14:38:51Z",
+    "followers": 5,
+    "following": 1,
+    "public_repos": 10,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1032d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:bf91f4aca8591a8d6b4e926b23253a03ac4fa9e14c91f44980d0e0bfaab48277",
+  "summary": "1032d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21536"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "renovate[bot]",
+  "score": 70,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3234,
+    "account_created": "2017-06-02T07:04:12Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 0,
+    "total_prs": 16285688,
+    "pr_velocity": "16285688 PRs over 3234d (5035.77/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e0b98dfbcbf3bf2c640970010b1bb108ab734ce39be00c31934fa399d0707872",
+  "summary": "3234d old account; 3 vite PRs; empty profile (-10); established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 3,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21880, #21492, #21362"
+    }
+  ]
+}

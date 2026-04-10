@@ -1,0 +1,34 @@
+{
+  "contributor": "stevehodgkiss",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6238,
+    "account_created": "2009-03-11T09:53:50Z",
+    "followers": 111,
+    "following": 86,
+    "public_repos": 62,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 6238d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:0efa2959fc9e31ce63f0ff4173383d0d3e9a0e70a0036a7848df4cd86b7815c7",
+  "summary": "6238d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #19092"
+    }
+  ]
+}

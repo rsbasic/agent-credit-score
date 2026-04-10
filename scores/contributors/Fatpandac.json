@@ -1,0 +1,38 @@
+{
+  "contributor": "Fatpandac",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3181,
+    "account_created": "2017-07-25T01:45:32Z",
+    "followers": 56,
+    "following": 3,
+    "public_repos": 69,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3181d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "feat(proxy): add router to support dynamically set the target"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:c288012ffb36b62c264657eccc39d22c7a56be5f65cfd64dfae8e61d544bb906",
+  "summary": "3181d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [
+        13968
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #13968"
+    }
+  ]
+}

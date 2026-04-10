@@ -1,0 +1,34 @@
+{
+  "contributor": "JackFGreen",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3446,
+    "account_created": "2016-11-01T09:47:40Z",
+    "followers": 15,
+    "following": 95,
+    "public_repos": 77,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3446d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:5bff2094342a6ad8f130025a2c8aafb289fbce74471961b09b87762fddada376",
+  "summary": "3446d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #6569"
+    }
+  ]
+}

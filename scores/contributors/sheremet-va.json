@@ -1,0 +1,34 @@
+{
+  "contributor": "sheremet-va",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3778,
+    "account_created": "2015-12-06T07:43:18Z",
+    "followers": 730,
+    "following": 59,
+    "public_repos": 56,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3778d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:3301253a40391e1b7e3e884055e0e80ee7c4fcb4bc3b9a3062147bd45de43b09",
+  "summary": "3778d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21626"
+    }
+  ]
+}

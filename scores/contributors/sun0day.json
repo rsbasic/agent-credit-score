@@ -1,0 +1,34 @@
+{
+  "contributor": "sun0day",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1478,
+    "account_created": "2022-03-23T14:31:15Z",
+    "followers": 90,
+    "following": 26,
+    "public_repos": 45,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1478d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:cf98429428587ebd0e9676625a6df77d301cbf392af4faef4a2a808e9df00f95",
+  "summary": "1478d old account; 5 vite PRs; 5 vite PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 5,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #12714, #12517, #12334, #12221, #11093"
+    }
+  ]
+}

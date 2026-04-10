@@ -1,0 +1,34 @@
+{
+  "contributor": "hlongc",
+  "score": 80,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3441,
+    "account_created": "2016-11-07T03:07:11Z",
+    "followers": 1,
+    "following": 2,
+    "public_repos": 63,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3441d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:dd48fed1be0bec5808b4be3d7451f9e82afcad4fc387481df931ee213bf7fc16",
+  "summary": "3441d old account; 2 vite PRs.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21167, #21165"
+    }
+  ]
+}

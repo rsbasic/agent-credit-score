@@ -1,0 +1,34 @@
+{
+  "contributor": "HeyAlaia",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2924,
+    "account_created": "2018-04-08T07:56:28Z",
+    "followers": 12,
+    "following": 36,
+    "public_repos": 36,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2924d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:cde666e133581c71219d2132d09e2ebbad0b0c5f16ad44a99c5b2fff5df89939",
+  "summary": "2924d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21351"
+    }
+  ]
+}

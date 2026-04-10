@@ -1,0 +1,34 @@
+{
+  "contributor": "poyoho",
+  "score": 83,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2988,
+    "account_created": "2018-02-02T09:35:07Z",
+    "followers": 150,
+    "following": 49,
+    "public_repos": 55,
+    "total_prs": 174,
+    "pr_velocity": "174 PRs over 2988d (0.06/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:b23188b7b2e13d8eb28a4d6d914e27209b596378c9df024e95523e2a82a6f82e",
+  "summary": "2988d old account; 2 vite PRs.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #14366, #8488"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "rexxars",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6287,
+    "account_created": "2009-01-21T11:11:51Z",
+    "followers": 651,
+    "following": 95,
+    "public_repos": 304,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 6287d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:b0e79c5eb6757d61bf4a10fc969d7a4df49773da6754c6f6843b718b1a8a47e6",
+  "summary": "6287d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21675"
+    }
+  ]
+}

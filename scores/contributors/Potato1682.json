@@ -1,0 +1,34 @@
+{
+  "contributor": "Potato1682",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2588,
+    "account_created": "2019-03-09T21:34:35Z",
+    "followers": 12,
+    "following": 26,
+    "public_repos": 7,
+    "total_prs": 76,
+    "pr_velocity": "76 PRs over 2588d (0.03/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:1682288cd45510ee48397976abe01a9c0fc102672e22cae7296ec0c5908b9bda",
+  "summary": "2588d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #11001"
+    }
+  ]
+}

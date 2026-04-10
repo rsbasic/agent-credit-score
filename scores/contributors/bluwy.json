@@ -1,0 +1,34 @@
+{
+  "contributor": "bluwy",
+  "score": 93,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3053,
+    "account_created": "2017-11-30T03:12:20Z",
+    "followers": 1611,
+    "following": 43,
+    "public_repos": 85,
+    "total_prs": 1662,
+    "pr_velocity": "1662 PRs over 3053d (0.54/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:6af55284bb0cc83d7130f99878cf152461e7fbc1fd98bc63eb900da143d02026",
+  "summary": "3053d old account; 2 vite PRs; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21270, #18103"
+    }
+  ]
+}

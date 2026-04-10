@@ -1,0 +1,34 @@
+{
+  "contributor": "Xavrir",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 960,
+    "account_created": "2023-08-23T10:21:22Z",
+    "followers": 12,
+    "following": 14,
+    "public_repos": 41,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 960d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:21139550deb7ba72b6987b42bbd89b373b0b07e0ef3beeeec4eb9e02e9139f1b",
+  "summary": "960d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21777"
+    }
+  ]
+}

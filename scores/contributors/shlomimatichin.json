@@ -1,0 +1,34 @@
+{
+  "contributor": "shlomimatichin",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4951,
+    "account_created": "2012-09-18T17:57:13Z",
+    "followers": 2,
+    "following": 0,
+    "public_repos": 83,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 4951d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:db3c4da49c000638671ee5cc042e2ac3d501d98850e7c955bb05a75f2341231c",
+  "summary": "4951d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #21860"
+    }
+  ]
+}

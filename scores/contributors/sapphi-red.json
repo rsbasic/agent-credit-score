@@ -1,0 +1,42 @@
+{
+  "contributor": "sapphi-red",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2569,
+    "account_created": "2019-03-29T07:11:06Z",
+    "followers": 1409,
+    "following": 21,
+    "public_repos": 205,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2569d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "fix(optimizer): handle more chars that will be sanitized"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:40634784b211448af829a53bd3103a6bae7edff60860607fd0c02b6a95fc2544",
+  "summary": "2569d old account; 20 vite PRs; 20 vite PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 20,
+      "risk_prs": [
+        22208,
+        22207,
+        22154,
+        22105,
+        21906
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #22208, #22207, #22154, #22105, #21906"
+    }
+  ]
+}

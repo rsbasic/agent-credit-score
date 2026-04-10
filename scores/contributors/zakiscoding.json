@@ -1,0 +1,38 @@
+{
+  "contributor": "zakiscoding",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 708,
+    "account_created": "2024-05-01T21:16:19Z",
+    "followers": 1,
+    "following": 2,
+    "public_repos": 39,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 708d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "fix(ssr): use proxyModuleUrl instead of proxyModulePath for CSS proxy URLs (fix #21836)"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:a79f6663effd24e3b38ddae56736594f8b8ba3d20abd459c387f0eb73e53b6ad",
+  "summary": "708d old account; 1 vite PR.",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 1,
+      "risk_prs": [
+        21837
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #21837"
+    }
+  ]
+}

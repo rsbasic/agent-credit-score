@@ -1,0 +1,34 @@
+{
+  "contributor": "OnlyWick",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2446,
+    "account_created": "2019-07-30T04:38:28Z",
+    "followers": 21,
+    "following": 9,
+    "public_repos": 16,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2446d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "vitejs/vite"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e73ba58d5261ba63354303fdce52a4a72af3993fc9de29d5eae591335570d439",
+  "summary": "2446d old account; 7 vite PRs; 7 vite PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "vitejs/vite",
+      "prs": 7,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #19752, #19558, #19545, #19544, #19543"
+    }
+  ]
+}
