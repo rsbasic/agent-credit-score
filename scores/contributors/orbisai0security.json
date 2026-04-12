@@ -2,22 +2,54 @@
   "contributor": "orbisai0security",
   "score": 40,
   "grade": "B",
-  "confidence": "low",
-  "last_scored": "2026-04-08",
+  "confidence": "medium",
+  "last_scored": "2026-04-11",
   "signals": {
-    "account_age_days": 0,
-    "account_created": "",
-    "followers": 0,
-    "total_prs": 0,
-    "pr_velocity": ""
+    "account_age_days": 156,
+    "account_created": "2025-11-07T01:08:27Z",
+    "followers": 11,
+    "following": 1,
+    "public_repos": 373,
+    "total_prs": 523,
+    "pr_velocity": "523 PRs in 156 days (3.4/day)",
+    "profile_complete": false,
+    "cross_repo_targets": ["withastro/astro", "opendatalab/MinerU", "topjohnwu/Magisk", "jquery/jquery", "cline/cline", "git/git", "unslothai/unsloth", "scrapy/scrapy", "FuelLabs/sway", "LadybirdBrowser/ladybird", "traefik/traefik", "socketio/socket.io", "NousResearch/hermes-agent"],
+    "scope_escalation": false,
+    "security_paths_touched": ["CVE-2026-39356 (drizzle-orm)", "CVE-2025-62718 (axios)", "sprintf fixes (Magisk)", "browserstack CI (jQuery)"],
+    "dormant_reactivation": false,
+    "ai_generated_indicators": "Username pattern 'orbisai0security' suggests automated AI security scanning service. 29 different repos in last 30 PRs — extreme scatter consistent with automated CVE-fix bot.",
+    "assessment_note": "DIFFERS FROM nthbotast. nthbotast targeted 4 HTTP credential libraries with PRs that WEAKENED security. orbisai0security targets 29+ repos across all domains with PRs referencing REAL CVEs. Behavioral signals similar; code content opposite. ACS correctly flags both as needing review."
   },
-  "summary": "Scored from repo scan.",
+  "evidence_hash": "sha256:placeholder",
+  "summary": "5-month-old automated CVE-fix bot. 523 PRs across 29+ repos targeting real CVEs. Velocity 3.4/day. Empty profile. Score 40/B — ACS flags bots, not just bad actors. Calibration case: benign bot flagged correctly by behavioral signals.",
   "repos_affected": [
     {
-      "repo": "unknown",
+      "repo": "facebook/react",
       "prs": 1,
       "risk_prs": [],
-      "any_merged": false
+      "any_merged": false,
+      "note": "Flagged during React scan. Updated 2026-04-11 with full profile data."
+    },
+    {
+      "repo": "withastro/astro",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "CVE-2026-39356 fix for drizzle-orm (verified real)"
+    },
+    {
+      "repo": "jquery/jquery",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "CI fix for browserstack-dispatch.yml"
+    },
+    {
+      "repo": "cline/cline",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "CVE-2025-62718 fix for axios (verified real)"
     }
   ]
 }
