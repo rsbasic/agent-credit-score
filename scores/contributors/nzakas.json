@@ -1,0 +1,34 @@
+{
+  "contributor": "nzakas",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-12",
+  "signals": {
+    "account_age_days": 6336,
+    "account_created": "2008-12-05T17:18:56Z",
+    "followers": 10754,
+    "following": 0,
+    "public_repos": 77,
+    "total_prs": 1582,
+    "pr_velocity": "1582 PRs over 6336d (0.25/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "eslint/eslint"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:0d2f4b4658e7f45d3cee33b21cf852c8c60798284345372ee4db3798a87a4489",
+  "summary": "6336d old account; 1 eslint PR; 1582 lifetime PRs.",
+  "repos_affected": [
+    {
+      "repo": "eslint/eslint",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #19843"
+    }
+  ]
+}

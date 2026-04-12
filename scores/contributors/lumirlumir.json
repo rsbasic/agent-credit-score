@@ -1,0 +1,34 @@
+{
+  "contributor": "lumirlumir",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-12",
+  "signals": {
+    "account_age_days": 1226,
+    "account_created": "2022-12-02T11:14:01Z",
+    "followers": 40,
+    "following": 0,
+    "public_repos": 71,
+    "total_prs": 2424,
+    "pr_velocity": "2424 PRs over 1226d (1.98/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "eslint/eslint"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:09e3af1e2f257f420ff7b1a7999839b30d1e15834c9ddfc6d86c8c09596e9b85",
+  "summary": "1226d old account; 1 eslint PR; 2424 lifetime PRs.",
+  "repos_affected": [
+    {
+      "repo": "eslint/eslint",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #20193"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "sethamus",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-12",
+  "signals": {
+    "account_age_days": 3106,
+    "account_created": "2017-10-09T08:25:04Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 9,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3106d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "eslint/eslint"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:d0757c17553e25ba7f8e9942deeeb818706fd5b2b87612ba28326a9100345e26",
+  "summary": "3106d old account; 2 eslint PRs; 0 lifetime PRs.",
+  "repos_affected": [
+    {
+      "repo": "eslint/eslint",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #20677, #20665"
+    }
+  ]
+}

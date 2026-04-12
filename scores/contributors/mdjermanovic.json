@@ -1,0 +1,34 @@
+{
+  "contributor": "mdjermanovic",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-12",
+  "signals": {
+    "account_age_days": 2729,
+    "account_created": "2018-10-21T23:17:53Z",
+    "followers": 118,
+    "following": 0,
+    "public_repos": 25,
+    "total_prs": 1210,
+    "pr_velocity": "1210 PRs over 2729d (0.44/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "eslint/eslint"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:d5602e416b80efcad03ef26fea51023350b42f6504004063769feeca8ab4b855",
+  "summary": "2729d old account; 1 eslint PR; 1210 lifetime PRs.",
+  "repos_affected": [
+    {
+      "repo": "eslint/eslint",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #20668"
+    }
+  ]
+}

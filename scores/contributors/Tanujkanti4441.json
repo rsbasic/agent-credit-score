@@ -1,0 +1,34 @@
+{
+  "contributor": "Tanujkanti4441",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-12",
+  "signals": {
+    "account_age_days": 1752,
+    "account_created": "2021-06-24T06:07:40Z",
+    "followers": 12,
+    "following": 1,
+    "public_repos": 33,
+    "total_prs": 155,
+    "pr_velocity": "155 PRs over 1752d (0.09/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "eslint/eslint"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e522e75b9a961d3e9ffdbae07a3c8819b02c842414928f3a400058997e66a16a",
+  "summary": "1752d old account; 6 eslint PRs; 155 lifetime PRs.",
+  "repos_affected": [
+    {
+      "repo": "eslint/eslint",
+      "prs": 6,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #20698, #20695, #20248, #20061, #19812"
+    }
+  ]
+}
