@@ -522,6 +522,140 @@ function gradeFromScore(s) {
   return 'D';
 }
 
+// Human-readable trust report — renders combined record as a one-page HTML report
+app.get('/report/:identifier', async (c) => {
+  const raw = c.req.param('identifier');
+  let platform = 'github', handle = raw.toLowerCase();
+  if (raw.includes(':')) { const [p, h] = raw.split(':', 2); platform = p.toLowerCase(); handle = h.toLowerCase(); }
+
+  // Fetch all three tracks (same logic as /api/combined/)
+  let acs = null;
+  if (platform === 'github') {
+    const acsData = await getScore(c.env, `contributor:${handle}`);
+    if (acsData) {
+      const topSignals = [];
+      const s = acsData.signals || {};
+      if (s.account_age_days !== undefined) topSignals.push({ name: 'Account age', value: `${s.account_age_days} days`, direction: s.account_age_days < 90 ? 'neg' : 'pos' });
+      if (s.pr_velocity) topSignals.push({ name: 'PR velocity', value: s.pr_velocity, direction: 'neutral' });
+      if (s.cross_repo_targets?.length > 1) topSignals.push({ name: 'Cross-repo targets', value: `${s.cross_repo_targets.length} repos`, direction: s.scope_escalation ? 'neg' : 'neutral' });
+      if (s.security_paths_touched?.length > 0) topSignals.push({ name: 'Security-sensitive paths', value: `${s.security_paths_touched.length} touched`, direction: 'neg' });
+      if (s.followers !== undefined) topSignals.push({ name: 'Followers', value: String(s.followers), direction: s.followers > 50 ? 'pos' : 'neutral' });
+      acs = { score: acsData.score, grade: acsData.grade, confidence: acsData.confidence || 'medium', topSignals, summary: acsData.summary };
+    }
+  }
+  const signal = await getScore(c.env, `signal:${platform}:${handle}`);
+  const downstream = await getScore(c.env, `downstream:${platform}:${handle}`);
+
+  if (!acs && !signal && !downstream) {
+    return c.html(`<!DOCTYPE html><html><head><title>Not Found</title><style>body{font-family:system-ui;background:#0a0a0a;color:#e0e0e0;display:flex;justify-content:center;padding:4rem}a{color:#60a5fa}</style></head><body><div><h1>Entity not found</h1><p>No trust data for <code>${platform}:${handle}</code>.</p><p><a href="https://github.com/rsbasic/agent-credit-score/issues/new?template=scan-request.md">Request a scan</a></p></div></body></html>`, 404);
+  }
+
+  // Compute verdict
+  const trackScores = [];
+  if (acs) trackScores.push(acs.score);
+  if (signal?.composite !== undefined) trackScores.push(signal.composite * 10);
+  if (downstream?.composite !== undefined) trackScores.push(downstream.composite * 10);
+  const worstScore = trackScores.length > 0 ? Math.min(...trackScores) : null;
+  let rec = 'insufficient_data';
+  if (worstScore !== null) { if (worstScore >= 70) rec = 'trust'; else if (worstScore >= 60) rec = 'trust_with_caveats'; else if (worstScore >= 30) rec = 'watch'; else rec = 'distrust'; }
+
+  const recColor = { trust: '#22c55e', trust_with_caveats: '#84cc16', watch: '#f59e0b', distrust: '#ef4444', insufficient_data: '#666' }[rec];
+  const recLabel = { trust: 'TRUST', trust_with_caveats: 'TRUST WITH CAVEATS', watch: 'WATCH', distrust: 'DISTRUST', insufficient_data: 'INSUFFICIENT DATA' }[rec];
+
+  // Render track cards
+  const trackCards = [];
+
+  if (acs) {
+    const gradeColor = acs.score >= 70 ? '#22c55e' : acs.score >= 50 ? '#f59e0b' : '#ef4444';
+    const signalRows = (acs.topSignals || []).map(s => {
+      const icon = s.direction === 'neg' ? '🔴' : s.direction === 'pos' ? '🟢' : '⚪';
+      return `<tr><td>${icon} ${s.name}</td><td>${s.value}</td></tr>`;
+    }).join('');
+    trackCards.push(`<div class="track"><h3>ACS — Code Behavior</h3><div class="score" style="color:${gradeColor}">${acs.score} <span class="grade">${acs.grade}</span></div><p class="conf">${acs.confidence} confidence</p><table>${signalRows}</table>${acs.summary ? `<p class="summary">${acs.summary}</p>` : ''}</div>`);
+  }
+
+  if (signal) {
+    const sc = signal.composite * 10;
+    const gradeColor = sc >= 70 ? '#22c55e' : sc >= 50 ? '#f59e0b' : '#ef4444';
+    const dims = signal.dimensions || {};
+    const dimRows = Object.entries(dims).map(([k, v]) => {
+      const label = k.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      const bar = k === 'trajectory' ? `<span style="color:${v > 0 ? '#22c55e' : v < 0 ? '#ef4444' : '#888'}">${v > 0 ? '↑' : v < 0 ? '↓' : '→'} ${v}</span>` : `<div class="bar"><div class="fill" style="width:${v*10}%;background:${v>=7?'#22c55e':v>=5?'#f59e0b':'#ef4444'}"></div></div> ${v}/10`;
+      return `<tr><td>${label}</td><td>${bar}</td></tr>`;
+    }).join('');
+    trackCards.push(`<div class="track"><h3>SIGNAL — Behavioral Traces</h3><div class="score" style="color:${gradeColor}">${signal.composite} <span class="grade">${gradeFromScore(sc)}</span></div><p class="conf">${signal.confidence} confidence · ${signal.trace_days_observed || '?'}d observed · assessor: ${signal.assessor || '?'}</p><table>${dimRows}</table></div>`);
+  }
+
+  if (downstream) {
+    const sc = downstream.composite * 10;
+    const gradeColor = sc >= 70 ? '#22c55e' : sc >= 50 ? '#f59e0b' : '#ef4444';
+    const subs = downstream.subdimensions || {};
+    const subRows = Object.entries(subs).map(([k, v]) => {
+      const label = k.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      return `<tr><td>${label}</td><td>${v}/10</td></tr>`;
+    }).join('');
+    const evidenceItems = (downstream.evidence_examples || []).map(e => `<li>${e}</li>`).join('');
+    trackCards.push(`<div class="track"><h3>DOWNSTREAM — Impact on Others</h3><div class="score" style="color:${gradeColor}">${downstream.composite} <span class="grade">${gradeFromScore(sc)}</span></div><p class="conf">${downstream.confidence} confidence</p><table>${subRows}</table>${evidenceItems ? `<ul class="evidence">${evidenceItems}</ul>` : ''}</div>`);
+  }
+
+  const trackCount = [acs, signal, downstream].filter(Boolean).length;
+  const coverageNote = trackCount === 1 ? 'Single-track assessment — multi-track verification recommended' : trackCount === 2 ? 'Two-track assessment' : trackCount === 3 ? 'Three-track assessment (full coverage)' : '';
+
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trust Report — ${platform}:${handle}</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+.container{max-width:800px;margin:0 auto;padding:2rem}
+.header{text-align:center;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid #222}
+h1{font-size:1.5rem;font-weight:700;margin-bottom:0.25rem}
+.entity-id{color:#888;font-family:monospace;font-size:0.9rem}
+.verdict-box{display:inline-block;padding:0.5rem 1.5rem;border-radius:8px;font-size:1.1rem;font-weight:700;margin:1rem 0;border:2px solid ${recColor};color:${recColor}}
+.coverage{color:#888;font-size:0.85rem}
+.tracks{display:grid;gap:1.5rem;margin:2rem 0}
+.track{background:#111;border-radius:8px;padding:1.5rem;border:1px solid #222}
+.track h3{font-size:1rem;color:#aaa;margin-bottom:0.75rem;text-transform:uppercase;letter-spacing:0.05em;font-weight:600}
+.score{font-size:2rem;font-weight:700;margin-bottom:0.25rem}
+.grade{font-size:1rem;opacity:0.7;margin-left:0.5rem}
+.conf{color:#666;font-size:0.8rem;margin-bottom:1rem}
+table{width:100%;border-collapse:collapse;font-size:0.85rem}
+td{padding:0.3rem 0;border-bottom:1px solid #1a1a1a}
+td:first-child{color:#aaa;width:45%}
+.bar{display:inline-block;width:100px;height:8px;background:#1a1a1a;border-radius:4px;vertical-align:middle;margin-right:8px}
+.fill{height:100%;border-radius:4px}
+.summary{color:#888;font-size:0.8rem;margin-top:0.75rem;font-style:italic}
+.evidence{margin-top:0.75rem;padding-left:1.2rem;font-size:0.8rem;color:#888}
+.evidence li{margin-bottom:0.4rem}
+.method{margin-top:2rem;padding-top:1rem;border-top:1px solid #222;font-size:0.75rem;color:#555;text-align:center}
+.method a{color:#60a5fa;text-decoration:none}
+footer{margin-top:2rem;text-align:center;color:#333;font-size:0.7rem}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Coding Agent Trust Report</h1>
+    <div class="entity-id">${platform}:${handle}</div>
+    <div class="verdict-box">${recLabel}</div>
+    <div class="coverage">${coverageNote} · Worst-track-wins gating · Scored ${new Date().toISOString().slice(0,10)}</div>
+  </div>
+  <div class="tracks">${trackCards.join('')}</div>
+  <div class="method">
+    Methodology: <a href="https://github.com/rsbasic/agent-credit-score/blob/main/methodology/overview.md">ACS</a> · SIGNAL · DOWNSTREAM (pubby two-track design)<br>
+    API: <a href="https://agentcreditscore.ai/api/combined/${platform}:${handle}">JSON endpoint</a> · <a href="https://github.com/rsbasic/agent-credit-score">GitHub</a>
+  </div>
+  <footer>Agent Credit Score &middot; agentcreditscore.ai &middot; Powered by rex + noobagent (Mycel Network)</footer>
+</div>
+</body>
+</html>`;
+
+  await logEvent(c.env, 'report_view', { identifier: `${platform}:${handle}`, tracks: trackCount }, extractCaller(c));
+  return c.html(html);
+});
+
 // Health check
 app.get('/api/health', (c) => {
   return c.json({
