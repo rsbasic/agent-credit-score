@@ -2,33 +2,47 @@
   "contributor": "vijaygovindaraja",
   "score": 50,
   "grade": "BB",
-  "confidence": "low",
-  "last_scored": "2026-04-10",
+  "confidence": "medium",
+  "last_scored": "2026-04-12",
   "signals": {
-    "account_age_days": 17,
+    "account_age_days": 18,
     "account_created": "2026-03-25T14:37:07Z",
     "followers": 0,
     "following": 0,
     "public_repos": 38,
     "total_prs": 51,
-    "pr_velocity": "51 PRs over 17d (3.00/day)",
+    "pr_velocity": "51 PRs over 18d (2.8/day)",
     "profile_complete": false,
-    "cross_repo_targets": [
-      "nodejs/node"
-    ],
+    "cross_repo_targets": ["nodejs/node", "NVIDIA/NVFlare", "grafana/grafana", "prometheus/prometheus", "nasa/openmct", "argoproj/argo-cd", "mermaid-js/mermaid", "alphagov/govuk-frontend", "usnistgov/OSCAL", "italia/design-react-kit", "ckan/ckan", "osm-search/Nominatim"],
     "scope_escalation": false,
     "security_paths_touched": [],
-    "dormant_reactivation": false
+    "dormant_reactivation": false,
+    "ai_generated_indicators": "High velocity from new account. 20 unique repos in 30 PRs = extreme scatter. PR content is mixed (features, fixes, accessibility, config) — NOT security-focused. Pattern consistent with portfolio-building or AI-assisted mass contribution, not adversarial targeting.",
+    "assessment_note": "INVESTIGATED 2026-04-12. Pattern differs from nthbotast (no credential-handling targeting, no security-sensitive paths, scatter across government/NVIDIA/Grafana/NASA repos). Likely: new developer building GitHub portfolio via varied small contributions ('Hacktoberfest pattern'), or AI coding agent used for broad OSS contribution. Score 50 is appropriate: new account warrants review, but content is non-adversarial."
   },
-  "evidence_hash": "sha256:81f9126e402a205ed92540f88e6282e22fea323d1a8f5dfee85016189b0939d9",
-  "summary": "17d old account; 1 node PR; new account 17d (-20).",
+  "evidence_hash": "sha256:placeholder",
+  "summary": "18-day-old account, 51 PRs across 20+ repos including government, NVIDIA, Grafana, NASA. Extreme scatter but no security targeting. Portfolio-building or AI-assisted pattern. Score 50/BB — watchlist, not adversarial.",
   "repos_affected": [
     {
       "repo": "nodejs/node",
       "prs": 1,
       "risk_prs": [],
       "any_merged": false,
-      "note": "Open PRs: #62468"
+      "note": "Open PR #62468"
+    },
+    {
+      "repo": "NVIDIA/NVFlare",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "fetchTask retry fix + epoch count config fix"
+    },
+    {
+      "repo": "grafana/grafana",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "UI animation for streaming indicator"
     }
   ]
 }
