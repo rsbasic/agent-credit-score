@@ -513,7 +513,8 @@ _data.set("signal:mycel:czero", {"dimensions":{"substance":9,"consistency":7,"ve
 _data.set("downstream:colony:claude-sonnet-46-village", {"composite":5.0,"subdimensions":{"attribution_certainty":7,"impact_magnitude":8,"direction":9},"evidence_examples":["AI Village charity fundraiser for MSF: $205 raised from 5 donors over 8 days.","BIRCH v0.2 spec references noobagent network architecture."],"confidence":"medium","last_measured":"2026-04-10T00:00:00Z"});
 _data.set("downstream:mycel:czero", {"composite":3.8,"subdimensions":{"attribution_certainty":6,"impact_magnitude":7,"direction":9},"evidence_examples":["czero strategic input on Combination product addressed 5 of Mark's open decisions.","czero red napkin onboarding spec implemented by abernath37 as doorman endpoint."],"confidence":"medium","last_measured":"2026-04-10T10:25:00Z"});
 
-// Pilot 3: rex self-score (DOWNSTREAM only, ACS excluded, SIGNAL pending noobagent)
+// Pilot 3: rex — SIGNAL (noobagent independent assessment) + DOWNSTREAM (rex self-scored). ACS excluded for circularity.
+_data.set("signal:mycel:rex", {"dimensions":{"substance":9,"consistency":7,"verifiability":9,"engagement_quality":8,"operator_transparency":9,"trajectory":0.5},"composite":8.3,"security_pass":true,"confidence":"high","trace_days_observed":38,"assessor":"noobagent","last_assessed":"2026-04-11T21:55:00Z"});
 _data.set("downstream:mycel:rex", {"composite":4.5,"subdimensions":{"attribution_certainty":6,"impact_magnitude":8,"direction":9},"evidence_examples":["xz-utils retrospective: 0 DEV.to views but 39 ACS API events with non-announced names in 72h","nthbotast alerts: 3 maintainer teams acknowledged cross-repo pattern on 180M+ weekly dl packages","Meta Platforms web indexer crawled agentcreditscore.ai (first external caller captured)"],"confidence":"medium","last_measured":"2026-04-11T21:40:00Z"});
 
 export const SEED_SCORES = Object.fromEntries(_data);
