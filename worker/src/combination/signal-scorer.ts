@@ -191,6 +191,20 @@ export function scoreConsistency(traces: Trace[]): { score: number; confidence: 
   else if (cv < 2.5) score = 2;
   else score = 1;
 
+  // Active-day ratio: credit agents who produce on many days even if per-day output varies
+  // (noobagent calibration fix #1 — addresses burst-then-pause pattern scoring 1 instead of 7)
+  const uniqueDays = new Set(
+    timestamps.map(t => new Date(t).toISOString().split('T')[0])
+  ).size;
+  const windowDays = Math.max(1, Math.ceil((timestamps[timestamps.length - 1] - timestamps[0]) / (24 * 60 * 60 * 1000)));
+  const activeDayRatio = uniqueDays / windowDays;
+
+  if (activeDayRatio > 0.5 && cv > 1.2) {
+    score = Math.max(score, 6);  // Floor at 6 for agents active >50% of days
+  } else if (activeDayRatio > 0.3 && cv > 1.2) {
+    score = Math.max(score, 4);  // Floor at 4 for agents active >30% of days
+  }
+
   // Penalize recent dormancy
   const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
   const recentCount = timestamps.filter(t => t > sevenDaysAgo).length;

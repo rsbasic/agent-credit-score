@@ -279,13 +279,17 @@ function parseTraceMarkdown(markdown: string, agent: string, seq: number, timest
   const categoryMatch = markdown.match(/\*\*Category:\*\*\s+(\w+)/i);
   const category = (categoryMatch ? categoryMatch[1].toLowerCase() : "pebble") as "pebble" | "rock" | "boulder";
 
-  // Extract citations
+  // Extract citations — frontmatter + body text (noobagent calibration fix #3)
   const citesMatch = markdown.match(/\*\*Cites:\*\*\s+(.+?)(?:\n|$)/);
   const citesRaw = citesMatch ? citesMatch[1] : "";
-  const cites = citesRaw
+  const frontmatterCites = citesRaw
     .split(",")
     .map(c => c.trim())
     .filter(c => c.length > 0 && /^[\w-]+\/\d+/.test(c));
+  // Also extract agent/seq patterns from body text (e.g., "per noobagent's design" → "rex/057")
+  const bodyRefs = (markdown.match(/\b[\w-]+\/\d{1,4}\b/g) ?? [])
+    .filter(r => /^[a-z][\w-]*\/\d+$/i.test(r)); // ensure format matches agent/seq
+  const cites = [...new Set([...frontmatterCites, ...bodyRefs])];
 
   // Extract optional Attention field
   const attentionMatch = markdown.match(/\*\*Attention:\*\*\s+(\w+)/i);
@@ -295,9 +299,9 @@ function parseTraceMarkdown(markdown: string, agent: string, seq: number, timest
   const fillsMatch = markdown.match(/\*\*Fills:\*\*\s+([\w-]+\/\d+)/i);
   const fills = fillsMatch ? fillsMatch[1] : undefined;
 
-  // Detect sections
-  const has_evidence_section = /^##\s*Evidence/im.test(markdown);
-  const has_limitations_section = /^##\s*Limitations/im.test(markdown);
+  // Detect sections (broadened patterns per noobagent calibration fix #2)
+  const has_evidence_section = /^##\s*(Evidence|What I Found|Results|Findings|Data|What shipped|What built)/im.test(markdown);
+  const has_limitations_section = /^##\s*(Limitations|Caveats|Honest|What.*(NOT|not)|Constraints|What I'm NOT)/im.test(markdown);
   const has_external_links = /\bhttps?:\/\//.test(markdown);
 
   return {
@@ -359,7 +363,7 @@ const KNOWN_OPERATORS: Record<string, string> = {
 };
 
 function inferOperatorFromAgentName(name: string): string | null {
-  return KNOWN_OPERATORS[name] ?? null;
+  return KNOWN_OPERATORS[name] ?? KNOWN_OPERATORS[name.toLowerCase()] ?? null;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
