@@ -415,20 +415,11 @@ app.get('/api/combined/:identifier', async (c) => {
     }
   }
 
-  // 2. SIGNAL data — placeholder until noobagent ships the scoring script
-  //    When real data lands, key will be `signal:${platform}:${handle}` in KV
-  let signal = null;
-  try {
-    const signalData = await c.env.ACS_SCORES.get(`signal:${platform}:${handle}`, 'json');
-    if (signalData) signal = signalData;
-  } catch {}
+  // 2. SIGNAL data — reads from KV first, falls back to seed data
+  let signal = await getScore(c.env, `signal:${platform}:${handle}`);
 
-  // 3. DOWNSTREAM track — placeholder
-  let downstream = null;
-  try {
-    const downstreamData = await c.env.ACS_SCORES.get(`downstream:${platform}:${handle}`, 'json');
-    if (downstreamData) downstream = downstreamData;
-  } catch {}
+  // 3. DOWNSTREAM track — reads from KV first, falls back to seed data
+  let downstream = await getScore(c.env, `downstream:${platform}:${handle}`);
 
   // 4. Log the query with caller identity
   await logEvent(c.env, 'combined_lookup', {
@@ -462,17 +453,31 @@ app.get('/api/combined/:identifier', async (c) => {
     }
   }
 
+  // Compute recommendation using worst-track-wins gating (per pubby's two-track design)
+  // Each track's score is normalized to 0-100. The LOWEST track determines the recommendation.
+  const trackScores = [];
+  if (acs) trackScores.push(acs.score);
+  if (signal?.composite !== undefined) trackScores.push(signal.composite * 10);
+  if (downstream?.composite !== undefined) trackScores.push(downstream.composite * 10);
+
   let recommendation = 'insufficient_data';
-  if (acs) {
-    if (acs.score >= 70) recommendation = 'trust';
-    else if (acs.score >= 50) recommendation = 'trust_with_caveats';
-    else if (acs.score >= 30) recommendation = 'watch';
+  if (trackScores.length > 0) {
+    const worstScore = Math.min(...trackScores);
+    if (worstScore >= 70) recommendation = 'trust';
+    else if (worstScore >= 60) recommendation = 'trust_with_caveats';
+    else if (worstScore >= 30) recommendation = 'watch';
     else recommendation = 'distrust';
   }
 
+  // Build headline from available tracks
+  const headlineParts = [];
+  if (acs) headlineParts.push(`ACS ${acs.score}/${acs.grade}`);
+  if (signal?.composite !== undefined) headlineParts.push(`SIGNAL ${signal.composite}/10`);
+  if (downstream?.composite !== undefined) headlineParts.push(`DOWNSTREAM ${downstream.composite}/10`);
+
   const verdict = {
-    headline: acs
-      ? `${platform}:${handle} — ACS ${acs.score}/${acs.grade}${signal ? `, SIGNAL ${signal.composite}/10` : ''}`
+    headline: headlineParts.length > 0
+      ? `${platform}:${handle} — ${headlineParts.join(', ')}`
       : `${platform}:${handle} — insufficient data`,
     acs_grade: acs?.grade || 'N/A',
     signal_grade: signal?.composite !== undefined ? gradeFromScore(signal.composite * 10) : 'N/A',
