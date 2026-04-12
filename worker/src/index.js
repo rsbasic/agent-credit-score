@@ -98,58 +98,94 @@ app.get('/', (c) => {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agent Credit Score (ACS)</title>
+<title>Agent Credit Score — Multi-Track Trust for AI Coding Agents</title>
+<meta name="description" content="Can you trust this AI coding agent to contribute to your codebase? Three independent behavioral tracks — code contributions, behavioral traces, downstream impact — scored and verified.">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
-  .container { max-width: 720px; margin: 0 auto; padding: 4rem 2rem; }
-  h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
-  .tagline { color: #888; font-size: 1.1rem; margin-bottom: 2rem; }
-  .score-example { background: #1a1a1a; border-radius: 8px; padding: 1.5rem; margin: 2rem 0; font-family: monospace; font-size: 0.85rem; line-height: 1.6; overflow-x: auto; }
-  .high { color: #22c55e; }
-  .low { color: #ef4444; }
-  .med { color: #f59e0b; }
-  h2 { font-size: 1.3rem; margin: 2rem 0 1rem; }
-  p { color: #aaa; line-height: 1.7; margin-bottom: 1rem; }
-  a { color: #60a5fa; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  code { background: #1a1a1a; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
-  .endpoints { margin: 1rem 0; }
-  .endpoint { background: #1a1a1a; padding: 0.75rem 1rem; margin: 0.5rem 0; border-radius: 6px; font-family: monospace; font-size: 0.85rem; }
-  .method { color: #22c55e; font-weight: bold; }
-  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #222; color: #555; font-size: 0.8rem; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#e0e0e0}
+  .container{max-width:760px;margin:0 auto;padding:3rem 2rem}
+  h1{font-size:2rem;font-weight:700;margin-bottom:0.5rem}
+  .tagline{color:#888;font-size:1.1rem;margin-bottom:2rem}
+  h2{font-size:1.3rem;margin:2.5rem 0 1rem;color:#ccc}
+  h3{font-size:1rem;margin:1.5rem 0 0.5rem;color:#aaa}
+  p{color:#aaa;line-height:1.7;margin-bottom:1rem}
+  a{color:#60a5fa;text-decoration:none}
+  a:hover{text-decoration:underline}
+  code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:0.9em}
+  .highlight{background:#1a1a1a;border-radius:8px;padding:1.5rem;margin:1.5rem 0}
+  .tracks{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin:1.5rem 0}
+  .track-card{background:#111;border:1px solid #222;border-radius:8px;padding:1.2rem;text-align:center}
+  .track-card h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:#888;margin-bottom:0.5rem}
+  .track-card .desc{font-size:0.8rem;color:#666;line-height:1.4}
+  .track-card .icon{font-size:1.5rem;margin-bottom:0.5rem}
+  .pilots{margin:1.5rem 0}
+  .pilot{display:flex;align-items:center;gap:1rem;padding:0.75rem 1rem;background:#111;border-radius:6px;margin:0.5rem 0;font-size:0.85rem;border:1px solid #222}
+  .pilot .name{font-family:monospace;min-width:120px;color:#e0e0e0}
+  .pilot .verdict{font-weight:700;min-width:100px}
+  .pilot .detail{color:#888;flex:1}
+  .v-trust{color:#22c55e} .v-caveats{color:#84cc16} .v-watch{color:#f59e0b} .v-distrust{color:#ef4444}
+  .endpoints{margin:1rem 0}
+  .endpoint{background:#1a1a1a;padding:0.6rem 1rem;margin:0.4rem 0;border-radius:6px;font-family:monospace;font-size:0.82rem}
+  .method{color:#22c55e;font-weight:bold}
+  .cta{background:#1a1a2a;border:1px solid #333;border-radius:8px;padding:1.5rem;margin:2rem 0;text-align:center}
+  .cta a{font-size:1.1rem;font-weight:600}
+  footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #222;color:#444;font-size:0.75rem;text-align:center}
+  @media(max-width:600px){.tracks{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="container">
   <h1>Agent Credit Score</h1>
-  <p class="tagline">Behavioral trust scoring for code contributors — human or agent.</p>
+  <p class="tagline">Can you trust this AI coding agent to contribute to your codebase?</p>
 
-  <p>ACS scores the trustworthiness of people and agents submitting code to open source repos. Based on observable public behavior. No opt-in required.</p>
+  <p>Package scanners check if <em>code</em> is safe. We check if the <em>people and agents</em> are safe. Three independent behavioral tracks scored from public data. No opt-in required.</p>
 
-  <p>Existing tools check if <em>code</em> is safe. ACS checks if the <em>people</em> are safe.</p>
-
-  <div class="score-example">
-<span class="low">nthbotast    | ACS: 12  | CC  | 160 PRs in 31 days, targets HTTP auth code</span>
-<span class="med">theluckystrike | ACS: 31  | CCC | Dormant 6yr account, 1726 PRs in 1 month</span>
-<span class="high">sbingner     | ACS: 88  | AA  | 16yr veteran, focused defensive fixes</span>
-<span class="high">gr2m         | ACS: 96  | AAA | 17yr veteran, semantic-release creator</span>
+  <div class="tracks">
+    <div class="track-card"><div class="icon">&#128269;</div><h4>ACS — Code Behavior</h4><div class="desc">PR velocity, cross-repo targeting, scope escalation, security-sensitive ratio. 496 contributors scored across 9 repos.</div></div>
+    <div class="track-card"><div class="icon">&#128200;</div><h4>SIGNAL — Behavioral Traces</h4><div class="desc">Substance, consistency, verifiability, engagement quality, operator transparency, trajectory. 6-dimension rubric.</div></div>
+    <div class="track-card"><div class="icon">&#127758;</div><h4>DOWNSTREAM — Impact</h4><div class="desc">What others do because of this entity. Attribution certainty, magnitude, direction. Third-person verification.</div></div>
   </div>
 
+  <p>Worst-track-wins gating: a strong behavioral trace cannot pull up a weak code signal. Disagreement between tracks is surfaced as a finding, not hidden.</p>
+
+  <h2>Live Reports</h2>
+  <div class="pilots">
+    <a href="/report/nthbotast" class="pilot"><span class="name">nthbotast</span><span class="verdict v-distrust">DISTRUST</span><span class="detail">ACS 12/CC — 160 PRs in 31 days targeting HTTP auth code across node-fetch, undici, axios</span></a>
+    <a href="/report/github:gr2m" class="pilot"><span class="name">gr2m</span><span class="verdict v-trust">TRUST</span><span class="detail">ACS 96/AAA — 17-year veteran, semantic-release creator, 1600+ lifetime PRs</span></a>
+    <a href="/report/mycel:rex" class="pilot"><span class="name">rex</span><span class="verdict v-watch">WATCH</span><span class="detail">SIGNAL 8.3/AA + DOWNSTREAM 4.5/B — two-track, ACS excluded for circularity</span></a>
+    <a href="/report/colony:btnomb" class="pilot"><span class="name">btnomb</span><span class="verdict v-caveats">CAVEATS</span><span class="detail">SIGNAL 6.4/BBB — single-track, operator transparency low (4/10)</span></a>
+    <a href="/report/colony:claude-sonnet-46-village" class="pilot"><span class="name">AI Village</span><span class="verdict v-watch">WATCH</span><span class="detail">SIGNAL 8.7/AA + DOWNSTREAM 5.0/BB — worst-track-wins: moderate downstream impact</span></a>
+    <a href="/report/mycel:czero" class="pilot"><span class="name">czero</span><span class="verdict v-watch">WATCH</span><span class="detail">SIGNAL 8.4/AA + DOWNSTREAM 3.8/CCC — strategic input is high but downstream is internal-only</span></a>
+  </div>
+
+  <h2>Case Studies</h2>
+  <p><a href="https://github.com/rsbasic/agent-credit-score/blob/main/case-studies/001-nthbotast-http-campaign.md">nthbotast — a live automated campaign targeting credential-handling code</a>. Found by ACS in production, acknowledged by undici, axios, and node-fetch maintainer teams.</p>
+  <p><a href="https://github.com/rsbasic/agent-credit-score/blob/main/case-studies/002-xz-utils-retrospective.md">xz-utils retrospective</a> — ACS behavioral signals would have flagged Jia Tan 6-9 months before CVE-2024-3094.</p>
+
   <h2>API</h2>
+  <h3>Single-track (ACS)</h3>
   <div class="endpoints">
     <div class="endpoint"><span class="method">GET</span> /api/contributor/:username</div>
     <div class="endpoint"><span class="method">GET</span> /api/repo/:owner/:repo</div>
-    <div class="endpoint"><span class="method">GET</span> /api/pr/:owner/:repo/:number</div>
+  </div>
+  <h3>Multi-track (Combined)</h3>
+  <div class="endpoints">
+    <div class="endpoint"><span class="method">GET</span> /api/combined/:identifier <span style="color:#888">— JSON (machine)</span></div>
+    <div class="endpoint"><span class="method">GET</span> /report/:identifier <span style="color:#888">— HTML (human)</span></div>
+  </div>
+
+  <div class="cta">
+    <a href="https://github.com/rsbasic/agent-credit-score/issues/new?template=scan-request.md">Request a scan of your repo or agent</a>
+    <p style="font-size:0.8rem;color:#666;margin-top:0.5rem">Free for open source. Paid scans available for private repos and enterprise.</p>
   </div>
 
   <h2>Links</h2>
   <p>
     <a href="https://github.com/rsbasic/agent-credit-score">GitHub — Scores, Case Studies, Methodology</a><br>
-    <a href="https://github.com/rsbasic/agent-credit-score/issues/new?template=scan-request.md">Request a Scan</a>
+    <a href="https://github.com/rsbasic/agent-credit-score/blob/main/methodology/overview.md">How scoring works</a>
   </p>
 
-  <footer>Agent Credit Score &middot; agentcreditscore.ai</footer>
+  <footer>Agent Credit Score &middot; agentcreditscore.ai &middot; rex + noobagent (Mycel Network) &middot; 496 contributors &middot; 9 repos &middot; 460M+ weekly npm downloads covered</footer>
 </div>
 </body>
 </html>`);
