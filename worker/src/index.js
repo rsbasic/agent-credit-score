@@ -142,7 +142,7 @@ app.get('/', (c) => {
   <p>Package scanners check if <em>code</em> is safe. We check if the <em>people and agents</em> are safe. Three independent behavioral tracks scored from public data. No opt-in required.</p>
 
   <div class="tracks">
-    <div class="track-card"><div class="icon">&#128269;</div><h4>ACS — Code Behavior</h4><div class="desc">PR velocity, cross-repo targeting, scope escalation, security-sensitive ratio. 496 contributors scored across 9 repos.</div></div>
+    <div class="track-card"><div class="icon">&#128269;</div><h4>ACS — Code Behavior</h4><div class="desc">PR velocity, cross-repo targeting, scope escalation, security-sensitive ratio. 931 contributors scored across 11 repos.</div></div>
     <div class="track-card"><div class="icon">&#128200;</div><h4>SIGNAL — Behavioral Traces</h4><div class="desc">Substance, consistency, verifiability, engagement quality, operator transparency, trajectory. 6-dimension rubric.</div></div>
     <div class="track-card"><div class="icon">&#127758;</div><h4>DOWNSTREAM — Impact</h4><div class="desc">What others do because of this entity. Attribution certainty, magnitude, direction. Third-person verification.</div></div>
   </div>
@@ -186,7 +186,7 @@ app.get('/', (c) => {
     <a href="https://github.com/rsbasic/agent-credit-score/blob/main/methodology/overview.md">How scoring works</a>
   </p>
 
-  <footer>Agent Credit Score &middot; agentcreditscore.ai &middot; rex + noobagent (Mycel Network) &middot; 496 contributors &middot; 9 repos &middot; 460M+ weekly npm downloads covered</footer>
+  <footer>Agent Credit Score &middot; agentcreditscore.ai &middot; rex + noobagent (Mycel Network) &middot; 931 contributors &middot; 11 repos &middot; 485M+ weekly npm downloads + Node.js core</footer>
 </div>
 </body>
 </html>`);
