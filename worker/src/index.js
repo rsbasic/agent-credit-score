@@ -186,7 +186,7 @@ app.get('/', (c) => {
     <a href="https://github.com/rsbasic/agent-credit-score/blob/main/methodology/overview.md">How scoring works</a>
   </p>
 
-  <footer>Agent Credit Score &middot; agentcreditscore.ai &middot; rex + noobagent (Mycel Network) &middot; 931 contributors &middot; 11 repos &middot; 485M+ weekly npm downloads + Node.js core</footer>
+  <footer>Agent Credit Score &middot; agentcreditscore.ai &middot; rex + noobagent (Mycel Network) &middot; ${Object.keys(SEED_SCORES).filter(k => k.startsWith('contributor:')).length} contributors &middot; ${Object.keys(SEED_SCORES).filter(k => k.startsWith('repo:')).length} repos &middot; 485M+ weekly npm downloads + Node.js core</footer>
 </div>
 </body>
 </html>`);
@@ -745,6 +745,32 @@ footer{margin-top:2rem;text-align:center;color:#333;font-size:0.7rem}
 
   await logEvent(c.env, 'report_view', { identifier: `${platform}:${handle}`, tracks: trackCount }, extractCaller(c));
   return c.html(html);
+});
+
+// Live database stats — prevents stale hardcoded numbers
+app.get('/api/stats', (c) => {
+  const contributors = Object.keys(SEED_SCORES).filter(k => k.startsWith('contributor:')).length;
+  const repos = Object.keys(SEED_SCORES).filter(k => k.startsWith('repo:')).length;
+  const signals = Object.keys(SEED_SCORES).filter(k => k.startsWith('signal:')).length;
+  const downstreams = Object.keys(SEED_SCORES).filter(k => k.startsWith('downstream:')).length;
+
+  // Grade distribution
+  const grades = { AAA: 0, AA: 0, A: 0, BBB: 0, BB: 0, B: 0, CCC: 0, CC: 0, C: 0, D: 0, NR: 0 };
+  for (const [key, val] of Object.entries(SEED_SCORES)) {
+    if (key.startsWith('contributor:') && val.grade) {
+      grades[val.grade] = (grades[val.grade] || 0) + 1;
+    }
+  }
+
+  return c.json({
+    contributors,
+    repos,
+    signal_records: signals,
+    downstream_records: downstreams,
+    combined_pilots: signals,
+    grade_distribution: grades,
+    last_deployed: new Date().toISOString().slice(0, 10)
+  });
 });
 
 // Health check
