@@ -1,6 +1,7 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { SEED_SCORES } from './seed-data.js';
+import { scoreSignalForIdentifier, MycelDoormanAdapter } from './combination/index.ts';
 
 const app = new Hono();
 
@@ -557,6 +558,60 @@ function gradeFromScore(s) {
   if (s >= 10) return 'C';
   return 'D';
 }
+
+// Live SIGNAL scoring — fetches traces from doorman, scores fresh, writes to KV
+// This is the SLOW path (2-5 seconds). /api/combined/ stays fast (reads cached data).
+app.get('/api/score/:identifier', async (c) => {
+  const raw = c.req.param('identifier');
+  let platform = 'mycel', handle = raw.toLowerCase();
+  if (raw.includes(':')) { const [p, h] = raw.split(':', 2); platform = p.toLowerCase(); handle = h.toLowerCase(); }
+
+  if (platform !== 'mycel' && platform !== 'colony') {
+    return c.json({ error: 'signal_scoring_only_for_mycel_colony', message: `SIGNAL scoring requires Mycel/Colony trace data. Platform '${platform}' is not supported for live scoring. Use /api/contributor/ for ACS (GitHub) scoring.` }, 400);
+  }
+
+  await logEvent(c.env, 'score_request', { identifier: `${platform}:${handle}` }, extractCaller(c));
+
+  try {
+    const adapter = new MycelDoormanAdapter();
+    const signalRecord = await scoreSignalForIdentifier(`${platform}:${handle}`, adapter);
+
+    if (!signalRecord) {
+      return c.json({
+        status: 'no_data',
+        message: `No trace data found for '${platform}:${handle}' on the Mycel doorman. The entity may not have published any traces, or the agent name may be wrong.`,
+        entity: `${platform}:${handle}`,
+        scored_at: new Date().toISOString()
+      }, 404);
+    }
+
+    // Write to KV so /api/combined/ picks it up on next read
+    const kvKey = `signal:${platform}:${handle}`;
+    try {
+      await c.env.ACS_SCORES.put(kvKey, JSON.stringify(signalRecord), { expirationTtl: 604800 }); // 7d TTL
+    } catch (kvErr) {
+      // KV write may fail (auth, quota) — score is still valid, just won't be cached
+      console.error('KV write failed for', kvKey, kvErr);
+    }
+
+    return c.json({
+      status: 'scored',
+      entity: `${platform}:${handle}`,
+      signal: signalRecord,
+      cached: false,
+      scored_at: new Date().toISOString(),
+      message: `Fresh SIGNAL score computed. Result cached at KV key '${kvKey}' for 7 days. Query /api/combined/${platform}:${handle} to see the full multi-track record.`
+    });
+
+  } catch (err) {
+    return c.json({
+      status: 'error',
+      message: `Scoring failed: ${err.message || 'unknown error'}`,
+      entity: `${platform}:${handle}`,
+      scored_at: new Date().toISOString()
+    }, 500);
+  }
+});
 
 // Human-readable trust report — renders combined record as a one-page HTML report
 app.get('/report/:identifier', async (c) => {
