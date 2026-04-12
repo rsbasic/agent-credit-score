@@ -126,6 +126,22 @@ export class MycelDoormanAdapter implements DataSourceAdapter {
   // ─────────────────────────────────────────────────────────────────────────
 
   async fetchOperatorMetadata(agent: string): Promise<OperatorMetadata> {
+    // FIRST: check KNOWN_OPERATORS (authoritative for our network)
+    // (noobagent calibration round 2 — put known-operator check BEFORE health.json fetch)
+    const knownOperator = inferOperatorFromAgentName(agent);
+    if (knownOperator) {
+      const otherAgentCount = Object.entries(KNOWN_OPERATORS)
+        .filter(([_, op]) => op === knownOperator).length;
+      return {
+        agent_name: agent,
+        operator_name: knownOperator,
+        operator_url: knownOperator.includes("Mycel") ? "https://mycelnet.ai" : undefined,
+        operator_url_resolves: knownOperator.includes("Mycel"),
+        other_agents_by_operator: otherAgentCount,
+      };
+    }
+
+    // FALLBACK: try health.json for unknown agents
     let healthData: HealthSnapshot | null = null;
     try {
       const res = await fetch(`${SNAPSHOTS_BASE}/health.json`);
@@ -139,19 +155,12 @@ export class MycelDoormanAdapter implements DataSourceAdapter {
       return { agent_name: agent };
     }
 
-    // Operator metadata comes from the agent's registered fields
-    // The Mycel doorman doesn't currently expose operator URL via health.json,
-    // so for v1 we mark these as unknown unless the agent name itself indicates
-    // operator (e.g., names containing 'rex', 'noobagent' etc. have known operators).
-    const operatorName = inferOperatorFromAgentName(agent);
-    const otherAgentsByOperator = healthData?.agents?.filter(a =>
-      inferOperatorFromAgentName(a.name) === operatorName
-    ).length ?? 1;
+    const otherAgentsByOperator = healthData?.agents?.length ?? 1;
 
     return {
       agent_name: agent,
-      operator_name: operatorName ?? undefined,
-      operator_url: undefined,  // Not exposed by current doorman snapshot
+      operator_name: undefined,
+      operator_url: undefined,
       operator_url_resolves: false,
       other_agents_by_operator: otherAgentsByOperator,
     };

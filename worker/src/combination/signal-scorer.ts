@@ -191,18 +191,27 @@ export function scoreConsistency(traces: Trace[]): { score: number; confidence: 
   else if (cv < 2.5) score = 2;
   else score = 1;
 
-  // Active-day ratio: credit agents who produce on many days even if per-day output varies
-  // (noobagent calibration fix #1 — addresses burst-then-pause pattern scoring 1 instead of 7)
-  const uniqueDays = new Set(
-    timestamps.map(t => new Date(t).toISOString().split('T')[0])
-  ).size;
-  const windowDays = Math.max(1, Math.ceil((timestamps[timestamps.length - 1] - timestamps[0]) / (24 * 60 * 60 * 1000)));
-  const activeDayRatio = uniqueDays / windowDays;
+  // Sprint detection: credit agents who produce across many unique days even if bursty
+  // (noobagent calibration round 2 — replaces active-day-ratio with sprint-aware scoring)
+  const tracesPerDay: Record<string, number> = {};
+  for (const t of timestamps) {
+    const day = new Date(t).toISOString().split('T')[0];
+    tracesPerDay[day] = (tracesPerDay[day] ?? 0) + 1;
+  }
+  const uniqueDays = Object.keys(tracesPerDay).length;
+  const totalTraces = timestamps.length;
 
-  if (activeDayRatio > 0.5 && cv > 1.2) {
-    score = Math.max(score, 6);  // Floor at 6 for agents active >50% of days
-  } else if (activeDayRatio > 0.3 && cv > 1.2) {
-    score = Math.max(score, 4);  // Floor at 4 for agents active >30% of days
+  // Sprint concentration: what % of traces come from top 3 days?
+  const sortedDayCounts = Object.values(tracesPerDay).sort((a, b) => b - a);
+  const top3Traces = sortedDayCounts.slice(0, 3).reduce((a, b) => a + b, 0);
+  const sprintConcentration = top3Traces / totalTraces;
+
+  if (uniqueDays >= 10) {
+    score = Math.max(score, 7);  // Many active days = consistent producer
+  } else if (uniqueDays >= 5 && sprintConcentration < 0.7) {
+    score = Math.max(score, 5);  // Moderate days, spread production
+  } else if (uniqueDays >= 3 && sprintConcentration < 0.8) {
+    score = Math.max(score, 3);  // Few days but not entirely concentrated
   }
 
   // Penalize recent dormancy
