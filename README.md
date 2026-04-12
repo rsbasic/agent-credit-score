@@ -1,79 +1,98 @@
 # Agent Credit Score (ACS)
 
-**Behavioral trust scoring for code contributors — human or agent.**
+**Can you trust this AI coding agent to contribute to your codebase?**
 
-ACS scores the trustworthiness of people and agents submitting code to open source repositories. Scores are based on observable public behavior — no opt-in, no integration, no registration required.
+ACS scores the trustworthiness of people and AI agents submitting code to open source repositories. Three independent behavioral tracks — code contributions, behavioral traces, downstream impact — scored from public data. No opt-in required.
 
-Existing tools check if code is safe. ACS checks if the people are safe.
+Package scanners check if *code* is safe. ACS checks if the *people and agents* are safe.
 
-## How It Works
+**Live at [agentcreditscore.ai](https://agentcreditscore.ai)** — 931 contributors scored across 11 repos including Node.js core.
 
-Point ACS at a repo. Every contributor with open PRs gets a score based on behavioral signals:
+## Live Trust Reports
 
-- Account age and contribution history
-- PR velocity and patterns
-- Cross-repo behavior (same contributor targeting multiple related projects)
-- Scope consistency (does the PR description match the actual changes?)
-- Security impact (do the changes strengthen or weaken the codebase?)
-- Trajectory (gradual contribution growth vs sudden velocity spikes)
+Click any to see a rendered one-page HTML trust report:
 
-Scores range from **0-100** with letter grades:
+| Entity | Verdict | Why |
+|--------|---------|-----|
+| [nthbotast](https://agentcreditscore.ai/report/nthbotast) | **DISTRUST** | 160 PRs in 31 days targeting HTTP auth code across node-fetch, undici, axios |
+| [gr2m](https://agentcreditscore.ai/report/github:gr2m) | **TRUST** | 17-year veteran, semantic-release creator, 1600+ lifetime PRs |
+| [rex](https://agentcreditscore.ai/report/mycel:rex) | **WATCH** | SIGNAL 8.3 + DOWNSTREAM 4.5 — two-track, ACS excluded for circularity |
+| [btnomb](https://agentcreditscore.ai/report/colony:btnomb) | **CAVEATS** | SIGNAL 6.4 — single-track, operator transparency low |
+| [AI Village](https://agentcreditscore.ai/report/colony:claude-sonnet-46-village) | **WATCH** | SIGNAL 8.7 + DOWNSTREAM 5.0 — worst-track-wins gating |
+| [czero](https://agentcreditscore.ai/report/mycel:czero) | **WATCH** | SIGNAL 8.4 + DOWNSTREAM 3.8 — strategic input high but downstream internal-only |
 
-| Grade | Score | Meaning |
-|-------|-------|---------|
-| AAA | 95-100 | Highly established, consistent, trusted |
-| AA | 85-94 | Well-established, strong track record |
-| A | 75-84 | Established contributor, minor concerns |
-| BBB | 65-74 | Moderate history, some review recommended |
-| BB | 50-64 | Limited history, review recommended |
-| B | 35-49 | Thin record or mixed signals |
-| CCC | 20-34 | Multiple risk indicators present |
-| CC | 10-19 | Significant risk indicators |
-| C | 0-9 | Critical risk indicators |
-| NR | — | Insufficient data to score |
+## Three Scoring Tracks
 
-## Why This Exists
+**ACS — Code Behavior.** PR velocity, cross-repo targeting, scope escalation, security-sensitive ratio. Catches the nthbotast pattern: selective targeting of credential-handling code across HTTP libraries.
 
-Supply chain attacks exploit trust gaps in open source. The xz/liblzma backdoor. The September 2025 npm attack (2.6B weekly downloads compromised). Both succeeded because a contributor gained trust over time and nobody was checking behavioral patterns.
+**SIGNAL — Behavioral Traces.** 6-dimension rubric: substance, consistency, verifiability, engagement quality, operator transparency, trajectory. Scored from public behavioral traces.
 
-ACS was born from a real discovery: a 1-month-old account submitting 160 PRs across node-fetch (131M weekly downloads), undici (Node.js core HTTP client), axios, and lodash in 31 days. The source code PRs specifically targeted credential-handling infrastructure — stripping auth headers on node-fetch, attempting a TLS downgrade on undici. Three maintainer teams acknowledged the findings.
+**DOWNSTREAM — Impact on Others.** What others do *because of* this entity. Attribution certainty, magnitude, direction. Third-person verification that bypasses self-report bias.
 
-Read the full case study: [001 — Coordinated PR Campaign Across HTTP Client Libraries](case-studies/001-nthbotast-http-campaign.md)
+Worst-track-wins gating: a strong behavioral trace cannot pull up a weak code signal. Disagreement between tracks is surfaced as a finding, not hidden.
 
-## Scores
+## Case Studies
 
-Browse published scores:
-- [Contributor scores](scores/contributors/) — individual contributor trust assessments
-- [Repo reports](reports/repos/) — repository health and maintenance assessments
+- [001 — nthbotast: Coordinated PR Campaign Across HTTP Client Libraries](case-studies/001-nthbotast-http-campaign.md) — a live finding caught in production, acknowledged by 3 maintainer teams
+- [002 — xz-utils Retrospective: Would ACS Have Caught Jia Tan?](case-studies/002-xz-utils-retrospective.md) — yes, 6-9 months before CVE-2024-3094
 
-## Request a Scan
+## Repos Scanned
 
-Want ACS to scan your repo? [Open a scan request](https://github.com/rsbasic/agent-credit-score/issues/new?template=scan-request.md).
+| Repo | Health | Contributors Scored |
+|------|--------|-------------------|
+| [nodejs/node](https://agentcreditscore.ai/api/repo/nodejs/node) | 95 | 424 |
+| [facebook/react](https://agentcreditscore.ai/api/repo/facebook/react) | 85 | 71 |
+| [vercel/next.js](https://agentcreditscore.ai/api/repo/vercel/next.js) | 90 | 73 |
+| [vitejs/vite](https://agentcreditscore.ai/api/repo/vitejs/vite) | 88 | 127 |
+| [webpack/webpack](https://agentcreditscore.ai/api/repo/webpack/webpack) | 80 | 94 |
+| [expressjs/express](https://agentcreditscore.ai/api/repo/expressjs/express) | 75 | 58 |
+| [eslint/eslint](https://agentcreditscore.ai/api/repo/eslint/eslint) | 90 | 11 |
+| [node-fetch/node-fetch](https://agentcreditscore.ai/api/repo/node-fetch/node-fetch) | 15 | 25 |
+| [moment/moment](https://agentcreditscore.ai/api/repo/moment/moment) | 30 | 24 |
+| [request/request](https://agentcreditscore.ai/api/repo/request/request) | 20 | 15 |
+| [jaredhanson/passport](https://agentcreditscore.ai/api/repo/jaredhanson/passport) | 25 | 9 |
 
-## For Agents (MCP / API)
+## API
 
-ACS scores are queryable programmatically:
-
-**MCP Server:** Connect to the ACS MCP server for inline trust checks during your workflow.
-
-**HTTP API:**
+**Single-track (ACS code behavior):**
 ```
 GET agentcreditscore.ai/api/contributor/:username
 GET agentcreditscore.ai/api/repo/:owner/:repo
-GET agentcreditscore.ai/api/pr/:owner/:repo/:number
 ```
 
-## What ACS Is NOT
+**Multi-track (Combined Trust Record):**
+```
+GET agentcreditscore.ai/api/combined/:identifier    # JSON
+GET agentcreditscore.ai/report/:identifier           # HTML report
+```
 
-- **Not a verdict.** Scores indicate behavioral patterns, not character. "CC" means "these signals warrant careful review," not "this person is malicious."
-- **Not permanent.** Scores evolve as behavior changes. Consistent quality contributions raise the score over time.
-- **Not about code quality.** Other tools check if code is well-written. ACS checks if the contributor is trustworthy.
+**Live scoring (computes fresh SIGNAL from doorman API):**
+```
+GET agentcreditscore.ai/api/score/:identifier
+```
 
-## Methodology
+**Database stats:**
+```
+GET agentcreditscore.ai/api/stats
+```
+
+## Request a Scan
+
+Want ACS to scan your repo or score an AI coding agent? [Open a scan request](https://github.com/rsbasic/agent-credit-score/issues/new?template=scan-request.md).
+
+Free for open source. Paid scans available for private repos and enterprise.
+
+## How Scoring Works
 
 ACS scores are based on publicly observable GitHub behavior. The evidence behind each score (account age, PR counts, cross-repo data, timestamps) is published and verifiable. The specific algorithm that weights these signals into a score is proprietary.
 
-Read more: [Methodology Overview](methodology/overview.md)
+Scores range from **0-100** with letter grades (AAA through D). [Full methodology](methodology/overview.md).
+
+## What ACS Is NOT
+
+- **Not a verdict.** Scores indicate behavioral patterns, not character. "CC" means "review carefully," not "this person is malicious."
+- **Not permanent.** Scores evolve as behavior changes.
+- **Not about code quality.** Other tools check if code is well-written. ACS checks if the contributor is trustworthy.
 
 ## License
 
