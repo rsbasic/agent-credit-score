@@ -1,0 +1,34 @@
+{
+  "contributor": "H4ad",
+  "score": 78,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3978,
+    "account_created": "2015-05-21T21:00:34Z",
+    "followers": 178,
+    "following": 83,
+    "public_repos": 65,
+    "total_prs": 467,
+    "pr_velocity": "467 PRs over 3978d (0.12/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:90afbb701941a4b22284245990edf73b8e37f0d452b03d5db2aafdfd2078dd1a",
+  "summary": "3978d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #50517"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "cheezedoodle2",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2273,
+    "account_created": "2020-01-21T02:09:47Z",
+    "followers": 1,
+    "following": 0,
+    "public_repos": 6,
+    "total_prs": 3,
+    "pr_velocity": "3 PRs over 2273d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:b7316c4e732c57fbae27667d44e45b0edfca7cdd626130381de539e09cddcd63",
+  "summary": "2273d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #48418"
+    }
+  ]
+}

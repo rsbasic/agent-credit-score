@@ -1,0 +1,38 @@
+{
+  "contributor": "elibarzilay",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5926,
+    "account_created": "2010-01-20T02:23:42Z",
+    "followers": 218,
+    "following": 0,
+    "public_repos": 29,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 5926d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "doc: `process.execve`: add example for restarting current process"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:d8f391daa3e9f9baff7db9b2f14185741663520fc9c5d0b2ee7006ce8af589cf",
+  "summary": "5926d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        60487
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #60487"
+    }
+  ]
+}

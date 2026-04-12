@@ -1,0 +1,34 @@
+{
+  "contributor": "ydeshayes",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4819,
+    "account_created": "2013-01-30T12:49:02Z",
+    "followers": 25,
+    "following": 6,
+    "public_repos": 121,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 4819d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:00ff3ca99ac74a74b5e167819c64c026978c0a4f3c771e4f1235b95995d949a7",
+  "summary": "4819d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #46000"
+    }
+  ]
+}

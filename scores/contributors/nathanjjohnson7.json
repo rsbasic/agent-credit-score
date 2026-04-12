@@ -1,0 +1,38 @@
+{
+  "contributor": "nathanjjohnson7",
+  "score": 65,
+  "grade": "BBB",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1922,
+    "account_created": "2021-01-06T03:46:13Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 15,
+    "total_prs": 3,
+    "pr_velocity": "3 PRs over 1922d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "tls: change TLSWrap::GetProtocol to fix #56935"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:16de883b723579f8c449f212f21e5ca1f97ee89f9dc2c18b66cb947411c4fb53",
+  "summary": "1922d old account; 1 node PR; empty profile (-10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        57036
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #57036"
+    }
+  ]
+}

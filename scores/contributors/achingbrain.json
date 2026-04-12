@@ -1,0 +1,34 @@
+{
+  "contributor": "achingbrain",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5509,
+    "account_created": "2011-03-12T15:38:27Z",
+    "followers": 437,
+    "following": 8,
+    "public_repos": 490,
+    "total_prs": 5536,
+    "pr_velocity": "5536 PRs over 5509d (1.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:73cbf52129761403325198501825ba97972273c7892228e45bade19e6597d37b",
+  "summary": "5509d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #57119"
+    }
+  ]
+}

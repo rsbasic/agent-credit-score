@@ -1,0 +1,34 @@
+{
+  "contributor": "mmomtchev",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3148,
+    "account_created": "2017-08-28T13:46:05Z",
+    "followers": 151,
+    "following": 9,
+    "public_repos": 154,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3148d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:21d898f3b9c77acb850b314d1f82def0333821e71f941dc8eda1ea079568d0eb",
+  "summary": "3148d old account; 3 node PRs; 3 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 3,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #43542, #41436, #39097"
+    }
+  ]
+}

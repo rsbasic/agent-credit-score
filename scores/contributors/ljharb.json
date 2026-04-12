@@ -1,0 +1,34 @@
+{
+  "contributor": "ljharb",
+  "score": 93,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6301,
+    "account_created": "2009-01-10T01:28:02Z",
+    "followers": 8031,
+    "following": 428,
+    "public_repos": 275,
+    "total_prs": 1476,
+    "pr_velocity": "1476 PRs over 6301d (0.23/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:a4441557e5e0e80787415697eb1d9f84e5967121d54c22ba83eec5c78b07173e",
+  "summary": "6301d old account; 2 node PRs; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #57895, #49579"
+    }
+  ]
+}

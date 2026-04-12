@@ -1,0 +1,34 @@
+{
+  "contributor": "anilhelvaci",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3094,
+    "account_created": "2017-10-21T18:30:09Z",
+    "followers": 12,
+    "following": 11,
+    "public_repos": 29,
+    "total_prs": 121,
+    "pr_velocity": "121 PRs over 3094d (0.04/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:5ef3cd245c19f3715cac8c78a3676af308e6b22a7fa98c93d62d9f72e67ff592",
+  "summary": "3094d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #54857"
+    }
+  ]
+}

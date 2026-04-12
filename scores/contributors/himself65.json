@@ -1,0 +1,34 @@
+{
+  "contributor": "himself65",
+  "score": 98,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3879,
+    "account_created": "2015-08-29T06:11:11Z",
+    "followers": 6194,
+    "following": 46,
+    "public_repos": 397,
+    "total_prs": 3930,
+    "pr_velocity": "3930 PRs over 3879d (1.01/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:29257bd375b1225ea4358c9a1fe02480f333d05c144da726d58fcaf1e59b7381",
+  "summary": "3879d old account; 6 node PRs; established >500 PRs (+10); 6 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 6,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62190, #59279, #59220, #58648, #58594"
+    }
+  ]
+}

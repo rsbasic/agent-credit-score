@@ -1,0 +1,38 @@
+{
+  "contributor": "lostfictions",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5565,
+    "account_created": "2011-01-16T03:07:04Z",
+    "followers": 46,
+    "following": 66,
+    "public_repos": 169,
+    "total_prs": 70,
+    "pr_velocity": "70 PRs over 5565d (0.01/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "doc: add caveats and example to crypto.timingSafeEqual"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:c81d4b02eeb0bcf4d8f13075488d8ee13e8aa427bcaef64c3a9e09803d34ad2f",
+  "summary": "5565d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        41837
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #41837"
+    }
+  ]
+}

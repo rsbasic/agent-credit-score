@@ -1,0 +1,38 @@
+{
+  "contributor": "prabhu",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6567,
+    "account_created": "2008-04-18T18:54:25Z",
+    "followers": 138,
+    "following": 1,
+    "public_repos": 93,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 6567d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "safely handle openssl realloc failures during resize"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:217bd1b6253ad665d9f770c4e3126de99467604899cd2cece0362369b334c415",
+  "summary": "6567d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        59198
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #59198"
+    }
+  ]
+}

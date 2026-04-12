@@ -1,0 +1,38 @@
+{
+  "contributor": "tristan-f-r",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3311,
+    "account_created": "2017-03-18T17:54:45Z",
+    "followers": 88,
+    "following": 31,
+    "public_repos": 726,
+    "total_prs": 737,
+    "pr_velocity": "737 PRs over 3311d (0.22/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "lib: add security warning on io full access"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:62d6b686504a81727251119f0c6a21c3bae343059c7d4065711504ff0db02411",
+  "summary": "3311d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        53609
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #53609"
+    }
+  ]
+}

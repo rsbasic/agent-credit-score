@@ -1,0 +1,38 @@
+{
+  "contributor": "tmisirpash",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2254,
+    "account_created": "2020-02-08T19:30:31Z",
+    "followers": 2,
+    "following": 1,
+    "public_repos": 14,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2254d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "Fix incorrect comment about caching of certificates when using the `--use-openssl-ca` option."
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:d0d1cf4f92cfb4151a9e146eea3db88abed255d055d5b1ebbc97101be5d2ac52",
+  "summary": "2254d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        59038
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #59038"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "contributor": "mscdex",
+  "score": 93,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6264,
+    "account_created": "2009-02-15T08:24:12Z",
+    "followers": 1252,
+    "following": 0,
+    "public_repos": 93,
+    "total_prs": 629,
+    "pr_velocity": "629 PRs over 6264d (0.10/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "build: export more OpenSSL symbols on Windows"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:4946e86b0eca778eda7b1b9c913871126ad9021327af7a588e941b8204bee6cd",
+  "summary": "6264d old account; 2 node PRs; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [
+        40434,
+        38857
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #40434, #38857"
+    }
+  ]
+}

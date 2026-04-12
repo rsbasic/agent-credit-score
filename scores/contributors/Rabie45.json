@@ -1,0 +1,34 @@
+{
+  "contributor": "Rabie45",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1935,
+    "account_created": "2020-12-23T14:30:54Z",
+    "followers": 36,
+    "following": 47,
+    "public_repos": 76,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1935d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:401e2208bc39ff70102156471517f7011a0f08dc054bead174e4b605028c94a2",
+  "summary": "1935d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #60264"
+    }
+  ]
+}

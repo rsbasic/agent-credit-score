@@ -1,0 +1,34 @@
+{
+  "contributor": "luffy84217",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3262,
+    "account_created": "2017-05-07T03:50:08Z",
+    "followers": 6,
+    "following": 3,
+    "public_repos": 45,
+    "total_prs": 32,
+    "pr_velocity": "32 PRs over 3262d (0.01/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:aab1214d4f20ebe1ed1735628d0be5c39e17be023e6b0a43cd07383a07002b44",
+  "summary": "3262d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #59843"
+    }
+  ]
+}

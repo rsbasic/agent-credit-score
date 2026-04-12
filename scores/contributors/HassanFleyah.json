@@ -1,0 +1,34 @@
+{
+  "contributor": "HassanFleyah",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 232,
+    "account_created": "2025-08-22T11:19:29Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 8,
+    "total_prs": 9,
+    "pr_velocity": "9 PRs over 232d (0.04/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:2b7d8e7b0d0bdf07ece5738c4cb73a94918d3d0a3868659aee606a701792ad2a",
+  "summary": "232d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61545"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "watson",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6538,
+    "account_created": "2008-05-17T11:00:22Z",
+    "followers": 1957,
+    "following": 71,
+    "public_repos": 396,
+    "total_prs": 2329,
+    "pr_velocity": "2329 PRs over 6538d (0.36/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:5a23a24f7e034b5bea99e2125bea54c676eed1c3abe46e709a3fb358007250bb",
+  "summary": "6538d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #48295"
+    }
+  ]
+}

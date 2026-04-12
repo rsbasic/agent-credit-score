@@ -1,0 +1,34 @@
+{
+  "contributor": "ace-tk",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 533,
+    "account_created": "2024-10-26T04:37:17Z",
+    "followers": 4,
+    "following": 4,
+    "public_repos": 38,
+    "total_prs": 25,
+    "pr_velocity": "25 PRs over 533d (0.05/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e0183a35f0f68e5cc5a9e96208fe6a2b3febabe0aefb4c3bce7f2319eddf5497",
+  "summary": "533d old account; 2 node PRs.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62362, #62359"
+    }
+  ]
+}

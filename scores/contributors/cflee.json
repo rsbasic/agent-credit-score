@@ -1,0 +1,34 @@
+{
+  "contributor": "cflee",
+  "score": 78,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4282,
+    "account_created": "2014-07-21T14:34:52Z",
+    "followers": 59,
+    "following": 21,
+    "public_repos": 52,
+    "total_prs": 85,
+    "pr_velocity": "85 PRs over 4282d (0.02/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e7aa99d2bcb295a5593126c3d72ef514f8d93106ef9d9af966a39a22461d32f2",
+  "summary": "4282d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #58575"
+    }
+  ]
+}

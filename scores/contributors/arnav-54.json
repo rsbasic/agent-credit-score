@@ -1,0 +1,34 @@
+{
+  "contributor": "arnav-54",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 548,
+    "account_created": "2024-10-10T20:09:48Z",
+    "followers": 1,
+    "following": 3,
+    "public_repos": 48,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 548d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e770b5e4c31d92d99c0154d9899ccd9c8f1853e5dd21cd80ee2a6d6f5fd38187",
+  "summary": "548d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #60923"
+    }
+  ]
+}

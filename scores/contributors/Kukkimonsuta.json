@@ -1,0 +1,34 @@
+{
+  "contributor": "Kukkimonsuta",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5472,
+    "account_created": "2011-04-18T16:44:29Z",
+    "followers": 18,
+    "following": 11,
+    "public_repos": 52,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 5472d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:98596718faada3ca688b4863b9a0992770658b2eb4a79efecff1679c24497f80",
+  "summary": "5472d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #40943"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "contributor": "araujogui",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2094,
+    "account_created": "2020-07-17T20:25:46Z",
+    "followers": 40,
+    "following": 10,
+    "public_repos": 13,
+    "total_prs": 114,
+    "pr_velocity": "114 PRs over 2094d (0.05/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "crypto: add uuidv7 monotonic counter"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:6f59a54af71bf034ca66b8cdc3bd442e1bea2a5fe9df369dbba46b72cbe0f26b",
+  "summary": "2094d old account; 7 node PRs; 7 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 7,
+      "risk_prs": [
+        62601,
+        62419,
+        62241,
+        62027,
+        61855
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62601, #62419, #62241, #62027, #61855"
+    }
+  ]
+}

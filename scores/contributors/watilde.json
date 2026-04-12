@@ -1,0 +1,38 @@
+{
+  "contributor": "watilde",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5086,
+    "account_created": "2012-05-08T10:18:33Z",
+    "followers": 739,
+    "following": 191,
+    "public_repos": 577,
+    "total_prs": 850,
+    "pr_velocity": "850 PRs over 5086d (0.17/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "http: fix no_proxy leading-dot suffix matching"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:f3be7dbc6423093c393183ca3f3ab96757d38d33c4d9eefb9bdd9fb4e68cc216",
+  "summary": "5086d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        62333
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62333"
+    }
+  ]
+}

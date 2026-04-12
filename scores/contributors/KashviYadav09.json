@@ -1,0 +1,34 @@
+{
+  "contributor": "KashviYadav09",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 500,
+    "account_created": "2024-11-27T08:38:31Z",
+    "followers": 1,
+    "following": 0,
+    "public_repos": 52,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 500d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:f578b822de65f76e25979013a7c405a957bbb24df9ae067d90aa5b75cb31aad7",
+  "summary": "500d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61534"
+    }
+  ]
+}

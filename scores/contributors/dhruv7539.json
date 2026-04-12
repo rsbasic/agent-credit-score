@@ -1,0 +1,34 @@
+{
+  "contributor": "dhruv7539",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1479,
+    "account_created": "2022-03-25T07:02:43Z",
+    "followers": 2,
+    "following": 28,
+    "public_repos": 45,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1479d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:00496cd6395bd85cbc6ce63057aa67a1cad4d9a336ec13596e9b5b73c9a60a7e",
+  "summary": "1479d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61978"
+    }
+  ]
+}

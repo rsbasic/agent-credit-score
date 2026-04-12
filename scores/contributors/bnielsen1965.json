@@ -1,0 +1,38 @@
+{
+  "contributor": "bnielsen1965",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5624,
+    "account_created": "2010-11-17T21:30:56Z",
+    "followers": 12,
+    "following": 1,
+    "public_repos": 116,
+    "total_prs": 34,
+    "pr_velocity": "34 PRs over 5624d (0.01/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "tls: fix reference to certificate object subjectAltName in checkServerIdentity function"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:40de1b384134761dea6bb933003820033547a8aeda1222ff60e4205cf87c0238",
+  "summary": "5624d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        42470
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #42470"
+    }
+  ]
+}

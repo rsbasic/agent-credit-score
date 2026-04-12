@@ -1,0 +1,34 @@
+{
+  "contributor": "DanKaplanSES",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5710,
+    "account_created": "2010-08-23T17:22:44Z",
+    "followers": 11,
+    "following": 1,
+    "public_repos": 92,
+    "total_prs": 107,
+    "pr_velocity": "107 PRs over 5710d (0.02/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:f12cfd5fe1140bda4917626817d26105a4a9246f1d3358141df5bf7dc4a91f59",
+  "summary": "5710d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #51963"
+    }
+  ]
+}

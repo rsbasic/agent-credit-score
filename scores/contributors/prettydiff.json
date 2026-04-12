@@ -1,0 +1,34 @@
+{
+  "contributor": "prettydiff",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5596,
+    "account_created": "2010-12-15T20:50:25Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 44,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 5596d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:8f1851c9a9387a40cbe5e58178ed084c85d6a218de3c7c3a7189a2917b4146b9",
+  "summary": "5596d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #49255"
+    }
+  ]
+}

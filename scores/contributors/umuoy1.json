@@ -1,0 +1,34 @@
+{
+  "contributor": "umuoy1",
+  "score": 80,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2341,
+    "account_created": "2019-11-13T10:50:11Z",
+    "followers": 21,
+    "following": 12,
+    "public_repos": 26,
+    "total_prs": 97,
+    "pr_velocity": "97 PRs over 2341d (0.04/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:7716434d8fbb5ff791051536a0be3b457ca190728e2768c01002c51c7b674f25",
+  "summary": "2341d old account; 2 node PRs.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #48497, #47025"
+    }
+  ]
+}

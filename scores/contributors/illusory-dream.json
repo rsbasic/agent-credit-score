@@ -1,0 +1,34 @@
+{
+  "contributor": "illusory-dream",
+  "score": 65,
+  "grade": "BBB",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2953,
+    "account_created": "2018-03-11T15:35:40Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 4,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2953d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:200ffe81288e9c02e3b466606370e85238adcd5e0832a3451dd3af58ff0af914",
+  "summary": "2953d old account; 1 node PR; empty profile (-10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #60833"
+    }
+  ]
+}

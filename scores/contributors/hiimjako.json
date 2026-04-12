@@ -1,0 +1,34 @@
+{
+  "contributor": "hiimjako",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2312,
+    "account_created": "2019-12-12T20:16:29Z",
+    "followers": 12,
+    "following": 54,
+    "public_repos": 30,
+    "total_prs": 104,
+    "pr_velocity": "104 PRs over 2312d (0.04/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:2f1fa6e65ad60f98e50af4bbef6b3a6b85a3b545bdf899da0f6532c51e32275a",
+  "summary": "2312d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #48105"
+    }
+  ]
+}

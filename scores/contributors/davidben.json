@@ -1,0 +1,38 @@
+{
+  "contributor": "davidben",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6101,
+    "account_created": "2009-07-29T02:50:27Z",
+    "followers": 247,
+    "following": 3,
+    "public_repos": 96,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 6101d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "crypto: don't claim errors come from within OpenSSL"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:b8411c8a11708bc449402e002512945b7581eff765117643798afcd837f748c2",
+  "summary": "6101d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        44560
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #44560"
+    }
+  ]
+}

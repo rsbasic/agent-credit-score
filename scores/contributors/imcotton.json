@@ -1,0 +1,38 @@
+{
+  "contributor": "imcotton",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6001,
+    "account_created": "2009-11-06T01:34:19Z",
+    "followers": 24,
+    "following": 0,
+    "public_repos": 102,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 6001d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "doc: refine sample code on tokens of util/parseArgs"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:6d13026fc222bdfd970aaece02da7a75a6ac0eb1987a1018d1322de0ba9a0738",
+  "summary": "6001d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        49263
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #49263"
+    }
+  ]
+}

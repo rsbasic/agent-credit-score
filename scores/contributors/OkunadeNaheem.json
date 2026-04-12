@@ -1,0 +1,34 @@
+{
+  "contributor": "OkunadeNaheem",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1365,
+    "account_created": "2022-07-16T15:24:08Z",
+    "followers": 1,
+    "following": 3,
+    "public_repos": 61,
+    "total_prs": 20,
+    "pr_velocity": "20 PRs over 1365d (0.01/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:148c8e0638767257a93b29fffaeddcb53dea8b0b8473e62b2b1944547d495981",
+  "summary": "1365d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #59309"
+    }
+  ]
+}

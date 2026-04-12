@@ -1,0 +1,34 @@
+{
+  "contributor": "pluris",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4121,
+    "account_created": "2014-12-30T01:43:30Z",
+    "followers": 6,
+    "following": 10,
+    "public_repos": 17,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 4121d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:c6c6bd72ab87d9fb2218be887b029b8f9c79097ac3104e18904f7e8b13551f2f",
+  "summary": "4121d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #49479"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "mete0rfish",
+  "score": 80,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2197,
+    "account_created": "2020-04-06T04:51:34Z",
+    "followers": 35,
+    "following": 55,
+    "public_repos": 43,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2197d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:5bfd63a997f5fc559c372e51feecde539d0bffd3c841204277326c6fc1f6951a",
+  "summary": "2197d old account; 2 node PRs.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #59674, #59418"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "sakina1303",
+  "score": 70,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 545,
+    "account_created": "2024-10-13T18:00:08Z",
+    "followers": 29,
+    "following": 32,
+    "public_repos": 78,
+    "total_prs": 76,
+    "pr_velocity": "76 PRs over 545d (0.14/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:ccf02ad1548fef7aed8c018d97b6756e200b932a3166bba867f4b03fe80cf3ac",
+  "summary": "545d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #60499"
+    }
+  ]
+}

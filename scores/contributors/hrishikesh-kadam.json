@@ -1,0 +1,34 @@
+{
+  "contributor": "hrishikesh-kadam",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4230,
+    "account_created": "2014-09-11T17:15:02Z",
+    "followers": 38,
+    "following": 81,
+    "public_repos": 91,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 4230d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:219b4ff3e08dfc8d6e699780eba3cb7811bc05fb6b513e86e8bce1a8e16874a9",
+  "summary": "4230d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #43948"
+    }
+  ]
+}

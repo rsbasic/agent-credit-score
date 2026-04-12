@@ -1,0 +1,38 @@
+{
+  "contributor": "daeyeon",
+  "score": 78,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4444,
+    "account_created": "2014-02-09T12:58:23Z",
+    "followers": 66,
+    "following": 23,
+    "public_repos": 16,
+    "total_prs": 261,
+    "pr_velocity": "261 PRs over 4444d (0.06/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "permission: add initial environment permission"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:21d1010818d76de61bdb0ae6e33f7d298d3d469b440e9fb24d036e4d39e7d008",
+  "summary": "4444d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        48077
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #48077"
+    }
+  ]
+}

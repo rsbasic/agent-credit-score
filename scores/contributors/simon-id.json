@@ -1,0 +1,34 @@
+{
+  "contributor": "simon-id",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2049,
+    "account_created": "2020-08-31T10:51:17Z",
+    "followers": 12,
+    "following": 4,
+    "public_repos": 12,
+    "total_prs": 374,
+    "pr_velocity": "374 PRs over 2049d (0.18/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:7be511e88e5a835a92f97b7f8d2c5b225030119912ff5bdce5912dd1049ef36f",
+  "summary": "2049d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61943"
+    }
+  ]
+}

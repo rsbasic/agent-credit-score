@@ -1,0 +1,34 @@
+{
+  "contributor": "srl295",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5413,
+    "account_created": "2011-06-16T22:55:01Z",
+    "followers": 438,
+    "following": 37,
+    "public_repos": 199,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 5413d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:225a4cd3253ee0746873898b2f8815e9201c62e08244edc671f5d2be15b98c4d",
+  "summary": "5413d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #55215"
+    }
+  ]
+}

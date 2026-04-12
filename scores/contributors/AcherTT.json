@@ -1,0 +1,34 @@
+{
+  "contributor": "AcherTT",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2562,
+    "account_created": "2019-04-06T13:31:46Z",
+    "followers": 1,
+    "following": 1,
+    "public_repos": 31,
+    "total_prs": 10,
+    "pr_velocity": "10 PRs over 2562d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:eeb14f71e4f5d26b3bb95625beb3a3a1503aa4e8ec207131a8eb815b03d43288",
+  "summary": "2562d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #57947"
+    }
+  ]
+}

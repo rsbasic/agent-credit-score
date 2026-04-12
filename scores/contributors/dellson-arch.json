@@ -1,0 +1,34 @@
+{
+  "contributor": "dellson-arch",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 839,
+    "account_created": "2023-12-24T16:02:43Z",
+    "followers": 3,
+    "following": 1,
+    "public_repos": 70,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 839d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:3933874e4c2a2dffbae2421307c9991942e3f56543b96cfc4597f0faaebc1635",
+  "summary": "839d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61576"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "contributor": "batrla",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3036,
+    "account_created": "2017-12-18T17:14:24Z",
+    "followers": 2,
+    "following": 0,
+    "public_repos": 6,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3036d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "make test fails behind a proxy"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:613c937879817d8df4d83330cb4a49b7a9e2f9db48212f8aac3553e4f1ac428e",
+  "summary": "3036d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        61473
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #61473"
+    }
+  ]
+}

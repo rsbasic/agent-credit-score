@@ -1,0 +1,34 @@
+{
+  "contributor": "akashguptasky",
+  "score": 80,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1412,
+    "account_created": "2022-05-30T12:35:36Z",
+    "followers": 2,
+    "following": 1,
+    "public_repos": 31,
+    "total_prs": 2,
+    "pr_velocity": "2 PRs over 1412d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e8db6146e7a8c39450d0dc056aa005cb3f1e2e79d2eb30b0a50c3b11784a6335",
+  "summary": "1412d old account; 2 node PRs.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62622, #62617"
+    }
+  ]
+}

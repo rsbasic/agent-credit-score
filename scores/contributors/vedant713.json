@@ -1,0 +1,34 @@
+{
+  "contributor": "vedant713",
+  "score": 80,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2145,
+    "account_created": "2020-05-27T09:19:35Z",
+    "followers": 13,
+    "following": 11,
+    "public_repos": 41,
+    "total_prs": 16,
+    "pr_velocity": "16 PRs over 2145d (0.01/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:dd1ff02f806760f4766d0e4f25e8c42b92fbf0f2538cc9e101b0a3add67bfc62",
+  "summary": "2145d old account; 2 node PRs.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #58684, #58683"
+    }
+  ]
+}

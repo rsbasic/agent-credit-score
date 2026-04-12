@@ -1,0 +1,34 @@
+{
+  "contributor": "GoldFish2500",
+  "score": 70,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 439,
+    "account_created": "2025-01-27T16:44:51Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 4,
+    "total_prs": 14,
+    "pr_velocity": "14 PRs over 439d (0.03/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:41ad8cd1d90137047ca4d0f1014576310424586dc9160bc521a1ccbd42647de4",
+  "summary": "439d old account; 7 node PRs; empty profile (-10); 7 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 7,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61380, #61034, #58731, #58395, #58393"
+    }
+  ]
+}

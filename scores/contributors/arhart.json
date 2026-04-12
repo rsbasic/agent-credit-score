@@ -1,0 +1,34 @@
+{
+  "contributor": "arhart",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5425,
+    "account_created": "2011-06-04T07:12:12Z",
+    "followers": 2,
+    "following": 0,
+    "public_repos": 15,
+    "total_prs": 7,
+    "pr_velocity": "7 PRs over 5425d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:4d347faf0523cf6b649d00dac08a51a51f24f24db5aca377504c6b085704ff49",
+  "summary": "5425d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #43828"
+    }
+  ]
+}

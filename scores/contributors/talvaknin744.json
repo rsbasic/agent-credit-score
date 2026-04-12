@@ -1,0 +1,34 @@
+{
+  "contributor": "talvaknin744",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2246,
+    "account_created": "2020-02-16T13:06:20Z",
+    "followers": 0,
+    "following": 1,
+    "public_repos": 3,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2246d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:8523e5d893359fed90f476c3bfab3f3435aa8ff956e2c8b4dcc1983d078e7baf",
+  "summary": "2246d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #48620"
+    }
+  ]
+}

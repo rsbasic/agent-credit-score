@@ -1,0 +1,34 @@
+{
+  "contributor": "kylo5aby",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1361,
+    "account_created": "2022-07-20T08:45:19Z",
+    "followers": 11,
+    "following": 8,
+    "public_repos": 7,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1361d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:82b8cbc4a5280564f7313918e3b75c8a4a74289478683072fee36ca002443a72",
+  "summary": "1361d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #50568"
+    }
+  ]
+}

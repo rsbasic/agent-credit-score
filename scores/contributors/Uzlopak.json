@@ -1,0 +1,45 @@
+{
+  "contributor": "Uzlopak",
+  "score": 98,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4647,
+    "account_created": "2013-07-21T15:36:54Z",
+    "followers": 229,
+    "following": 64,
+    "public_repos": 273,
+    "total_prs": 2315,
+    "pr_velocity": "2315 PRs over 4647d (0.50/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "http: improve performance of shouldUseProxy",
+      "tls: wrap ssl errors in ECONNRESET",
+      "tls: Server should generate lazily create sessionIdContext",
+      "tls: improve performance of getAllowUnauthorized"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:0bfbfcddbb3fce678aef9209c4f70ec7ce342cc9fdd7f16b1c2714efa4e89ea4",
+  "summary": "4647d old account; 9 node PRs; established >500 PRs (+10); 9 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 9,
+      "risk_prs": [
+        59426,
+        59386,
+        54492,
+        54489,
+        54298
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #59426, #59386, #54492, #54489, #54298"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "jsumners",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5762,
+    "account_created": "2010-07-02T14:31:32Z",
+    "followers": 387,
+    "following": 33,
+    "public_repos": 222,
+    "total_prs": 711,
+    "pr_velocity": "711 PRs over 5762d (0.12/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:8061644e4298a76421571f7eb4fccc13d9a1ce937b7df6d894afaad4f751e969",
+  "summary": "5762d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #55907"
+    }
+  ]
+}

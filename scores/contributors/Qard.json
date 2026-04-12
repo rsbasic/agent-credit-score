@@ -1,0 +1,34 @@
+{
+  "contributor": "Qard",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5897,
+    "account_created": "2010-02-17T19:06:45Z",
+    "followers": 511,
+    "following": 76,
+    "public_repos": 258,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 5897d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:49875a50ec6c306f242b42e80b1e6f500bd5568024b5f957b85983a6d239c344",
+  "summary": "5897d old account; 4 node PRs; 4 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 4,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62641, #62407, #58874, #49405"
+    }
+  ]
+}

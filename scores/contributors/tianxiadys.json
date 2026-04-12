@@ -1,0 +1,34 @@
+{
+  "contributor": "tianxiadys",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3241,
+    "account_created": "2017-05-28T07:13:38Z",
+    "followers": 1,
+    "following": 0,
+    "public_repos": 3,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3241d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:91aa7a40b17dc3f1a66375a9df6f800f494dfac985cec0ac3b16c5f86de7bc89",
+  "summary": "3241d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #57761"
+    }
+  ]
+}

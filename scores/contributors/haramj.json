@@ -1,0 +1,41 @@
+{
+  "contributor": "haramj",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1659,
+    "account_created": "2021-09-26T03:32:45Z",
+    "followers": 30,
+    "following": 34,
+    "public_repos": 10,
+    "total_prs": 89,
+    "pr_velocity": "89 PRs over 1659d (0.05/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "http: add IPv6 range support for NO_PROXY environment variable",
+      "tls: use options in getCACertificates() with X509Certificate"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:42621308b2418991a7a738237f40c10474482cddd40285fd5d486819de50decd",
+  "summary": "1659d old account; 3 node PRs; 3 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 3,
+      "risk_prs": [
+        60161,
+        59950,
+        59349
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #60161, #59950, #59349"
+    }
+  ]
+}

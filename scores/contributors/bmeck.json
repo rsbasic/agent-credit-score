@@ -1,0 +1,42 @@
+{
+  "contributor": "bmeck",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5855,
+    "account_created": "2010-04-01T03:54:12Z",
+    "followers": 658,
+    "following": 23,
+    "public_repos": 360,
+    "total_prs": 355,
+    "pr_velocity": "355 PRs over 5855d (0.06/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "node: warn for Object.prototype.__* accessors common in security warnings"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:4c8cb7a02791d4e5e19c83f1e51662eb3701e89b874a4f3cc2865725916390d4",
+  "summary": "5855d old account; 6 node PRs; 6 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 6,
+      "risk_prs": [
+        53457,
+        52641,
+        42392,
+        41540,
+        39824
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #53457, #52641, #42392, #41540, #39824"
+    }
+  ]
+}

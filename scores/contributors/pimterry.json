@@ -1,0 +1,39 @@
+{
+  "contributor": "pimterry",
+  "score": 83,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5144,
+    "account_created": "2012-03-11T22:59:18Z",
+    "followers": 754,
+    "following": 124,
+    "public_repos": 236,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 5144d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "Enable compression in OpenSSL and add opt-in certificate compression support for TLS connections"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:38fad80ea1b8d62c7cde1a52eb1323261c2bae558f1532e125261a61b8995da2",
+  "summary": "5144d old account; 2 node PRs.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [
+        62648,
+        62217
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62648, #62217"
+    }
+  ]
+}

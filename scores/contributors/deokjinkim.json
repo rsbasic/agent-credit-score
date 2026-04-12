@@ -1,0 +1,34 @@
+{
+  "contributor": "deokjinkim",
+  "score": 80,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4574,
+    "account_created": "2013-10-02T07:55:22Z",
+    "followers": 19,
+    "following": 12,
+    "public_repos": 17,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 4574d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:bd13f5679b46d1db54492e248d742cbd1619240232709ef81cb943192ef362cb",
+  "summary": "4574d old account; 2 node PRs.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #47757, #47327"
+    }
+  ]
+}

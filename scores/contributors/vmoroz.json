@@ -1,0 +1,34 @@
+{
+  "contributor": "vmoroz",
+  "score": 93,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5358,
+    "account_created": "2011-08-11T01:32:22Z",
+    "followers": 74,
+    "following": 1,
+    "public_repos": 25,
+    "total_prs": 624,
+    "pr_velocity": "624 PRs over 5358d (0.12/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:c5433b548b56952141bdd3177523987a7554a80cabbdee15c2df3f59cb97d66a",
+  "summary": "5358d old account; 2 node PRs; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #60916, #54660"
+    }
+  ]
+}

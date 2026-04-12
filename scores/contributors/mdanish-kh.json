@@ -1,0 +1,34 @@
+{
+  "contributor": "mdanish-kh",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1717,
+    "account_created": "2021-07-29T18:55:49Z",
+    "followers": 72,
+    "following": 23,
+    "public_repos": 45,
+    "total_prs": 2219,
+    "pr_velocity": "2219 PRs over 1717d (1.29/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e25bae4246f36e4ef81655c3cf0516b8da9bb1a3ad3087b18db77785026d1d10",
+  "summary": "1717d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #56774"
+    }
+  ]
+}

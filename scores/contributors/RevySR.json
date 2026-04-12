@@ -1,0 +1,34 @@
+{
+  "contributor": "RevySR",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3938,
+    "account_created": "2015-06-30T10:12:21Z",
+    "followers": 280,
+    "following": 367,
+    "public_repos": 175,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3938d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:ba10ea32bdafc87e86d95de37a813fddf035923328e698a7f65aadb2ce56a22e",
+  "summary": "3938d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61760"
+    }
+  ]
+}

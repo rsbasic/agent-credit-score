@@ -1,0 +1,42 @@
+{
+  "contributor": "LiviaMedeiros",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1974,
+    "account_created": "2020-11-14T09:07:27Z",
+    "followers": 61,
+    "following": 0,
+    "public_repos": 96,
+    "total_prs": 439,
+    "pr_velocity": "439 PRs over 1974d (0.22/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "[v25.x backport] util: fix nested proxy inspection"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:97b8f3d1848c866ed70ac497c9458a88d1d6c53d6be1b41a54a4ebba95eae431",
+  "summary": "1974d old account; 16 node PRs; 16 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 16,
+      "risk_prs": [
+        61247,
+        61157,
+        61152,
+        60871,
+        60791
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #61247, #61157, #61152, #60871, #60791"
+    }
+  ]
+}

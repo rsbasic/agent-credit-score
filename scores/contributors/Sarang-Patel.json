@@ -1,0 +1,38 @@
+{
+  "contributor": "Sarang-Patel",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1532,
+    "account_created": "2022-01-30T09:04:18Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 38,
+    "total_prs": 12,
+    "pr_velocity": "12 PRs over 1532d (0.01/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "doc: clarify tls version negotiation behavior with DEFAULT_MIN_VERSION"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:23d15d9ac7399dce6cc9f69c1a543045d28a56d2e03ca5640e700f0fbc8a00d8",
+  "summary": "1532d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        60571
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #60571"
+    }
+  ]
+}

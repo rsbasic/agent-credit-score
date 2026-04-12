@@ -1,0 +1,38 @@
+{
+  "contributor": "szmarczak",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2965,
+    "account_created": "2018-02-27T16:32:56Z",
+    "followers": 697,
+    "following": 34,
+    "public_repos": 43,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2965d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "http2, tls: check content-length, fix RST and GOAWAY logic"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e0b1259d26a16f276b6dcb2fda3e9f30d7ead35e2720243ec7cf0c0d70bef3c6",
+  "summary": "2965d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        53160
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #53160"
+    }
+  ]
+}

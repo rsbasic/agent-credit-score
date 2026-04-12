@@ -1,0 +1,34 @@
+{
+  "contributor": "Dinesh0007000",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 750,
+    "account_created": "2024-03-23T04:33:36Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 21,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 750d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:b07989efba99b4aeabb27a83df7d2285aad604d969af17f3bcf20d3945c98538",
+  "summary": "750d old account; 2 node PRs; empty profile (-10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #58810, #58769"
+    }
+  ]
+}

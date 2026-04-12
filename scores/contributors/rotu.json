@@ -1,0 +1,34 @@
+{
+  "contributor": "rotu",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6072,
+    "account_created": "2009-08-27T01:09:27Z",
+    "followers": 50,
+    "following": 4,
+    "public_repos": 237,
+    "total_prs": 824,
+    "pr_velocity": "824 PRs over 6072d (0.14/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:6f1f1ac5c171ad6777c558ab5c9d1eb7550f42ed05c30306e552e25ec0a2b8ae",
+  "summary": "6072d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #53798"
+    }
+  ]
+}

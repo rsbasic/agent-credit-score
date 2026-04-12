@@ -1,0 +1,40 @@
+{
+  "contributor": "codebytere",
+  "score": 98,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5009,
+    "account_created": "2012-07-24T19:05:37Z",
+    "followers": 3898,
+    "following": 10,
+    "public_repos": 109,
+    "total_prs": 3530,
+    "pr_velocity": "3530 PRs over 5009d (0.70/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "test,crypto: adjust tests for BoringSSL"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:a4942de5d1884975ec81e884d8f4e44fd8d4cc858364c256c03d3537cff8790f",
+  "summary": "5009d old account; 3 node PRs; established >500 PRs (+10); 3 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 3,
+      "risk_prs": [
+        62237,
+        61459,
+        55903
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62237, #61459, #55903"
+    }
+  ]
+}

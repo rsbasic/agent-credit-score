@@ -1,0 +1,38 @@
+{
+  "contributor": "hkleungai",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2767,
+    "account_created": "2018-09-14T02:12:40Z",
+    "followers": 8,
+    "following": 0,
+    "public_repos": 28,
+    "total_prs": 683,
+    "pr_velocity": "683 PRs over 2767d (0.25/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "doc: add tls.convertALPNProtocols(protocols, out)"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:21065751be72e766b77d4e182656e7f33b99d6dede608a33e12595ee96d81dc6",
+  "summary": "2767d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        58026
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #58026"
+    }
+  ]
+}

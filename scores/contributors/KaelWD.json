@@ -1,0 +1,34 @@
+{
+  "contributor": "KaelWD",
+  "score": 78,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3762,
+    "account_created": "2015-12-24T04:59:50Z",
+    "followers": 318,
+    "following": 0,
+    "public_repos": 73,
+    "total_prs": 497,
+    "pr_velocity": "497 PRs over 3762d (0.13/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:12b3d8f130a0870fe9a5452bf50e2ac323ad9a3aba27d4fc240b08628d8e7f21",
+  "summary": "3762d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #46994"
+    }
+  ]
+}

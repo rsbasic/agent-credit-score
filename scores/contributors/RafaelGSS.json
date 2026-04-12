@@ -1,0 +1,42 @@
+{
+  "contributor": "RafaelGSS",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3323,
+    "account_created": "2017-03-06T21:58:09Z",
+    "followers": 1570,
+    "following": 145,
+    "public_repos": 232,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3323d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "lib,permission: add permission.drop"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:d8fe2951c45b2a3c41e3ed1b2933e1d0d5a47873b9da32131e7c1c9f0fdabc80",
+  "summary": "3323d old account; 6 node PRs; 6 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 6,
+      "risk_prs": [
+        62672,
+        62526,
+        62105,
+        61533,
+        59862
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62672, #62526, #62105, #61533, #59862"
+    }
+  ]
+}

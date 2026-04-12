@@ -1,0 +1,40 @@
+{
+  "contributor": "jorgitin02",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 119,
+    "account_created": "2025-12-14T02:22:17Z",
+    "followers": 2,
+    "following": 0,
+    "public_repos": 11,
+    "total_prs": 30,
+    "pr_velocity": "30 PRs over 119d (0.25/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "tls: preserve servername on resumed sessions"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:3da304441c4b1fcbee3878c1ab2910c5de328fe89de4abecf5c0b2734047dfc3",
+  "summary": "119d old account; 3 node PRs; account 119d (-10); 3 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 3,
+      "risk_prs": [
+        62068,
+        62067,
+        62053
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62068, #62067, #62053"
+    }
+  ]
+}

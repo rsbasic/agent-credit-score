@@ -1,0 +1,34 @@
+{
+  "contributor": "github-actions[bot]",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2812,
+    "account_created": "2018-07-30T09:30:16Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 0,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2812d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:63d7272b2a26897916ec8ebed186064f5fe03f94e284ef731c689cd440ec49b1",
+  "summary": "2812d old account; 2 node PRs; empty profile (-10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62681, #61522"
+    }
+  ]
+}

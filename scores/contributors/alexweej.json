@@ -1,0 +1,34 @@
+{
+  "contributor": "alexweej",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6495,
+    "account_created": "2008-06-29T17:19:55Z",
+    "followers": 21,
+    "following": 1,
+    "public_repos": 23,
+    "total_prs": 17,
+    "pr_velocity": "17 PRs over 6495d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:172d51352af7047bc2effc3fe9c313a6c984991b7abe865f9f3f8f8ab405817e",
+  "summary": "6495d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #55752"
+    }
+  ]
+}

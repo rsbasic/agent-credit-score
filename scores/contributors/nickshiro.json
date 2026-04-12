@@ -1,0 +1,34 @@
+{
+  "contributor": "nickshiro",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2622,
+    "account_created": "2019-02-06T04:28:58Z",
+    "followers": 16,
+    "following": 103,
+    "public_repos": 21,
+    "total_prs": 31,
+    "pr_velocity": "31 PRs over 2622d (0.01/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:5e5c0956597be4a47dad7b91d575f489281beaea3bf1e397cc01cc7c21826617",
+  "summary": "2622d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62334"
+    }
+  ]
+}

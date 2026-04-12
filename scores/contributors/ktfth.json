@@ -1,0 +1,34 @@
+{
+  "contributor": "ktfth",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2737,
+    "account_created": "2018-10-13T19:47:58Z",
+    "followers": 116,
+    "following": 643,
+    "public_repos": 299,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2737d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:2eaee0bbc3015b7988649f014b04c43d81d5f711a952d930a3c8507484e11092",
+  "summary": "2737d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #39533"
+    }
+  ]
+}

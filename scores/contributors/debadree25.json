@@ -1,0 +1,34 @@
+{
+  "contributor": "debadree25",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3570,
+    "account_created": "2016-07-02T14:49:42Z",
+    "followers": 128,
+    "following": 290,
+    "public_repos": 48,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3570d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:a4e56b91f1af998ccc6906186d9a36b3f101c9e9d85dbb0ff91994a7e0ec3f71",
+  "summary": "3570d old account; 4 node PRs; 4 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 4,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #52546, #50340, #47794, #47277"
+    }
+  ]
+}

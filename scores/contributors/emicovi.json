@@ -1,0 +1,34 @@
+{
+  "contributor": "emicovi",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5186,
+    "account_created": "2012-01-29T12:14:13Z",
+    "followers": 0,
+    "following": 1,
+    "public_repos": 27,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 5186d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e62026acbd8c94f539299472ef00fe714484a00a30963bd63b92e1d4b216aa9d",
+  "summary": "5186d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61351"
+    }
+  ]
+}

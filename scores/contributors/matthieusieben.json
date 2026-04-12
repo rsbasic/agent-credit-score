@@ -1,0 +1,34 @@
+{
+  "contributor": "matthieusieben",
+  "score": 78,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5434,
+    "account_created": "2011-05-27T06:18:20Z",
+    "followers": 64,
+    "following": 41,
+    "public_repos": 25,
+    "total_prs": 488,
+    "pr_velocity": "488 PRs over 5434d (0.09/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:efc117353bd7694c21679d3cb7228317103196e9c12900f61dc4b69851dab5d3",
+  "summary": "5434d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #56287"
+    }
+  ]
+}

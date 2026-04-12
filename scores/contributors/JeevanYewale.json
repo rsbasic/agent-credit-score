@@ -1,0 +1,34 @@
+{
+  "contributor": "JeevanYewale",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 270,
+    "account_created": "2025-07-15T12:09:03Z",
+    "followers": 4,
+    "following": 1,
+    "public_repos": 62,
+    "total_prs": 27,
+    "pr_velocity": "27 PRs over 270d (0.10/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:29b823ce564150022d8ae6369ca17ee1d38e6555ba59a27087f330a0f09c18a5",
+  "summary": "270d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61648"
+    }
+  ]
+}

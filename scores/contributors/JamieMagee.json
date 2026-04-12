@@ -1,0 +1,41 @@
+{
+  "contributor": "JamieMagee",
+  "score": 98,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5195,
+    "account_created": "2012-01-20T15:39:56Z",
+    "followers": 382,
+    "following": 151,
+    "public_repos": 336,
+    "total_prs": 2378,
+    "pr_velocity": "2378 PRs over 5195d (0.46/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "deps: enable OpenSSL asm support for riscv64"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:bd2e73cdb7667fb105c1e742afef020851464b3d086b9651676bc192887cfe3b",
+  "summary": "5195d old account; 4 node PRs; established >500 PRs (+10); 4 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 4,
+      "risk_prs": [
+        62609,
+        62608,
+        62606,
+        62605
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62609, #62608, #62606, #62605"
+    }
+  ]
+}

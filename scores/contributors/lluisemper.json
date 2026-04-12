@@ -1,0 +1,34 @@
+{
+  "contributor": "lluisemper",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2322,
+    "account_created": "2019-12-02T10:22:33Z",
+    "followers": 8,
+    "following": 21,
+    "public_repos": 39,
+    "total_prs": 63,
+    "pr_velocity": "63 PRs over 2322d (0.03/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:09cd28f5743ee5722f11d8234d108b33fa549fc589adde5723ea1c708f91e584",
+  "summary": "2322d old account; 4 node PRs; 4 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 4,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #59557, #59543, #59333, #59121"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "yashLadha",
+  "score": 83,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3671,
+    "account_created": "2016-03-23T15:00:23Z",
+    "followers": 180,
+    "following": 84,
+    "public_repos": 142,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3671d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:3e0a0d061625fa7f6ee8078af380ae1b02ba8432973a3c5c568e05a54b6146da",
+  "summary": "3671d old account; 2 node PRs.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 2,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #42308, #41731"
+    }
+  ]
+}

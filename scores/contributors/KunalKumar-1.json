@@ -1,0 +1,34 @@
+{
+  "contributor": "KunalKumar-1",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1022,
+    "account_created": "2023-06-24T15:10:36Z",
+    "followers": 49,
+    "following": 42,
+    "public_repos": 55,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1022d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:dd51c6948dabb8361fb95d373c938be16275ed9a11bdd5e415b4d49a2a876804",
+  "summary": "1022d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #55394"
+    }
+  ]
+}

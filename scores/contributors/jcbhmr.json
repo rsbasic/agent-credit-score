@@ -1,0 +1,34 @@
+{
+  "contributor": "jcbhmr",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2248,
+    "account_created": "2020-02-14T22:56:27Z",
+    "followers": 39,
+    "following": 41,
+    "public_repos": 276,
+    "total_prs": 335,
+    "pr_velocity": "335 PRs over 2248d (0.15/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:2ea4f138adf72331ad17d0db29b02a13f3ab39564d1e733eaabb13a1f8143e02",
+  "summary": "2248d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #49205"
+    }
+  ]
+}

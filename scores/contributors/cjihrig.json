@@ -1,0 +1,34 @@
+{
+  "contributor": "cjihrig",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4933,
+    "account_created": "2012-10-08T15:36:21Z",
+    "followers": 1024,
+    "following": 37,
+    "public_repos": 213,
+    "total_prs": 2071,
+    "pr_velocity": "2071 PRs over 4933d (0.42/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:2afcbc68823761d420790a1053ed83302b6584d03272ce07f7fe0a8bb5ef4490",
+  "summary": "4933d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62072"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "prateekkushwaha2",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1814,
+    "account_created": "2021-04-23T11:21:17Z",
+    "followers": 2,
+    "following": 4,
+    "public_repos": 7,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1814d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:95abc3741fe5d7dd05031eaf2290a5d52129ff045ebb87ca7a189a9bce0dcd2a",
+  "summary": "1814d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #51953"
+    }
+  ]
+}

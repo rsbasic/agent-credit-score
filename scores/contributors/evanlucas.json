@@ -1,0 +1,34 @@
+{
+  "contributor": "evanlucas",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5503,
+    "account_created": "2011-03-18T23:38:32Z",
+    "followers": 282,
+    "following": 66,
+    "public_repos": 283,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 5503d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:efdb2063f55388ac545d1912ec6627785c78e9897178fc39f0b4edb8c7b7f8ff",
+  "summary": "5503d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #39473"
+    }
+  ]
+}

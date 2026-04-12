@@ -1,0 +1,34 @@
+{
+  "contributor": "oussamaBGZ",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3178,
+    "account_created": "2017-07-29T13:56:16Z",
+    "followers": 8,
+    "following": 31,
+    "public_repos": 35,
+    "total_prs": 6,
+    "pr_velocity": "6 PRs over 3178d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:157f6fff353e7a84e7123019dfff29b77a0b2947936e6bb26fd6b4d02b93299b",
+  "summary": "3178d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #56419"
+    }
+  ]
+}

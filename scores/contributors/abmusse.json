@@ -1,0 +1,34 @@
+{
+  "contributor": "abmusse",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3060,
+    "account_created": "2017-11-25T04:00:55Z",
+    "followers": 37,
+    "following": 9,
+    "public_repos": 10,
+    "total_prs": 393,
+    "pr_velocity": "393 PRs over 3060d (0.13/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:8ac543341358f87f23e2f2e8bd0ca80f8bc75840397093b69c9d3b82e73a6966",
+  "summary": "3060d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62656"
+    }
+  ]
+}

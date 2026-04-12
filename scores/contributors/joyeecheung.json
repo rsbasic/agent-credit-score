@@ -1,0 +1,42 @@
+{
+  "contributor": "joyeecheung",
+  "score": 98,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4730,
+    "account_created": "2013-04-30T06:22:37Z",
+    "followers": 5763,
+    "following": 66,
+    "public_repos": 115,
+    "total_prs": 1297,
+    "pr_velocity": "1297 PRs over 4730d (0.27/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "wip: crypto: use cppgc to manage Hash"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:0bc16ee4de6c91483870f2b98c39b24a0800cf7c9c6523cdd435d8bc4284ba18",
+  "summary": "4730d old account; 11 node PRs; established >500 PRs (+10); 11 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 11,
+      "risk_prs": [
+        62388,
+        62029,
+        60490,
+        59904,
+        57139
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62388, #62029, #60490, #59904, #57139"
+    }
+  ]
+}

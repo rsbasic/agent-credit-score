@@ -1,0 +1,34 @@
+{
+  "contributor": "shash-hq",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 800,
+    "account_created": "2024-02-01T16:36:12Z",
+    "followers": 6,
+    "following": 15,
+    "public_repos": 23,
+    "total_prs": 43,
+    "pr_velocity": "43 PRs over 800d (0.05/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:ad87ebdb9cc7b02a65a967356547893b9d41286dd1abfd9479a25692d709212a",
+  "summary": "800d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61071"
+    }
+  ]
+}

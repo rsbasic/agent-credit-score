@@ -1,0 +1,34 @@
+{
+  "contributor": "inoway46",
+  "score": 85,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2148,
+    "account_created": "2020-05-24T13:20:33Z",
+    "followers": 3,
+    "following": 5,
+    "public_repos": 12,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2148d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e6c79fc72c9f8b5d03594e68416ec5b85ef7b2c758dd4cdcd304b23fcbd1fa9f",
+  "summary": "2148d old account; 6 node PRs; 6 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 6,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62489, #62488, #62060, #62055, #61937"
+    }
+  ]
+}

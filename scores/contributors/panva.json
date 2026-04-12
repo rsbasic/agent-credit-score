@@ -1,0 +1,43 @@
+{
+  "contributor": "panva",
+  "score": 98,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5844,
+    "account_created": "2010-04-11T11:34:08Z",
+    "followers": 1629,
+    "following": 14,
+    "public_repos": 60,
+    "total_prs": 855,
+    "pr_velocity": "855 PRs over 5844d (0.15/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "crypto: add crypto.signDigest() and crypto.verifyDigest() methods",
+      "crypto: support deterministic ECDSA/DSA signatures"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:70dc7447059637298b889b80e53b548c8c85d3fa483a8847fdd801ab8863a349",
+  "summary": "5844d old account; 5 node PRs; established >500 PRs (+10); 5 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 5,
+      "risk_prs": [
+        62680,
+        62677,
+        62498,
+        62345,
+        62252
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62680, #62677, #62498, #62345, #62252"
+    }
+  ]
+}

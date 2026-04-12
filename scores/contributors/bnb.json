@@ -1,0 +1,34 @@
+{
+  "contributor": "bnb",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5612,
+    "account_created": "2010-11-29T20:27:28Z",
+    "followers": 1849,
+    "following": 13,
+    "public_repos": 251,
+    "total_prs": 662,
+    "pr_velocity": "662 PRs over 5612d (0.12/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:28f04c493b4f6114f0cc5aba5324113b148d13220ae2da69e6aaa1c6dee1f3cc",
+  "summary": "5612d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #52207"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "xsbchen",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5277,
+    "account_created": "2011-10-30T12:03:28Z",
+    "followers": 43,
+    "following": 53,
+    "public_repos": 130,
+    "total_prs": 46,
+    "pr_velocity": "46 PRs over 5277d (0.01/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:704e484e2d56d375c93d25404334390cb6b53668580090d6054ba9e014c27d5f",
+  "summary": "5277d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #51497"
+    }
+  ]
+}

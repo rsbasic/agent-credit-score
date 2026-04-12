@@ -1,0 +1,38 @@
+{
+  "contributor": "AdamMajer",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5255,
+    "account_created": "2011-11-21T22:08:08Z",
+    "followers": 23,
+    "following": 0,
+    "public_repos": 82,
+    "total_prs": 147,
+    "pr_velocity": "147 PRs over 5255d (0.03/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "crypto: disable ciphers not supported by EVP"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:d87e82824b485325f925b3db75d6d8d6723bb83a6b9f07e13d9a130af9fd4a1a",
+  "summary": "5255d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        43532
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #43532"
+    }
+  ]
+}

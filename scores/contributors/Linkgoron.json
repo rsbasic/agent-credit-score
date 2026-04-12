@@ -1,0 +1,38 @@
+{
+  "contributor": "Linkgoron",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5458,
+    "account_created": "2011-05-02T14:35:07Z",
+    "followers": 23,
+    "following": 0,
+    "public_repos": 18,
+    "total_prs": 65,
+    "pr_velocity": "65 PRs over 5458d (0.01/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "crypto: fix Hash and Cipher abort on end"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:62ce6f8162dee43377372a31cc3f9517e987f1392aee76645f58f3777d376fdc",
+  "summary": "5458d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        38425
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #38425"
+    }
+  ]
+}

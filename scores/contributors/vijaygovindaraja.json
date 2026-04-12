@@ -1,0 +1,34 @@
+{
+  "contributor": "vijaygovindaraja",
+  "score": 50,
+  "grade": "BB",
+  "confidence": "low",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 17,
+    "account_created": "2026-03-25T14:37:07Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 38,
+    "total_prs": 51,
+    "pr_velocity": "51 PRs over 17d (3.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:81f9126e402a205ed92540f88e6282e22fea323d1a8f5dfee85016189b0939d9",
+  "summary": "17d old account; 1 node PR; new account 17d (-20).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62468"
+    }
+  ]
+}

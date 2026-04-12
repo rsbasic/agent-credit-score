@@ -1,0 +1,34 @@
+{
+  "contributor": "joao-oliveira-softtor",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 438,
+    "account_created": "2025-01-28T19:29:20Z",
+    "followers": 0,
+    "following": 3,
+    "public_repos": 5,
+    "total_prs": 5,
+    "pr_velocity": "5 PRs over 438d (0.01/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:00dc4097d4bd7b110fe99e4c8a83e67a1815b9947fbc4f5f364cc0795099adeb",
+  "summary": "438d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62696"
+    }
+  ]
+}

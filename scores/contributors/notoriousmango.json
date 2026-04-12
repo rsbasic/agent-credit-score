@@ -1,0 +1,34 @@
+{
+  "contributor": "notoriousmango",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3110,
+    "account_created": "2017-10-05T21:34:37Z",
+    "followers": 7,
+    "following": 0,
+    "public_repos": 8,
+    "total_prs": 87,
+    "pr_velocity": "87 PRs over 3110d (0.03/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:66faec1257a354ccb6f166332dd101b1bd7b1179e4e4cfe58d5a4e06aa9dfb13",
+  "summary": "3110d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61059"
+    }
+  ]
+}

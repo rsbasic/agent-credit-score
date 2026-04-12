@@ -1,0 +1,42 @@
+{
+  "contributor": "nektro",
+  "score": 98,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4591,
+    "account_created": "2013-09-15T16:41:53Z",
+    "followers": 612,
+    "following": 259,
+    "public_repos": 252,
+    "total_prs": 1232,
+    "pr_velocity": "1232 PRs over 4591d (0.27/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "tls: make Server.getTicketKeys throw instead of assert"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:52e9834febf7d1b17c5f7d27d7b45ce7bc7816c216f5f57f115bb072d608857e",
+  "summary": "4591d old account; 6 node PRs; established >500 PRs (+10); 6 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 6,
+      "risk_prs": [
+        59357,
+        58522,
+        58365,
+        58364,
+        57735
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #59357, #58522, #58365, #58364, #57735"
+    }
+  ]
+}

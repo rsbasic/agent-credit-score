@@ -1,0 +1,34 @@
+{
+  "contributor": "NinadUbale",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 927,
+    "account_created": "2023-09-28T02:42:59Z",
+    "followers": 6,
+    "following": 13,
+    "public_repos": 10,
+    "total_prs": 3,
+    "pr_velocity": "3 PRs over 927d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:93b859d1ab757d5ce98fc395cf747c8f27cf72f89a39a6a04b392674b4dbd3fc",
+  "summary": "927d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62613"
+    }
+  ]
+}

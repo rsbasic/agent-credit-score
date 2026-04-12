@@ -1,0 +1,34 @@
+{
+  "contributor": "theanarkh",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3520,
+    "account_created": "2016-08-21T12:31:19Z",
+    "followers": 830,
+    "following": 51,
+    "public_repos": 116,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 3520d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:9efb0be38402d7be6221021bf847a0e898bfa65d6df7905701c8ebad9ca00dd7",
+  "summary": "3520d old account; 7 node PRs; 7 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 7,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #60231, #59829, #59599, #59126, #52103"
+    }
+  ]
+}

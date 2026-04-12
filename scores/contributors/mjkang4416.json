@@ -1,0 +1,38 @@
+{
+  "contributor": "mjkang4416",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1059,
+    "account_created": "2023-05-18T10:33:07Z",
+    "followers": 26,
+    "following": 17,
+    "public_repos": 36,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1059d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "doc: fix added version for tls.DEFAULT_CIPHERS"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:4debf86a349eb50524457f2c27ff431bb1a5a204666951dbff2a040b9e192838",
+  "summary": "1059d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        59327
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #59327"
+    }
+  ]
+}

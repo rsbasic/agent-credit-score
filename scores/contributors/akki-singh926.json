@@ -1,0 +1,34 @@
+{
+  "contributor": "akki-singh926",
+  "score": 60,
+  "grade": "BBB",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 566,
+    "account_created": "2024-09-22T17:33:11Z",
+    "followers": 0,
+    "following": 0,
+    "public_repos": 24,
+    "total_prs": 1,
+    "pr_velocity": "1 PRs over 566d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:a29797d62448f5c99ccd27401203746fc9fe428bbc880d8d7743bf69b4ebd2eb",
+  "summary": "566d old account; 1 node PR; empty profile (-10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #60421"
+    }
+  ]
+}

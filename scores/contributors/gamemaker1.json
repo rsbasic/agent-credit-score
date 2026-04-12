@@ -1,0 +1,34 @@
+{
+  "contributor": "gamemaker1",
+  "score": 78,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3050,
+    "account_created": "2017-12-04T10:26:38Z",
+    "followers": 161,
+    "following": 0,
+    "public_repos": 99,
+    "total_prs": 121,
+    "pr_velocity": "121 PRs over 3050d (0.04/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:9c2129c7a72f0b40ba10f39a575920316b8717e79f828a736f4adbd4dc604414",
+  "summary": "3050d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62117"
+    }
+  ]
+}

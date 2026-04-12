@@ -1,0 +1,34 @@
+{
+  "contributor": "ThierryMT",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1835,
+    "account_created": "2021-04-02T07:17:35Z",
+    "followers": 1,
+    "following": 5,
+    "public_repos": 20,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1835d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:f27d10bb45bc1ee2590b1749ebe9fcc44c27ffd4e5bbe6ebba398c546b5c9882",
+  "summary": "1835d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #60438"
+    }
+  ]
+}

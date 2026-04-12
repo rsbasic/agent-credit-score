@@ -1,0 +1,34 @@
+{
+  "contributor": "MikeMcC399",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2125,
+    "account_created": "2020-06-16T09:30:50Z",
+    "followers": 84,
+    "following": 1,
+    "public_repos": 112,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 2125d (0.00/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e0dcd2997cc0f30cdb335659d2ae30742f2a7c2c2dfcc7ce6993292b857cbeae",
+  "summary": "2125d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62668"
+    }
+  ]
+}

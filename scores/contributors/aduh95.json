@@ -1,0 +1,44 @@
+{
+  "contributor": "aduh95",
+  "score": 98,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3860,
+    "account_created": "2015-09-16T09:06:14Z",
+    "followers": 393,
+    "following": 4,
+    "public_repos": 130,
+    "total_prs": 2879,
+    "pr_velocity": "2879 PRs over 3860d (0.75/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "tools: use upstream version of OpenSSL in `test-shared`",
+      "tools: add ncrypto updater script",
+      "tools: add workflow to add `author ready`"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:e416cf357d7a6cde226d7fb6ddec43f8002dd42fd2c77b86c55b767f3b861523",
+  "summary": "3860d old account; 22 node PRs; established >500 PRs (+10); 22 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 22,
+      "risk_prs": [
+        62679,
+        62661,
+        62651,
+        62633,
+        62462
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62679, #62661, #62651, #62633, #62462"
+    }
+  ]
+}

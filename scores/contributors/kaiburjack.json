@@ -1,0 +1,34 @@
+{
+  "contributor": "kaiburjack",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 2007,
+    "account_created": "2020-10-12T18:10:03Z",
+    "followers": 6,
+    "following": 0,
+    "public_repos": 6,
+    "total_prs": 17,
+    "pr_velocity": "17 PRs over 2007d (0.01/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:91648a86c2379f430b384df4681ba29def7580b18bac29b91b6022d5442ae9e8",
+  "summary": "2007d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #60621"
+    }
+  ]
+}

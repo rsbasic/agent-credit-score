@@ -1,0 +1,38 @@
+{
+  "contributor": "jaanrebane",
+  "score": 75,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 1243,
+    "account_created": "2022-11-15T14:19:08Z",
+    "followers": 1,
+    "following": 0,
+    "public_repos": 4,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 1243d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "deps: rewrite openssl x86asm.pl win32 workaround"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:17843ffe4ddc5d2d3ba521b814d08bcf7d94ad0b971df9700afaaedd3920cda5",
+  "summary": "1243d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        60510
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #60510"
+    }
+  ]
+}

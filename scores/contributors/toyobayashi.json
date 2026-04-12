@@ -1,0 +1,34 @@
+{
+  "contributor": "toyobayashi",
+  "score": 78,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3440,
+    "account_created": "2016-11-09T07:52:47Z",
+    "followers": 178,
+    "following": 106,
+    "public_repos": 190,
+    "total_prs": 214,
+    "pr_velocity": "214 PRs over 3440d (0.06/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:3f4f8c0664f1f454ac2d633973e9c83b553d7b6775aa9ee5c9f7c8c2d73503bf",
+  "summary": "3440d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #59255"
+    }
+  ]
+}

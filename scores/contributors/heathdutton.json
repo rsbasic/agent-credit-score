@@ -1,0 +1,34 @@
+{
+  "contributor": "heathdutton",
+  "score": 88,
+  "grade": "AA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5784,
+    "account_created": "2010-06-10T20:40:13Z",
+    "followers": 1025,
+    "following": 103,
+    "public_repos": 226,
+    "total_prs": 655,
+    "pr_velocity": "655 PRs over 5784d (0.11/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:af09136aa9a5568ea591385dec0e5880f8abc3c1e2218fa1e0c288ce1330c310",
+  "summary": "5784d old account; 1 node PR; established >500 PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #61251"
+    }
+  ]
+}

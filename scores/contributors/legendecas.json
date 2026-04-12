@@ -1,0 +1,34 @@
+{
+  "contributor": "legendecas",
+  "score": 98,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4252,
+    "account_created": "2014-08-20T07:56:09Z",
+    "followers": 586,
+    "following": 10,
+    "public_repos": 120,
+    "total_prs": 1659,
+    "pr_velocity": "1659 PRs over 4252d (0.39/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:b158d245c51aba058162b684285dfa451d8a9c58e780b23022f6e26f82e9dc5c",
+  "summary": "4252d old account; 7 node PRs; established >500 PRs (+10); 7 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 7,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62660, #62630, #62459, #62322, #58328"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "contributor": "ChALkeR",
+  "score": 98,
+  "grade": "AAA",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 5795,
+    "account_created": "2010-05-30T10:44:35Z",
+    "followers": 674,
+    "following": 89,
+    "public_repos": 244,
+    "total_prs": 1059,
+    "pr_velocity": "1059 PRs over 5795d (0.18/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "crypto: protect against string collisions"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:fc29ea3636e5f23ab993d9067d41bc0944a2cc4196cca7d55099335770294011",
+  "summary": "5795d old account; 7 node PRs; established >500 PRs (+10); 7 node PRs (+10).",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 7,
+      "risk_prs": [
+        61559,
+        61120,
+        61118,
+        60553,
+        60477
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #61559, #61120, #61118, #60553, #60477"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "vassudanagunta",
+  "score": 75,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 4892,
+    "account_created": "2012-11-19T00:09:21Z",
+    "followers": 25,
+    "following": 12,
+    "public_repos": 42,
+    "total_prs": 98,
+    "pr_velocity": "98 PRs over 4892d (0.02/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:5a04b320b7d4abf4e53f798b469684fcd1d13020122e1346846df64b782022f2",
+  "summary": "4892d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #62137"
+    }
+  ]
+}

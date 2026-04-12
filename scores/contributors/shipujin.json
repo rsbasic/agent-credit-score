@@ -1,0 +1,38 @@
+{
+  "contributor": "shipujin",
+  "score": 78,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3469,
+    "account_created": "2016-10-11T10:26:47Z",
+    "followers": 74,
+    "following": 60,
+    "public_repos": 37,
+    "total_prs": 45,
+    "pr_velocity": "45 PRs over 3469d (0.01/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "deps: add loong64 into openssl Makefile and gen openssl(asm)"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:c3d0c5735b99317d10154e8c3fd19131e98dfb2f7b62b1318431b11340db2bfa",
+  "summary": "3469d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        59324
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #59324"
+    }
+  ]
+}

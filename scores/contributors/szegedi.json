@@ -1,0 +1,34 @@
+{
+  "contributor": "szegedi",
+  "score": 78,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 6064,
+    "account_created": "2009-09-03T12:56:14Z",
+    "followers": 192,
+    "following": 4,
+    "public_repos": 23,
+    "total_prs": 0,
+    "pr_velocity": "0 PRs over 6064d (0.00/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:13ab18131ce75cbc7d55dc36fb7a7190b02da972e1b7ae262a5eb2e541e07b86",
+  "summary": "6064d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #58229"
+    }
+  ]
+}

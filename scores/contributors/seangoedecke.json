@@ -1,0 +1,34 @@
+{
+  "contributor": "seangoedecke",
+  "score": 78,
+  "grade": "A",
+  "confidence": "high",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 3520,
+    "account_created": "2016-08-22T01:16:49Z",
+    "followers": 65,
+    "following": 1,
+    "public_repos": 17,
+    "total_prs": 36,
+    "pr_velocity": "36 PRs over 3520d (0.01/day)",
+    "profile_complete": true,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:f1e4496e53707d5f516ad097ded4f28f1ad3821e5314b139a4eb81178cc575d1",
+  "summary": "3520d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [],
+      "any_merged": false,
+      "note": "Open PRs: #38716"
+    }
+  ]
+}

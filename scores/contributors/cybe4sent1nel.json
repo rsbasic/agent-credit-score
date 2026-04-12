@@ -1,0 +1,38 @@
+{
+  "contributor": "cybe4sent1nel",
+  "score": 70,
+  "grade": "A",
+  "confidence": "medium",
+  "last_scored": "2026-04-10",
+  "signals": {
+    "account_age_days": 258,
+    "account_created": "2025-07-28T05:19:51Z",
+    "followers": 4,
+    "following": 3,
+    "public_repos": 33,
+    "total_prs": 7,
+    "pr_velocity": "7 PRs over 258d (0.03/day)",
+    "profile_complete": false,
+    "cross_repo_targets": [
+      "nodejs/node"
+    ],
+    "scope_escalation": false,
+    "security_paths_touched": [
+      "doc: clarify process._debugProcess() in Permission Model"
+    ],
+    "dormant_reactivation": false
+  },
+  "evidence_hash": "sha256:2c9afbd103187ad30a283fbadb6d6dde7e16d9326f97a778157a3bb0fdad982e",
+  "summary": "258d old account; 1 node PR.",
+  "repos_affected": [
+    {
+      "repo": "nodejs/node",
+      "prs": 1,
+      "risk_prs": [
+        62537
+      ],
+      "any_merged": false,
+      "note": "Open PRs: #62537"
+    }
+  ]
+}
